@@ -1,0 +1,10 @@
+{
+  "run": "nsfc_profile_review_v3",
+  "new_ai_calls": 0,
+  "display_update": "Model and portfolio calculations aligned with the technical appendix; strict midpoint Voting added",
+  "files": {
+    "materials.json": "c07f06a5cecdeb6bdeed8ba48a421248d26e0659860e9dfc53e48f7fcc2ba8f1",
+    "results.json": "987266b805f9a611cccf9579eb92dd326aab2f7260a43bbfc83e049a1607bced",
+    "researcher_values.json": "a778f8cd73424fb9a837472f3126118a2fd8856928cf6fa736b6b77676d44221"
+  }
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when referring to this research prototype."
+type: software
+authors:
+  - name: "ReviewLab contributors"
+title: "ReviewLab: GenAI review experiments for interdisciplinary project selection"
+version: 0.1.0
+repository-code: "https://github.com/Rigelynn/ReviewLab"
+url: "http://106.54.30.90:3389/reviewlab/"
+abstract: "Publication-based GenAI reviewers provide scores and separately submitted rankings for budget-constrained project selection. The package includes a simulator, saved evaluations and official rankrate joint fits."

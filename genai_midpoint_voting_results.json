@@ -1,0 +1,57 @@
+{
+  "analysis": "midpoint_voting_recalculation_from_saved_reviews",
+  "rule": "S/M < 0.5; M=12; S<6; equivalently T>50",
+  "new_model_calls": 0,
+  "input_sha256": {
+    "results.json": "987266b805f9a611cccf9579eb92dd326aab2f7260a43bbfc83e049a1607bced",
+    "researcher_values.json": "a778f8cd73424fb9a837472f3126118a2fd8856928cf6fa736b6b77676d44221",
+    "materials.json": "c07f06a5cecdeb6bdeed8ba48a421248d26e0659860e9dfc53e48f7fcc2ba8f1"
+  },
+  "tie_seed": 1028,
+  "tie_order": [
+    "P01",
+    "P06",
+    "P10",
+    "P03",
+    "P04",
+    "P02",
+    "P09",
+    "P05",
+    "P07",
+    "P08"
+  ],
+  "votes": {
+    "P01": 5,
+    "P02": 0,
+    "P03": 3,
+    "P04": 1,
+    "P05": 5,
+    "P06": 0,
+    "P07": 4,
+    "P08": 0,
+    "P09": 3,
+    "P10": 0
+  },
+  "order": [
+    "P01",
+    "P05",
+    "P07",
+    "P03",
+    "P09",
+    "P04",
+    "P06",
+    "P10",
+    "P02",
+    "P08"
+  ],
+  "capacity": 3,
+  "selected": [
+    "P01",
+    "P05",
+    "P07"
+  ],
+  "value": 2.525,
+  "loss": 0.1375,
+  "oracle_value": 2.6625,
+  "top_m_recovery": 0.6666666666666666
+}
