@@ -1,0 +1,745 @@
+{
+  "records": [
+    {
+      "project_id": "P01",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "CS-1",
+          "supported": true,
+          "quote": "主题通道估计问题重合，方法通道依据任务输入输出关系识别方法互补",
+          "reason_en": "The design explicitly builds two separate channels—topic and method—to distinguish topic proximity from method complementarity, rather than relying solely on co-authorship prediction.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-2",
+          "supported": true,
+          "quote": "将一个机构全部留出，其余机构的最后两年另作时间外检验",
+          "reason_en": "The design explicitly holds out one entire institution and uses the last two years of the remaining institutions as a temporal out-of-sample test, directly testing transfer to new institutions.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-3",
+          "supported": true,
+          "quote": "将主题、方法和共同署名通道逐一去除",
+          "reason_en": "The design explicitly performs ablation by removing the topic, method, and co-authorship channels one at a time to test the independent contribution of the complementarity channel.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-4",
+          "supported": true,
+          "quote": "对节点度数和机构规模进行保持边际分布的置换检验",
+          "reason_en": "The design explicitly uses permutation tests preserving marginal distributions of node degree and institution size, and reports recall and calibration error stratified by author activity level.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-1",
+          "supported": true,
+          "quote": "合作结局由共同研究任务、持续三个月以上的资料交换和共同方案确认构成",
+          "reason_en": "The design explicitly defines the cooperation outcome using joint research tasks, data exchange lasting over three months, and joint protocol confirmation, distinguishing it from co-authorship.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-2",
+          "supported": true,
+          "quote": "随机展示主题接近或方法互补推荐",
+          "reason_en": "The design explicitly uses random assignment of recommendation types (topic proximity vs. method complementarity) to identify the causal effect on cooperation events.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-3",
+          "supported": true,
+          "quote": "检验推荐关系类型和机构边界的交互",
+          "reason_en": "The design explicitly tests the interaction between recommendation relationship type and institutional boundary, addressing the moderating role of organizational boundaries.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-4",
+          "supported": false,
+          "quote": "不安排第二地区重复；结论限定在现有机构环境",
+          "reason_en": "The design explicitly states that no second-region replication is arranged and conclusions are limited to the existing institutional environment, so cross-regional applicability is not tested.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "a46ca0cbb1dd239eb2bdf6b40f848c0c011dcb6514f8910fbb829769707ae8f3"
+    },
+    {
+      "project_id": "P02",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "CS-1",
+          "supported": true,
+          "quote": "构建两条独立关系通道：主题通道估计问题重合，方法通道依据任务输入输出关系识别方法互补",
+          "reason_en": "The design explicitly builds separate topic and method channels and reports incremental explanation for each, directly distinguishing topic proximity from method complementarity rather than only predicting co-authorship.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-2",
+          "supported": false,
+          "quote": "此次研究目标限于已有机构的链接补全",
+          "reason_en": "The design explicitly limits the goal to link completion within existing institutions and does not test transfer to new institutions.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "CS-3",
+          "supported": true,
+          "quote": "将主题、方法和共同署名通道逐一去除",
+          "reason_en": "The design uses ablation by removing topic, method, and co-authorship channels one at a time and compares against baselines, which tests the independent contribution of the relation representations.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-4",
+          "supported": false,
+          "quote": "不设置保持度数的置换或活跃程度分层",
+          "reason_en": "The design explicitly does not include degree-preserving permutation or activity stratification, and defers the issue of high-activity authors to future work, so it does not exclude surface gains from active authors or network size.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MS-1",
+          "supported": true,
+          "quote": "合作结局由共同研究任务、持续三个月以上的资料交换和共同方案确认构成",
+          "reason_en": "The design defines a cooperation outcome using joint research tasks, sustained material exchange, and joint protocol confirmation, with independent reports and log verification, distinguishing it from co-authorship.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-2",
+          "supported": false,
+          "quote": "观察平台自然形成的推荐点击与共同署名，使用相关回归控制既往产出",
+          "reason_en": "The design uses observational data on naturally occurring recommendation clicks and co-authorship with correlational regression, which cannot identify a causal effect of recommended knowledge relations on cooperation formation.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MS-3",
+          "supported": false,
+          "quote": "不提出边界如何改变方法互补转化为合作的机制预测",
+          "reason_en": "The design explicitly does not propose a mechanism prediction for how boundaries change the conversion of method complementarity into cooperation, so it does not explain the moderating role of organizational boundaries.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MS-4",
+          "supported": false,
+          "quote": "不安排第二地区重复",
+          "reason_en": "The design explicitly does not arrange a second-region replication and limits conclusions to the existing institutional environment, so it does not test cross-regional applicability.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "c133a876fb35a76a5072cdd23f254df62fe5680d3e74bca8d35481a3c6239486"
+    },
+    {
+      "project_id": "P03",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "OR-1",
+          "supported": true,
+          "quote": "将收益分布集合、固定预算和领域覆盖约束同时写入模型",
+          "reason_en": "The design explicitly states that the robust optimization model jointly incorporates the return distribution set, fixed budget, and domain coverage constraints, which directly addresses the joint representation of return uncertainty and budget constraints.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-2",
+          "supported": true,
+          "quote": "给出最优性差距和运行时间",
+          "reason_en": "The design specifies reporting optimality gaps and running times for large instances, providing a basis for solution accuracy.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-3",
+          "supported": true,
+          "quote": "比较半径变化的收益与风险曲线",
+          "reason_en": "The design explicitly compares return and risk curves as the uncertainty set radius changes, characterizing the trade-off between conservatism and loss.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-4",
+          "supported": false,
+          "quote": "共同冲击作为尚未覆盖的边界",
+          "reason_en": "The design explicitly assumes independent project returns and does not estimate cross-project covariance, deferring common shocks as an uncovered boundary rather than handling correlated shocks.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "STAT-1",
+          "supported": true,
+          "quote": "自助法形成候选不确定集合",
+          "reason_en": "The design uses training batches to estimate empirical distributions and scales, and bootstrap methods to form candidate uncertainty sets from observed data.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-2",
+          "supported": true,
+          "quote": "校准集合半径后冻结",
+          "reason_en": "The design uses training, calibration, and final test splits, freezing the calibrated set radius before final evaluation to control information leakage.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-3",
+          "supported": true,
+          "quote": "分别报告入选与未入选项目的覆盖差异",
+          "reason_en": "The design computes interval coverage for all candidate projects and separately reports coverage differences between selected and unselected projects, checking coverage beyond only successful combinations.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-4",
+          "supported": true,
+          "quote": "构建组合损失的独立检验区间",
+          "reason_en": "The design uses sample splitting to construct independent test intervals for portfolio loss and tests nominal coverage under heavy-tailed and heteroscedastic mechanisms.",
+          "design_support": true,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "6a79269ce04d12a59a253db57e425182ae03b4e4b3eec9d9073eecbb7155e32a"
+    },
+    {
+      "project_id": "P04",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "OR-1",
+          "supported": true,
+          "quote": "建立分布稳健整数规划，将收益分布集合、固定预算和领域覆盖约束同时写入模型",
+          "reason_en": "The design explicitly formulates a distributionally robust integer program that jointly incorporates the return distribution set, fixed budget, and coverage constraints.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-2",
+          "supported": true,
+          "quote": "大实例报告原问题可行解与松弛界，给出最优性差距和运行时间",
+          "reason_en": "The design explicitly requires reporting feasible solutions and relaxation bounds for large instances, along with optimality gaps and running times.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-3",
+          "supported": false,
+          "quote": "半径与保守性的关系不在本次分析范围内",
+          "reason_en": "The design explicitly states that the relationship between radius and conservatism is outside the scope of this analysis, so the trade-off between conservatism and loss is not addressed.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "OR-4",
+          "supported": false,
+          "quote": "共同冲击作为尚未覆盖的边界",
+          "reason_en": "The design assumes independent project returns and explicitly treats common shocks as an uncovered boundary, so correlated shocks are not handled.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "STAT-1",
+          "supported": true,
+          "quote": "用训练批次估计经验分布和尺度，自助法形成候选不确定集合",
+          "reason_en": "The design explicitly uses training batches to estimate the empirical distribution and scale, and bootstrap methods to form candidate uncertainty sets.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-2",
+          "supported": false,
+          "quote": "以最终组合收益最高者报告主要结果",
+          "reason_en": "The design selects the radius with the highest final portfolio return as the main result, which constitutes information leakage rather than controlling it.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "STAT-3",
+          "supported": true,
+          "quote": "分别报告入选与未入选项目的覆盖差异",
+          "reason_en": "The design explicitly computes coverage for all candidate projects and separately reports coverage differences between selected and unselected projects.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-4",
+          "supported": false,
+          "quote": "直接沿用单项目区间作为组合风险依据，不额外处理优化选择导致的依赖",
+          "reason_en": "The design explicitly reuses single-project intervals as the portfolio risk basis without addressing dependence induced by optimization selection, so post-selection portfolio loss inference is not provided.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "ce97589421f792bc65cf8a878e26af20f5863d6696271a414719761af95d9148"
+    },
+    {
+      "project_id": "P05",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "CS-1",
+          "supported": true,
+          "quote": "以方法输入、输出和适用条件编码互补关系，另保留主题相似通道",
+          "reason_en": "The design explicitly encodes complementary relations by method inputs, outputs, and applicability conditions while retaining a topic-similarity channel, allowing the two recommendation types to be distinguished.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-2",
+          "supported": true,
+          "quote": "两条件固定材料数量、长度、可读性和排序位置",
+          "reason_en": "The design fixes material quantity, length, readability, and ordering position across the two conditions, directly supporting comparable exposure.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-3",
+          "supported": false,
+          "quote": "推荐词表覆盖本实验主题，不检验未见主题",
+          "reason_en": "The design explicitly states that the recommendation vocabulary covers only the experimental topics and does not test unseen topics, so generalization to unknown topics is not supported.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "CS-4",
+          "supported": true,
+          "quote": "在固定候选池上删除互补关系模块，检查推荐知识结构的变化",
+          "reason_en": "The design removes the complementary-relation module on a fixed candidate pool and examines changes in the recommended knowledge structure, directly isolating the module's technical role.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-1",
+          "supported": true,
+          "quote": "构想由盲评者分别判断问题变化、方法重组和论证完整性",
+          "reason_en": "The design measures idea content through blinded raters assessing problem change, method recombination, and argument completeness, going beyond click-through rates.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-2",
+          "supported": true,
+          "quote": "在240名参与者中随机分配推荐条件，预注册主要构想指标和排除规则",
+          "reason_en": "The design randomly assigns 240 participants to recommendation conditions with pre-registered primary idea indicators and exclusion rules, supporting causal effect identification.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-3",
+          "supported": true,
+          "quote": "记录搜索路径及既往领域知识，预设不同知识背景下的异质性比较",
+          "reason_en": "The design records search paths and prior domain knowledge and prespecifies heterogeneity comparisons across knowledge backgrounds, supporting examination of search process and prior knowledge differences.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-4",
+          "supported": false,
+          "quote": "只进行即时构想任务，不跟踪后续研究",
+          "reason_en": "The design explicitly conducts only an immediate idea task and does not follow up on subsequent research, so sustained effects in real follow-up studies are not supported.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "2d4f932a65466825460bb3339e28cb37d440b39b6d246f792e9cdc84db438a55"
+    },
+    {
+      "project_id": "P06",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "CS-1",
+          "supported": true,
+          "quote": "以方法输入、输出和适用条件编码互补关系",
+          "reason_en": "Task 1 explicitly encodes complementary relations by method input, output, and applicability conditions while retaining a topic-similarity channel, directly supporting the goal of distinguishing method-complementary from topic-similar recommendations.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-2",
+          "supported": false,
+          "quote": "长度、难度和排名位置不配平",
+          "reason_en": "Task 2 explicitly does not match length, difficulty, and ranking position between the two recommendation types, so exposure comparability is contradicted rather than supported.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "CS-3",
+          "supported": true,
+          "quote": "在未参与关系词表开发的主题上复核推荐",
+          "reason_en": "Task 3 re-checks recommendations on topics not used in developing the relation vocabulary and reports out-of-domain effectiveness, directly supporting generalization testing.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-4",
+          "supported": false,
+          "quote": "仅运行完整推荐系统",
+          "reason_en": "Task 4 runs only the complete recommendation system and selects parameters by behavioral performance, so the technical contribution of the recommendation module is not isolated.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MS-1",
+          "supported": true,
+          "quote": "构想由盲评者分别判断问题变化、方法重组和论证完整性",
+          "reason_en": "Innovation behavior Task 1 has blinded raters judge problem change, method recombination, and argument completeness, measuring conception content rather than only clicks.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-2",
+          "supported": false,
+          "quote": "参与者自行选择推荐模式",
+          "reason_en": "Innovation behavior Task 2 lets participants self-select the recommendation mode, so causal effects of the recommendation condition cannot be identified.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MS-3",
+          "supported": true,
+          "quote": "预设不同知识背景下的异质性比较",
+          "reason_en": "Innovation behavior Task 3 records search paths and prior domain knowledge and presets heterogeneity comparisons across knowledge backgrounds, supporting the goal of examining search process and prior knowledge differences.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MS-4",
+          "supported": false,
+          "quote": "只进行即时构想任务，不跟踪后续研究",
+          "reason_en": "Innovation behavior Task 4 conducts only an immediate conception task and does not follow up subsequent research, so the goal of testing sustained effects in real follow-up research is explicitly deferred.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "d12469d60025dcfa1b209737fe72f6fb81a5e1fc139f8093d639f68f525cde25"
+    },
+    {
+      "project_id": "P07",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "CS-1",
+          "supported": true,
+          "quote": "比较常规风险评分、结构化变量模型和文本增强模型",
+          "reason_en": "Task 1 explicitly compares routine risk scores, structured variable models, and text-enhanced models on the same patient sample, directly testing the incremental value of text.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-2",
+          "supported": true,
+          "quote": "按患者划分，并将第三家门诊及末期患者完全留出",
+          "reason_en": "Task 2 explicitly holds out the third clinic and end-stage patients, with thresholds frozen after calibration on the first two clinics, directly testing transfer to new clinics and future patients.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-3",
+          "supported": true,
+          "quote": "除AUC外报告校准、每100个名额识别的真实高风险人数",
+          "reason_en": "Task 3 explicitly reports calibration and true high-risk count per 100 slots under fixed capacity, directly evaluating calibration and fixed-capacity identification.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-4",
+          "supported": false,
+          "quote": "模型只在冻结时间窗使用，不实施持续更新",
+          "reason_en": "Task 4 explicitly states the model is used only in a frozen time window without continuous updating, and later drift is listed as a boundary, so testing updates over time is deferred rather than supported.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MED-1",
+          "supported": true,
+          "quote": "将对象限定为已有诊断且可接受常规随访的人群",
+          "reason_en": "Clinical task 1 explicitly limits participants to those with existing diagnoses eligible for routine follow-up and pre-specifies the clinical outcome for intervention escalation, directly defining the follow-up population and outcome.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MED-2",
+          "supported": true,
+          "quote": "训练及检验结局由病历和独立临床复核确定",
+          "reason_en": "Clinical task 2 explicitly states that training and test outcomes are determined by medical records and independent clinical review, with model developers unable to modify outcomes, directly supporting independent clinical verification of risk labels.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MED-3",
+          "supported": true,
+          "quote": "随机安排两种随访优先方案，比较90天内干预升级与漏访",
+          "reason_en": "Clinical task 3 explicitly randomizes eligible patients to two follow-up priority schemes and compares intervention escalation and missed visits within 90 days, directly testing the service effect of slot allocation.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MED-4",
+          "supported": true,
+          "quote": "设立独立安全监测、预定停止规则与补救随访",
+          "reason_en": "Clinical task 4 explicitly establishes independent safety monitoring, pre-specified stopping rules, and remedial follow-up, with reporting of service differences and potential harm by age and comorbidity, directly supporting patient safety control and group difference testing.",
+          "design_support": true,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "9a22692bcf45c9329bfad7b07397e44e50d754506f7d764de471325bbc1c7e8d"
+    },
+    {
+      "project_id": "P08",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "CS-1",
+          "supported": true,
+          "quote": "在同一患者样本比较常规风险评分、结构化变量模型和文本增强模型",
+          "reason_en": "The design explicitly compares routine risk scores, structured variable models, and text-enhanced models on the same patient sample, which directly tests the incremental value of text.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-2",
+          "supported": false,
+          "quote": "按咨询记录随机分割，同一患者不同记录可出现在训练与测试；不单独保留门诊",
+          "reason_en": "The design splits by consultation records rather than holding out new clinics or future patients, so it does not support validation of migration to new outpatient settings or future patients.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "CS-3",
+          "supported": true,
+          "quote": "除AUC外报告校准、每100个名额识别的真实高风险人数及年龄分组误差",
+          "reason_en": "The design explicitly reports calibration, true high-risk counts per 100 slots, and age-group errors under a fixed capacity, supporting evaluation of calibration and fixed-capacity identification.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "CS-4",
+          "supported": false,
+          "quote": "模型只在冻结时间窗使用，不实施持续更新；后续漂移列为边界",
+          "reason_en": "The design freezes the model in a time window and does not implement continuous updating, so it does not support testing updates after risk changes over time.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MED-1",
+          "supported": true,
+          "quote": "将对象限定为已有诊断且可接受常规随访的人群，排除必须即时就诊者；预先规定干预升级的临床结局",
+          "reason_en": "The design explicitly defines the follow-up population and pre-specifies clinical outcomes for intervention escalation, supporting clarification of follow-up targets and outcomes.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "MED-2",
+          "supported": false,
+          "quote": "使用下一次咨询中的自报症状作为风险标签，不安排病历复核",
+          "reason_en": "The design uses self-reported symptoms from the next consultation as risk labels and does not arrange independent clinical verification, so it does not support use of independently verified risk labels.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MED-3",
+          "supported": false,
+          "quote": "根据历史日志回溯比较已被随访者与未被随访者，使用可观测特征控制差异；暂不随机安排服务",
+          "reason_en": "The design uses retrospective comparison with observable-feature adjustment rather than random assignment, so it does not support testing service effects of slot allocation.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "MED-4",
+          "supported": false,
+          "quote": "沿用常规投诉处理，不设置针对算法遗漏的主动安全监测或群体差异分析",
+          "reason_en": "The design relies on routine complaint handling and does not set up active safety monitoring or group difference analysis for algorithm misses, so it does not support controlling patient safety or testing group differences.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "644adb467df9a4dbed1d78254e365b18f3d5ffa88019af921ee358b5d005e283"
+    },
+    {
+      "project_id": "P09",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "STAT-1",
+          "supported": true,
+          "quote": "在同一滚动窗口比较季节均值、灰色模型和分位数模型",
+          "reason_en": "The design explicitly compares seasonal mean, grey model, and quantile model in the same rolling window, establishing a comparable short-sequence forecasting benchmark.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-2",
+          "supported": true,
+          "quote": "所有插补、缩放和参数选择只使用预测时点以前的数据",
+          "reason_en": "The design requires all imputation, scaling, and parameter selection to use only data before the prediction time, preventing future information from entering fitting.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-3",
+          "supported": true,
+          "quote": "报告需求分位数的覆盖率、区间宽度和高需求期误差",
+          "reason_en": "The design reports coverage, interval width, and high-demand period errors of demand quantiles, directly testing prediction intervals and tail risk.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-4",
+          "supported": true,
+          "quote": "预设灰色生成、残差学习和成本重加权三个消融",
+          "reason_en": "The design presets three ablations—grey generation, residual learning, and cost reweighting—to distinguish sources of forecasting gains.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-1",
+          "supported": true,
+          "quote": "以采购预算、仓储容量及提前期为约束，缺货与持有成本由同一会计口径给定",
+          "reason_en": "The design specifies procurement budget, storage capacity, and lead time as constraints, with shortage and holding costs given by the same accounting standard, clarifying inventory budget and asymmetric costs.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-2",
+          "supported": true,
+          "quote": "以预测分位数形成随机库存规划，用需求不确定性决定安全库存",
+          "reason_en": "The design uses forecast quantiles to form stochastic inventory planning and uses demand uncertainty to determine safety stock, incorporating prediction uncertainty into decisions.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-3",
+          "supported": false,
+          "quote": "不设置新供应商留出",
+          "reason_en": "The design explicitly does not set aside new suppliers and tests only within the existing 80-component time window, so it does not support testing decisions on suppliers not involved in development.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "OR-4",
+          "supported": false,
+          "quote": "不推导政策阈值或外部成本情景",
+          "reason_en": "The design explicitly does not derive policy thresholds or external cost scenarios, so it does not support analyzing policy boundaries under cost changes.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 8,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "8f0f939ad5bef784a973037d1d8bdc4af2a6977b1620445da220f89b482b27d5"
+    },
+    {
+      "project_id": "P10",
+      "status": "actual",
+      "checks": [
+        {
+          "id": "STAT-1",
+          "supported": true,
+          "quote": "在同一滚动窗口比较季节均值、灰色模型和分位数模型",
+          "reason_en": "The design explicitly compares seasonal mean, grey model, and quantile model in the same rolling window, establishing a comparable short-sequence forecasting benchmark.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-2",
+          "supported": true,
+          "quote": "先用全部36个月平滑缺失，再随机抽取重叠窗口作训练和测试",
+          "reason_en": "The design specifies smoothing missing values over all 36 months before randomly drawing overlapping windows for training and testing, which prevents future information from entering fitting.",
+          "design_support": false,
+          "agreement": false
+        },
+        {
+          "id": "STAT-3",
+          "supported": true,
+          "quote": "报告需求分位数的覆盖率、区间宽度和高需求期误差",
+          "reason_en": "The design explicitly reports coverage, interval width, and high-demand period errors of demand quantiles, and separately checks scarce interruption months, thereby testing prediction intervals and tail risk.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "STAT-4",
+          "supported": false,
+          "quote": "仅报告完整融合方案，不实施独立消融",
+          "reason_en": "The design explicitly states that only the complete fusion scheme is reported and no independent ablation is implemented, so the source of prediction gains cannot be distinguished.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "OR-1",
+          "supported": true,
+          "quote": "以采购预算、仓储容量及提前期为约束，缺货与持有成本由同一会计口径给定",
+          "reason_en": "The design explicitly specifies procurement budget, storage capacity, and lead time as constraints, with shortage and holding costs given by the same accounting standard, clarifying inventory budget and asymmetric costs.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-2",
+          "supported": false,
+          "quote": "安全库存统一设置为均值的10%，不随预测不确定性改变",
+          "reason_en": "The design fixes safety stock at 10% of the mean regardless of prediction uncertainty, so prediction uncertainty is not incorporated into the decision.",
+          "design_support": false,
+          "agreement": true
+        },
+        {
+          "id": "OR-3",
+          "supported": true,
+          "quote": "将20类供应商关联零部件留出，冻结全部成本校准与政策参数后比较库存损失",
+          "reason_en": "The design holds out 20 supplier-related components and freezes all cost calibration and policy parameters before comparing inventory losses, testing decisions on suppliers not involved in development.",
+          "design_support": true,
+          "agreement": true
+        },
+        {
+          "id": "OR-4",
+          "supported": false,
+          "quote": "仅报告当前成本比下的损失，不推导政策阈值或外部成本情景",
+          "reason_en": "The design explicitly reports losses only under the current cost ratio and does not derive policy thresholds or external cost scenarios, so policy boundaries under cost changes are not analyzed.",
+          "design_support": false,
+          "agreement": true
+        }
+      ],
+      "agreement_count": 7,
+      "total": 8,
+      "method": "Value-blind AI text check; human scientific-validity audit pending",
+      "raw_file": "c521d3924bf410ff5e6ebd3faa2cdbd90136a9b15c0e7c1c3921ec3a349c1f52"
+    }
+  ],
+  "scope": "Checks explicit design-to-text representation, not true scientific value or human simulation validity"
+}

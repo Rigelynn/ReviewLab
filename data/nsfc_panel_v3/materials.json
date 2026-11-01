@@ -1,0 +1,2051 @@
+{
+  "version": "nsfc_panel_v3_20261029",
+  "taxonomy": {
+    "CS": {
+      "label": "Computer science",
+      "zh": "计算机科学",
+      "description": "Algorithms, machine learning, computing systems, information retrieval and data representation."
+    },
+    "MS": {
+      "label": "Management and organization",
+      "zh": "管理与组织",
+      "description": "Organizational behavior, innovation, research management and organizational decision making."
+    },
+    "OR": {
+      "label": "Operations research",
+      "zh": "运筹与决策科学",
+      "description": "Optimization, resource allocation, multicriteria decision analysis and uncertainty modeling."
+    },
+    "MED": {
+      "label": "Clinical and population health",
+      "zh": "临床与公共健康",
+      "description": "Clinical outcomes, patient populations, care pathways and health-service evaluation."
+    },
+    "STAT": {
+      "label": "Statistics and forecasting",
+      "zh": "统计与预测",
+      "description": "Statistical inference, time series, grey prediction and forecast uncertainty."
+    }
+  },
+  "projects": [
+    {
+      "id": "P01",
+      "title": "跨机构知识互补关系的识别与合作形成",
+      "title_en": "Identifying Complementary Knowledge and Cross-Institutional Collaboration",
+      "domains": [
+        "图表示学习",
+        "科研合作与组织行为"
+      ],
+      "family_id": "A",
+      "field_ids": [
+        "CS",
+        "MS"
+      ],
+      "field_shares": {
+        "CS": 0.6,
+        "MS": 0.4,
+        "OR": 0,
+        "MED": 0,
+        "STAT": 0
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究A-R1已实现按摘要主题相似度推荐研究伙伴，但无法区分方法重复和互补；A-R2发现机构边界影响合作，却没有把边界影响与知识互补分开。现有推荐用共同署名作为合作代理，尚缺对实际共同研究活动的测量。两类文献都不能回答：什么样的跨领域知识关系会在何种组织条件下变成合作。\n\n科学问题\n主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？\n\n研究定位\n本项目将图表示学习与科研合作与组织行为结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？\n\n研究任务与技术路线\n图表示学习研究任务1：构建两条独立关系通道：主题通道估计问题重合，方法通道依据任务输入输出关系识别方法互补。训练中加入同主题同方法与异主题互补方法的配对对照，分别报告两通道的增量解释。\n\n图表示学习研究任务2：将一个机构全部留出，其余机构的最后两年另作时间外检验。阈值只在训练机构验证集确定，报告新机构与既有机构的误差差异。\n\n图表示学习研究任务3：将主题、方法和共同署名通道逐一去除，固定训练预算与候选池，并与共同邻居和主题余弦基线比较，检验互补通道的增量。\n\n图表示学习研究任务4：对节点度数和机构规模进行保持边际分布的置换检验，按作者活跃程度分层报告召回率与校准误差。\n\n科研合作与组织行为研究任务1：合作结局由共同研究任务、持续三个月以上的资料交换和共同方案确认构成，使用双方独立报告与日志核对；共同署名单独作为远期指标。\n\n科研合作与组织行为研究任务2：在160组符合接触条件的研究者对中随机展示主题接近或方法互补推荐，保持展示位置与文字长度一致，按初始分组比较合作事件。\n\n科研合作与组织行为研究任务3：事先区分跨机构与机构内研究者对，检验推荐关系类型和机构边界的交互，并记录沟通频率作为过程指标。\n\n科研合作与组织行为研究任务4：正式行为样本仅来自现有六家机构，不安排第二地区重复；结论限定在现有机构环境。\n\n跨领域接口\n图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。\n\n知识内容和工作配置\n计算任务占60个标准研究工时单元：关系定义20、算法20、迁移检验20；组织任务占40单元：测量12、实验18、机制分析10。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。方法术语表有240个概念；独立的80组研究者访谈可用于建立合作事件定义，正式结局尚未收集。数据使用协议覆盖时间切分和匿名合作核查，两项目具有相同数据权限。\n\n研究队伍和条件\n研究队伍包括分别负责图表示学习与科研合作与组织行为的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0.6,
+          "MS": 0.4,
+          "OR": 0,
+          "MED": 0,
+          "STAT": 0
+        },
+        "content_units_total": 100,
+        "span_D": 0.43868818,
+        "pair_distance": 0.9139337034,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "CS",
+            "quote": "图表示学习与科研合作与组织行为结合"
+          },
+          {
+            "field_id": "MS",
+            "quote": "科研合作与组织行为"
+          }
+        ],
+        "method_tags": [
+          "graph representation learning",
+          "ablation study",
+          "permutation test",
+          "randomized experiment",
+          "holdout validation"
+        ],
+        "integration_en": "CS develops graph representation learning to identify thematic proximity and methodological complementarity among researchers. MS uses cooperation events and institutional boundaries to test whether these identified relations explain collaboration formation. The two fields connect through researcher pairs and timestamps, with algorithmic rankings not treated as evidence of organizational mechanisms."
+      },
+      "sections_en": [
+        {
+          "heading": "Basis for the Project",
+          "text": "This application is a fictional research plan within a controlled study. The following scenario reference records, data permissions, and preliminary preparations are experimentally given conditions; they are not statements about real institutions or completed research. Reviewers should judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study A-R1 has achieved recommendation of research partners based on abstract topic similarity, but cannot distinguish methodological duplication from complementarity; A-R2 found that institutional boundaries affect collaboration, but did not separate boundary effects from knowledge complementarity. Existing recommendations use co-authorship as a proxy for collaboration, and measurement of actual joint research activity is still lacking. Neither body of literature can answer: what kinds of cross-domain knowledge relationships become collaboration under what organizational conditions.\n\nScientific question\nWhy do researchers with similar topics but duplicated methods, and researchers with different topics but complementary methods, show different probabilities of collaboration formation? Can these relationships be identified and their organizational mechanisms explained?\n\nResearch positioning\nThis project combines graph representation learning with research collaboration and organizational behavior, studies the respective scientific questions separately, and tests the connection between the two parts. The knowledge integration is as follows: the graph representation task outputs topic proximity and method relationship evidence, and the organizational research task uses collaboration events and institutional boundaries to test the explanation of these relationships. The two are connected through researcher pairs and timestamps; algorithm rankings alone do not serve as evidence that organizational mechanisms are established.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, an executable analysis pipeline, and records of failure situations. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relationships not yet explained, rather than on adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "Research Content",
+          "text": "Research objectives\nWhy do researchers with similar topics but duplicated methods, and researchers with different topics but complementary methods, show different probabilities of collaboration formation? Can these relationships be identified and their organizational mechanisms explained?\n\nResearch tasks and technical route\nGraph representation learning research task 1: Construct two independent relational channels: the topic channel estimates problem overlap, and the method channel identifies method complementarity based on task input-output relationships. Training includes paired contrasts of same-topic-same-method and different-topic-complementary-method pairs, and reports the incremental explanation of the two channels separately.\n\nGraph representation learning research task 2: Hold out one entire institution, and use the last two years of the remaining institutions as an additional temporal out-of-sample test. Thresholds are determined only on the training institutions' validation set, and the error difference between new institutions and existing institutions is reported.\n\nGraph representation learning research task 3: Remove the topic, method, and co-authorship channels one at a time, fix the training budget and candidate pool, and compare with common-neighbor and topic-cosine baselines to test the increment of the complementarity channel.\n\nGraph representation learning research task 4: Conduct permutation tests preserving marginal distributions of node degree and institution size, and report recall and calibration error stratified by author activity level.\n\nResearch collaboration and organizational behavior research task 1: The collaboration outcome consists of joint research tasks, data exchange lasting more than three months, and joint protocol confirmation, using independent reports from both parties and log verification; co-authorship is separately used as a long-term indicator.\n\nResearch collaboration and organizational behavior research task 2: Among 160 researcher pairs meeting contact conditions, randomly display topic-proximity or method-complementarity recommendations, keep display position and text length consistent, and compare collaboration events by initial group assignment.\n\nResearch collaboration and organizational behavior research task 3: Distinguish cross-institution and within-institution researcher pairs in advance, test the interaction between recommendation relationship type and institutional boundary, and record communication frequency as a process indicator.\n\nResearch collaboration and organizational behavior research task 4: The formal behavioral sample comes only from the existing six institutions; no second-region replication is arranged; conclusions are limited to the existing institutional environment.\n\nCross-domain interface\nThe graph representation task outputs topic proximity and method relationship evidence, and the organizational research task uses collaboration events and institutional boundaries to test the explanation of these relationships. The two are connected through researcher pairs and timestamps; algorithm rankings alone do not serve as evidence that organizational mechanisms are established.\n\nKnowledge content and work allocation\nComputational tasks account for 60 standard research work units: relationship definition 20, algorithm 20, transfer testing 20; organizational tasks account for 40 units: measurement 12, experiment 18, mechanism analysis 10. The work units here are used to illustrate work content and cannot be treated as the size of scientific contribution.\n\nImplementation plan\nMonths 1–6: freeze the data dictionary, research subjects, primary outcomes, and analysis specifications; months 7–18: complete the main methods of the two parts; months 19–28: execute the above validation scheme; months 29–36: analyze failure cases, organize shared code and reports. Each conclusion simultaneously reports the materials supporting it, the scope of applicability, and situations not covered.\n\nExpected outputs\nThe two fields will separately produce research reports, and the intersection part will submit an interface description and joint analysis; data splits, runtime configurations, evaluation scripts, and results will also be preserved. When results do not support expectations, they will be reported truthfully, and the number of publications will not be used as a substitute for evidence that the method is established."
+        },
+        {
+          "heading": "Research Foundation",
+          "text": "Preliminary work and data conditions\nIn the scenario, de-identified linkage of 120,000 papers from six research institutions from 2014 to 2023 has been completed, and author disambiguation has been checked with 600 manual samples, with an accuracy of 97%. The method terminology list has 240 concepts; 80 independent researcher group interviews can be used to establish the collaboration event definition, and formal outcomes have not yet been collected. The data use agreement covers time splitting and anonymized collaboration verification, and the two projects have the same data permissions.\n\nResearch team and conditions\nThe research team includes two principal investigators respectively responsible for graph representation learning and research collaboration and organizational behavior, and three research assistants. Personnel qualifications, general equipment, and total available time are kept consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code only covers the above basic methods; the new knowledge integration and main effects remain to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unspecified tests will not be supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions will not be used. If changed conditions make the originally planned research impossible to execute, first report the affected tasks, then clearly narrow the scope of conclusions. Tasks not covered by different schemes will not be automatically treated as already completed at project conclusion.\n\nDuration and budget\nThe project duration is 36 months, with a budget of 30 unified funding units. Funds are used for research assistants, data processing, experiment organization, and operating resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "跨机构研究主题关联与合作线索识别",
+      "title_en": "Topic Associations and Cross-Institutional Collaboration Signals",
+      "domains": [
+        "图表示学习",
+        "科研合作与组织行为"
+      ],
+      "family_id": "A",
+      "field_ids": [
+        "CS",
+        "MS"
+      ],
+      "field_shares": {
+        "CS": 0.6,
+        "MS": 0.4,
+        "OR": 0,
+        "MED": 0,
+        "STAT": 0
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究A-R1已实现按摘要主题相似度推荐研究伙伴，但无法区分方法重复和互补；A-R2发现机构边界影响合作，却没有把边界影响与知识互补分开。现有推荐用共同署名作为合作代理，尚缺对实际共同研究活动的测量。两类文献都不能回答：什么样的跨领域知识关系会在何种组织条件下变成合作。\n\n科学问题\n主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？\n\n研究定位\n本项目将图表示学习与科研合作与组织行为结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？\n\n研究任务与技术路线\n图表示学习研究任务1：构建两条独立关系通道：主题通道估计问题重合，方法通道依据任务输入输出关系识别方法互补。训练中加入同主题同方法与异主题互补方法的配对对照，分别报告两通道的增量解释。\n\n图表示学习研究任务2：按论文随机划分训练测试集，同一机构和同一研究者可以出现在两部分；此次研究目标限于已有机构的链接补全。\n\n图表示学习研究任务3：将主题、方法和共同署名通道逐一去除，固定训练预算与候选池，并与共同邻居和主题余弦基线比较，检验互补通道的增量。\n\n图表示学习研究任务4：只报告整体准确率，不设置保持度数的置换或活跃程度分层；高活跃作者对收益的影响留作后续研究。\n\n科研合作与组织行为研究任务1：合作结局由共同研究任务、持续三个月以上的资料交换和共同方案确认构成，使用双方独立报告与日志核对；共同署名单独作为远期指标。\n\n科研合作与组织行为研究任务2：观察平台自然形成的推荐点击与共同署名，使用相关回归控制既往产出；推荐类型由用户自己选择。\n\n科研合作与组织行为研究任务3：回归中仅加入机构固定效应，不提出边界如何改变方法互补转化为合作的机制预测。\n\n科研合作与组织行为研究任务4：正式行为样本仅来自现有六家机构，不安排第二地区重复；结论限定在现有机构环境。\n\n跨领域接口\n图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。\n\n知识内容和工作配置\n计算任务占60个标准研究工时单元：关系定义20、算法20、迁移检验20；组织任务占40单元：测量12、实验18、机制分析10。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。方法术语表有240个概念；独立的80组研究者访谈可用于建立合作事件定义，正式结局尚未收集。数据使用协议覆盖时间切分和匿名合作核查，两项目具有相同数据权限。\n\n研究队伍和条件\n研究队伍包括分别负责图表示学习与科研合作与组织行为的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0.6,
+          "MS": 0.4,
+          "OR": 0,
+          "MED": 0,
+          "STAT": 0
+        },
+        "content_units_total": 100,
+        "span_D": 0.43868818,
+        "pair_distance": 0.9139337034,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "CS",
+            "quote": "图表示学习"
+          },
+          {
+            "field_id": "MS",
+            "quote": "科研合作与组织行为"
+          }
+        ],
+        "method_tags": [
+          "graph representation learning",
+          "link prediction",
+          "ablation study",
+          "regression with fixed effects"
+        ],
+        "integration_en": "CS develops graph representation learning to estimate topic proximity and method complementarity between researchers. MS uses cooperation events and institutional boundaries to test whether these relations explain collaboration formation. The two fields connect through researcher pairs and timestamps, with algorithm rankings not treated as evidence of organizational mechanisms."
+      },
+      "sections_en": [
+        {
+          "heading": "立项依据",
+          "text": "This application is a fictional research plan within a controlled study. The following scenario reference records, data permissions, and preliminary preparations are all experimentally given conditions; they are not statements about real institutions or completed research. Reviewers should judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study A-R1 has achieved recommendation of research partners based on abstract topic similarity, but cannot distinguish methodological duplication from complementarity; A-R2 found that institutional boundaries affect collaboration, but did not separate the influence of boundaries from knowledge complementarity. Existing recommendations use co-authorship as a proxy for collaboration, and there is still a lack of measurement of actual joint research activity. Neither body of literature can answer: what kinds of cross-domain knowledge relations become collaboration under what organizational conditions.\n\nScientific question\nWhy do researchers with similar topics but duplicated methods, and researchers with different topics but complementary methods, show different probabilities of collaboration formation? Can these relations be identified and their organizational mechanisms explained?\n\nResearch positioning\nThis project combines graph representation learning with research collaboration and organizational behavior, studies the respective scientific questions of each part, and tests the connection between the two parts. The knowledge integration is as follows: the graph representation task outputs topic proximity and method relation evidence, and the organizational research task uses collaboration events and institutional boundaries to test the explanation of these relations. The two are connected through researcher pairs and timestamps; algorithm rankings alone do not serve as evidence that organizational mechanisms hold.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, an executable analysis pipeline, and records of failure situations. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relations not yet explained, rather than on adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "研究内容",
+          "text": "Research objectives\nWhy do researchers with similar topics but duplicated methods, and researchers with different topics but complementary methods, show different probabilities of collaboration formation? Can these relations be identified and their organizational mechanisms explained?\n\nResearch tasks and technical route\nGraph representation learning research task 1: Construct two independent relation channels: the topic channel estimates problem overlap, and the method channel identifies method complementarity based on task input-output relations. Training includes paired controls of same-topic-same-method and different-topic-complementary-method, and reports the incremental explanation of the two channels separately.\n\nGraph representation learning research task 2: Split training and test sets randomly by paper; the same institution and the same researcher may appear in both parts; the research goal this time is limited to link completion for existing institutions.\n\nGraph representation learning research task 3: Remove the topic, method, and co-authorship channels one at a time, fix the training budget and candidate pool, and compare with common-neighbor and topic-cosine baselines to test the increment of the complementarity channel.\n\nGraph representation learning research task 4: Report only overall accuracy, without setting degree-preserving permutation or activity stratification; the impact of high-activity authors on gains is left for subsequent research.\n\nResearch collaboration and organizational behavior research task 1: The cooperation outcome consists of joint research tasks, material exchange lasting more than three months, and joint protocol confirmation, using independent reports from both parties and log verification; co-authorship alone serves as a long-term indicator.\n\nResearch collaboration and organizational behavior research task 2: Observe naturally occurring recommendation clicks and co-authorship on the platform, using correlational regression to control for prior output; recommendation type is chosen by users themselves.\n\nResearch collaboration and organizational behavior research task 3: The regression includes only institutional fixed effects, and does not propose a mechanism prediction for how boundaries change the conversion of method complementarity into cooperation.\n\nResearch collaboration and organizational behavior research task 4: The formal behavior sample comes only from the existing six institutions, and no second-region replication is arranged; conclusions are limited to the existing institutional environment.\n\nCross-domain interface\nThe graph representation task outputs topic proximity and method relation evidence, and the organizational research task uses collaboration events and institutional boundaries to test the explanation of these relations. The two are connected through researcher pairs and timestamps; algorithm rankings alone do not serve as evidence that organizational mechanisms hold.\n\nKnowledge content and work configuration\nComputational tasks account for 60 standard research work-hour units: relation definition 20, algorithms 20, transfer testing 20; organizational tasks account for 40 units: measurement 12, experiments 18, mechanism analysis 10. The work-hour units here are used to explain work content and cannot be treated as the size of scientific contribution.\n\nImplementation plan\nMonths 1-6 freeze the data dictionary, research objects, primary outcomes, and analysis specifications; months 7-18 complete the main methods of the two parts; months 19-28 execute the above validation scheme; months 29-36 analyze failure cases, organize shared code, and report. Each conclusion simultaneously reports the materials supporting it, its scope of application, and uncovered situations.\n\nExpected products\nThe two fields separately form research reports, and the cross-cutting part submits an interface description and joint analysis; at the same time, data splits, runtime configurations, evaluation scripts, and results are preserved. When results do not support expectations, they are reported truthfully, and the number of publications is not used as a substitute for evidence that the method holds."
+        },
+        {
+          "heading": "研究基础",
+          "text": "Preliminary work and data conditions\nIn the scenario, de-identified linkage of 120,000 papers from six research institutions from 2014 to 2023 has been completed, and author disambiguation has been checked with 600 manual samples, with an accuracy of 97%. The method terminology list has 240 concepts; 80 independent groups of researcher interviews can be used to establish the cooperation event definition, and formal outcomes have not yet been collected. The data use agreement covers time slicing and anonymized cooperation verification, and the two projects have the same data permissions.\n\nResearch team and conditions\nThe research team includes two principal investigators respectively responsible for graph representation learning and research collaboration and organizational behavior, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code only covers the above basic methods; the new knowledge integration and main effects still need to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unspecified tests are not supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions are not used. If changed conditions make the originally planned research impossible to execute, the affected tasks are reported first, and then the scope of conclusions is explicitly narrowed. Tasks not covered by different plans are not automatically treated as completed at project conclusion.\n\nPeriod and budget\nThe project period is 36 months, with a budget of 30 unified funding units. The funds are used for research assistants, data processing, experimental organization, and operating resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "收益分布不确定条件下项目组合的校准与配置",
+      "title_en": "Calibrated Portfolio Allocation under Distributional Uncertainty",
+      "domains": [
+        "稳健优化",
+        "统计推断"
+      ],
+      "family_id": "B",
+      "field_ids": [
+        "OR",
+        "STAT"
+      ],
+      "field_shares": {
+        "CS": 0,
+        "MS": 0,
+        "OR": 0.55,
+        "MED": 0,
+        "STAT": 0.45
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究B-R1对给定收益区间提供稳健最优解，但区间由分析者指定；B-R2估计单项目收益区间，却没有研究经过组合优化后的整体覆盖与损失。现有方法把参数估计与决策分开处理，缺少选择后仍成立的风险校准。\n\n科学问题\n项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？\n\n研究定位\n本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：统计模块给出不确定集合及其覆盖条件，优化模块据此配置预算；再将入选组合反馈给统计评估，检查选择是否破坏风险保证。项目的贡献必须同时落实到决策可解性与推断可靠性。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？\n\n研究任务与技术路线\n稳健优化研究任务1：建立分布稳健整数规划，将收益分布集合、固定预算和领域覆盖约束同时写入模型，证明可行域非空的条件。\n\n稳健优化研究任务2：小实例枚举最优组合，大实例报告原问题可行解与松弛界，给出最优性差距和运行时间。\n\n稳健优化研究任务3：推导不确定集合半径对最坏损失上界的作用，并在独立实例中比较半径变化的收益与风险曲线。\n\n稳健优化研究任务4：基准假设项目收益独立，不估计跨项目协方差；共同冲击作为尚未覆盖的边界。\n\n统计推断研究任务1：用训练批次估计经验分布和尺度，自助法形成候选不确定集合，记录每一项目的样本量与异常值。\n\n统计推断研究任务2：设置训练、校准和最终测试三段，校准集合半径后冻结，最终收益仅用于评估，全部方案共享相同划分。\n\n统计推断研究任务3：计算全部候选项目区间覆盖率，并分别报告入选与未入选项目的覆盖差异，避免只在成功组合上验证。\n\n统计推断研究任务4：利用样本分割构建组合损失的独立检验区间，并在重尾及异方差生成机制下检验名义覆盖率。\n\n跨领域接口\n统计模块给出不确定集合及其覆盖条件，优化模块据此配置预算；再将入选组合反馈给统计评估，检查选择是否破坏风险保证。项目的贡献必须同时落实到决策可解性与推断可靠性。\n\n知识内容和工作配置\n优化任务55单元：建模20、求解20、风险边界15；统计任务45单元：分布估计15、校准15、推断15。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器；现有实现不含选择后的风险校准。两项目使用同一数据、机器和工程基础。\n\n研究队伍和条件\n研究队伍包括分别负责稳健优化与统计推断的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0,
+          "MS": 0,
+          "OR": 0.55,
+          "MED": 0,
+          "STAT": 0.45
+        },
+        "content_units_total": 100,
+        "span_D": 0.495,
+        "pair_distance": 1.0,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "OR",
+            "quote": "建立分布稳健整数规划"
+          },
+          {
+            "field_id": "STAT",
+            "quote": "统计估计的不确定性转化为具有可检验风险保证"
+          }
+        ],
+        "method_tags": [
+          "distributionally robust optimization",
+          "integer programming",
+          "bootstrap",
+          "sample splitting",
+          "coverage probability",
+          "uncertainty set calibration"
+        ],
+        "integration_en": "Operations research supplies the budget allocation model with uncertainty sets and feasibility guarantees. Statistics constructs and calibrates those sets from limited data, then evaluates post-selection coverage. The interface feeds optimized selections back into statistical checks to ensure risk guarantees survive selection."
+      },
+      "sections_en": [
+        {
+          "heading": "Basis for the Project",
+          "text": "This application is a fictional research plan in a controlled study. The following scenario reference records, data permissions, and preliminary preparations are given experimental conditions; they are not statements about real institutions or completed research. During review, judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study B-R1 provides robust optimal solutions for a given return interval, but the interval is specified by the analyst; B-R2 estimates single-project return intervals, but does not study the overall coverage and loss after portfolio optimization. Existing methods treat parameter estimation and decision-making separately, lacking risk calibration that still holds after selection.\n\nScientific question\nWhen project return distributions can only be estimated from a small number of historical observations, how can the uncertainty of statistical estimation be converted into budget allocation with testable risk guarantees?\n\nResearch positioning\nThis project combines robust optimization with statistical inference, studies the scientific questions of each part separately, and examines the connection between the two parts. The knowledge combination is as follows: the statistical module provides uncertainty sets and their coverage conditions, and the optimization module allocates budgets accordingly; the selected portfolio is then fed back to the statistical evaluation to check whether selection destroys the risk guarantee. The project's contribution must be realized simultaneously in decision solvability and inferential reliability.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, executable analysis workflows, and records of failure scenarios. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relationships not yet explained, rather than adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "Research Content",
+          "text": "Research objectives\nWhen project return distributions can only be estimated from a small number of historical observations, how can the uncertainty of statistical estimation be converted into budget allocation with testable risk guarantees?\n\nResearch tasks and technical route\nRobust optimization research task 1: Establish a distributionally robust integer program, writing the return distribution set, fixed budget, and domain coverage constraints into the model simultaneously, and prove conditions under which the feasible region is nonempty.\n\nRobust optimization research task 2: Enumerate optimal portfolios for small instances; for large instances, report feasible solutions and relaxation bounds of the original problem, giving optimality gaps and running times.\n\nRobust optimization research task 3: Derive the effect of the uncertainty set radius on the worst-case loss upper bound, and compare return and risk curves as the radius changes in independent instances.\n\nRobust optimization research task 4: The baseline assumes project returns are independent and does not estimate cross-project covariance; common shocks are treated as a boundary not yet covered.\n\nStatistical inference research task 1: Use training batches to estimate empirical distributions and scales, use bootstrap methods to form candidate uncertainty sets, and record the sample size and outliers for each project.\n\nStatistical inference research task 2: Set up training, calibration, and final test segments; freeze the set radius after calibration; final returns are used only for evaluation; all schemes share the same partition.\n\nStatistical inference research task 3: Compute interval coverage for all candidate projects, and separately report coverage differences between selected and unselected projects, avoiding validation only on successful portfolios.\n\nStatistical inference research task 4: Use sample splitting to construct independent test intervals for portfolio loss, and test nominal coverage under heavy-tailed and heteroscedastic generating mechanisms.\n\nCross-domain interface\nThe statistical module provides uncertainty sets and their coverage conditions, and the optimization module allocates budgets accordingly; the selected portfolio is then fed back to the statistical evaluation to check whether selection destroys the risk guarantee. The project's contribution must be realized simultaneously in decision solvability and inferential reliability.\n\nKnowledge content and work allocation\nOptimization tasks 55 work units: modeling 20, solving 20, risk bounds 15; statistical tasks 45 work units: distribution estimation 15, calibration 15, inference 15. These work units are used to explain work content and cannot be treated as the size of scientific contribution.\n\nImplementation plan\nMonths 1–6: freeze the data dictionary, research objects, primary outcomes, and analysis specifications; months 7–18: complete the main methods for the two parts; months 19–28: execute the above validation scheme; months 29–36: analyze failure cases, organize shared code and reports. Each conclusion simultaneously reports the supporting materials, scope of applicability, and uncovered situations.\n\nExpected outputs\nThe two fields will separately form research reports, and the intersection part will submit interface descriptions and joint analysis; data partitions, runtime configurations, evaluation scripts, and results will also be preserved. When results do not support expectations, report truthfully, and do not replace evidence that the method holds with the number of publications."
+        },
+        {
+          "heading": "Research Foundation",
+          "text": "Preliminary work and data conditions\nFour hundred de-identified resource allocation instances and four periods of return records for each project have been obtained; the sample contains zero returns and heavy-tailed returns. The research team has implemented deterministic integer programming and single-project bootstrap intervals; 20 small-scale instances can be enumerated and verified with a solver; the existing implementation does not include post-selection risk calibration. The two projects use the same data, machines, and engineering foundation.\n\nResearch team and conditions\nThe research team includes two principal investigators responsible for robust optimization and statistical inference respectively, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code only covers the above basic methods; the new knowledge combination and main effects remain to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unarranged tests are not supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions are not used. If changed conditions make the originally planned research impossible to execute, first report the affected tasks, then clearly narrow the scope of conclusions. Tasks not covered by different schemes are not automatically treated as completed at project conclusion.\n\nDuration and budget\nThe project duration is 36 months, with a budget of 30 unified funding units. Funds are used for research assistants, data processing, experimental organization, and computational resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "收益区间条件下项目组合的配置与比较",
+      "title_en": "Portfolio Allocation with Estimated Return Intervals",
+      "domains": [
+        "稳健优化",
+        "统计推断"
+      ],
+      "family_id": "B",
+      "field_ids": [
+        "OR",
+        "STAT"
+      ],
+      "field_shares": {
+        "CS": 0,
+        "MS": 0,
+        "OR": 0.55,
+        "MED": 0,
+        "STAT": 0.45
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究B-R1对给定收益区间提供稳健最优解，但区间由分析者指定；B-R2估计单项目收益区间，却没有研究经过组合优化后的整体覆盖与损失。现有方法把参数估计与决策分开处理，缺少选择后仍成立的风险校准。\n\n科学问题\n项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？\n\n研究定位\n本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：统计模块给出不确定集合及其覆盖条件，优化模块据此配置预算；再将入选组合反馈给统计评估，检查选择是否破坏风险保证。项目的贡献必须同时落实到决策可解性与推断可靠性。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？\n\n研究任务与技术路线\n稳健优化研究任务1：建立分布稳健整数规划，将收益分布集合、固定预算和领域覆盖约束同时写入模型，证明可行域非空的条件。\n\n稳健优化研究任务2：小实例枚举最优组合，大实例报告原问题可行解与松弛界，给出最优性差距和运行时间。\n\n稳健优化研究任务3：使用统一固定半径，只报告平均收益；半径与保守性的关系不在本次分析范围内。\n\n稳健优化研究任务4：基准假设项目收益独立，不估计跨项目协方差；共同冲击作为尚未覆盖的边界。\n\n统计推断研究任务1：用训练批次估计经验分布和尺度，自助法形成候选不确定集合，记录每一项目的样本量与异常值。\n\n统计推断研究任务2：在全部实例上比较多种半径，以最终组合收益最高者报告主要结果；保留随机种子以便复算。\n\n统计推断研究任务3：计算全部候选项目区间覆盖率，并分别报告入选与未入选项目的覆盖差异，避免只在成功组合上验证。\n\n统计推断研究任务4：直接沿用单项目区间作为组合风险依据，不额外处理优化选择导致的依赖。\n\n跨领域接口\n统计模块给出不确定集合及其覆盖条件，优化模块据此配置预算；再将入选组合反馈给统计评估，检查选择是否破坏风险保证。项目的贡献必须同时落实到决策可解性与推断可靠性。\n\n知识内容和工作配置\n优化任务55单元：建模20、求解20、风险边界15；统计任务45单元：分布估计15、校准15、推断15。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器；现有实现不含选择后的风险校准。两项目使用同一数据、机器和工程基础。\n\n研究队伍和条件\n研究队伍包括分别负责稳健优化与统计推断的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0,
+          "MS": 0,
+          "OR": 0.55,
+          "MED": 0,
+          "STAT": 0.45
+        },
+        "content_units_total": 100,
+        "span_D": 0.495,
+        "pair_distance": 1.0,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "OR",
+            "quote": "分布稳健整数规划"
+          },
+          {
+            "field_id": "STAT",
+            "quote": "统计估计的不确定性"
+          }
+        ],
+        "method_tags": [
+          "distributionally robust optimization",
+          "integer programming",
+          "bootstrap",
+          "uncertainty set calibration",
+          "coverage probability"
+        ],
+        "integration_en": "Operations research supplies the budget allocation model with uncertainty sets and feasibility conditions; statistics constructs and calibrates those sets from limited observations. The interface feeds selected portfolios back into statistical evaluation to check whether optimization-induced selection preserves risk guarantees."
+      },
+      "sections_en": [
+        {
+          "heading": "A. Research Rationale",
+          "text": "This application is a fictional research plan in a controlled study. The following scenario references, data permissions, and preliminary preparations are given experimental conditions; they are not statements about real institutions or completed research. Reviewers should judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study B-R1 provides a robust optimal solution for a given return interval, but the interval is specified by the analyst; B-R2 estimates single-project return intervals, but does not study the overall coverage and loss after portfolio optimization. Existing methods treat parameter estimation and decision-making separately, lacking risk calibration that still holds after selection.\n\nScientific question\nWhen project return distributions can only be estimated from a small number of historical observations, how can the uncertainty of statistical estimation be converted into budget allocation with testable risk guarantees?\n\nResearch positioning\nThis project combines robust optimization with statistical inference, studies their respective scientific questions separately, and examines the connection between the two parts. The knowledge integration works as follows: the statistical module provides uncertainty sets and their coverage conditions, and the optimization module allocates the budget accordingly; the selected portfolio is then fed back to the statistical evaluation to check whether selection destroys the risk guarantee. The project's contribution must be realized simultaneously in decision solvability and inferential reliability.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, an executable analysis workflow, and records of failure scenarios. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relationships not yet explained, rather than on adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "B. Research Content",
+          "text": "Research objectives\nWhen project return distributions can only be estimated from a small number of historical observations, how can the uncertainty of statistical estimation be converted into budget allocation with testable risk guarantees?\n\nResearch tasks and technical route\nRobust optimization research task 1: Establish a distributionally robust integer program, simultaneously incorporating the return distribution set, fixed budget, and domain coverage constraints into the model, and prove the conditions under which the feasible region is nonempty.\n\nRobust optimization research task 2: Enumerate optimal combinations for small instances; for large instances, report feasible solutions of the original problem and relaxation bounds, and provide optimality gaps and running times.\n\nRobust optimization research task 3: Use a single fixed radius and report only average returns; the relationship between radius and conservatism is not within the scope of this analysis.\n\nRobust optimization research task 4: The baseline assumes project returns are independent and does not estimate cross-project covariances; common shocks are treated as a boundary not yet covered.\n\nStatistical inference research task 1: Use training batches to estimate the empirical distribution and scale, use bootstrap methods to form candidate uncertainty sets, and record the sample size and outliers for each project.\n\nStatistical inference research task 2: Compare multiple radii on all instances, and report the main result using the one with the highest final portfolio return; retain random seeds for reproducibility.\n\nStatistical inference research task 3: Compute interval coverage for all candidate projects, and separately report the coverage difference between selected and unselected projects, avoiding validation only on successful combinations.\n\nStatistical inference research task 4: Directly reuse single-project intervals as the basis for portfolio risk, without additionally handling the dependence caused by optimization selection.\n\nCross-domain interface\nThe statistical module provides uncertainty sets and their coverage conditions, and the optimization module allocates the budget accordingly; the selected portfolio is then fed back to the statistical evaluation to check whether selection destroys the risk guarantee. The project's contribution must be realized simultaneously in decision solvability and inferential reliability.\n\nKnowledge content and work allocation\nOptimization tasks 55 units: modeling 20, solving 20, risk bounds 15; statistical tasks 45 units: distribution estimation 15, calibration 15, inference 15. These work units are used to illustrate work content and cannot be treated as the magnitude of scientific contribution.\n\nImplementation plan\nMonths 1–6: freeze the data dictionary, research objects, primary outcomes, and analysis specifications; months 7–18: complete the main methods for the two parts; months 19–28: execute the above validation plan; months 29–36: analyze failure cases, organize shared code, and prepare reports. Each conclusion simultaneously reports the supporting materials, scope of applicability, and uncovered situations.\n\nExpected outputs\nThe two fields will each produce research reports, and the intersection part will submit interface documentation and joint analysis; data splits, runtime configurations, evaluation scripts, and results will also be preserved. If results do not support expectations, they will be reported truthfully, and the number of publications will not be used as a substitute for evidence that the methods are valid."
+        },
+        {
+          "heading": "C. Research Foundation",
+          "text": "Preliminary work and data conditions\nFour hundred de-identified resource allocation instances and four periods of return records for each project have been obtained; the sample contains zero returns and heavy-tailed returns. The research team has implemented deterministic integer programming and single-project bootstrap intervals, and 20 small-scale instances can be enumerated for solver verification; the existing implementation does not include post-selection risk calibration. The two projects use the same data, machines, and engineering foundation.\n\nResearch team and conditions\nThe research team includes two principal investigators responsible for robust optimization and statistical inference respectively, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code only covers the above basic methods; the new knowledge integration and main effects remain to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unspecified tests will not be supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions will not be used. If changed conditions make the originally planned research impossible to execute, the affected tasks will be reported first, and then the scope of conclusions will be explicitly narrowed. Tasks not covered by different plans will not be automatically treated as completed at project conclusion.\n\nDuration and budget\nThe project duration is 36 months, with a budget of 30 unified funding units. The funds are used for research assistants, data processing, experimental organization, and computational resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "方法互补推荐对研究构想形成的影响",
+      "title_en": "Complementary-Method Recommendations and Research Idea Formation",
+      "domains": [
+        "推荐系统",
+        "创新行为"
+      ],
+      "family_id": "C",
+      "field_ids": [
+        "CS",
+        "MS"
+      ],
+      "field_shares": {
+        "CS": 0.4,
+        "MS": 0.6,
+        "OR": 0,
+        "MED": 0,
+        "STAT": 0
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究C-R1已表明主题推荐可提高点击率，但没有测量构想内容；C-R2将跨领域阅读与新颖构想联系起来，却未随机控制展示材料。现有证据无法区分算法选择、曝光差异和研究者自主选择。\n\n科学问题\n向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？\n\n研究定位\n本项目将推荐系统与创新行为结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：推荐系统控制知识关系与曝光，创新行为研究测量构想发生的具体变化。系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？\n\n研究任务与技术路线\n推荐系统研究任务1：以方法输入、输出和适用条件编码互补关系，另保留主题相似通道；同一主题下构造方法重复与互补材料包。\n\n推荐系统研究任务2：两条件固定材料数量、长度、可读性和排序位置，先由不参与主实验的编码者核对内容差异。\n\n推荐系统研究任务3：推荐词表覆盖本实验主题，不检验未见主题；研究目标限于这组控制材料。\n\n推荐系统研究任务4：在固定候选池上删除互补关系模块，检查推荐知识结构的变化；不把行为得分用于反向选择算法。\n\n创新行为研究任务1：构想由盲评者分别判断问题变化、方法重组和论证完整性，并保留构想前后版本；报告编码一致性。\n\n创新行为研究任务2：在240名参与者中随机分配推荐条件，预注册主要构想指标和排除规则，按初始分组估计效应。\n\n创新行为研究任务3：记录搜索路径及既往领域知识，预设不同知识背景下的异质性比较，并区分过程关联与因果中介结论。\n\n创新行为研究任务4：只进行即时构想任务，不跟踪后续研究，结论限于实验中的构想形成。\n\n跨领域接口\n推荐系统控制知识关系与曝光，创新行为研究测量构想发生的具体变化。系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。\n\n知识内容和工作配置\n算法任务40单元：知识关系15、材料生成15、模块检验10；行为任务60单元：测量15、招募实验25、过程分析20。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n情境中已有1200篇授权教学研究材料的主题与方法标注，双人复核一致率0.86。40名预试参与者完成了界面可用性测试，形成24对长度相近的材料包，但未用于检验主要效果。正式240名研究者的招募额度已确认，项目均使用同一界面、招募标准和报酬。\n\n研究队伍和条件\n研究队伍包括分别负责推荐系统与创新行为的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0.4,
+          "MS": 0.6,
+          "OR": 0,
+          "MED": 0,
+          "STAT": 0
+        },
+        "content_units_total": 100,
+        "span_D": 0.43868818,
+        "pair_distance": 0.9139337034,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "CS",
+            "quote": "推荐系统控制知识关系与曝光"
+          },
+          {
+            "field_id": "MS",
+            "quote": "创新行为研究测量构想发生的具体变化"
+          }
+        ],
+        "method_tags": [
+          "recommender systems",
+          "randomized controlled trial",
+          "blind coding",
+          "preregistration",
+          "heterogeneity analysis"
+        ],
+        "integration_en": "Computer science supplies recommender-system control over knowledge relations and exposure, while management and organization measures how such exposure shapes research idea formation. The interface validates material relations and uses search paths and idea content as behavioral outcomes, linking algorithmic conditions to innovation behavior."
+      },
+      "sections_en": [
+        {
+          "heading": "立项依据",
+          "text": "This application is a fictional research plan within a controlled study. The following scenario reference records, data permissions, and preliminary preparations are experiment-given conditions; they are not statements about real institutions or completed research. Reviewers should judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study C-R1 has shown that topic recommendations can increase click-through rates, but it did not measure idea content; C-R2 linked cross-domain reading with novel ideas, yet did not randomly control the displayed materials. Existing evidence cannot distinguish algorithmic selection, exposure differences, and researchers' autonomous choices.\n\nScientific question\nDoes showing researchers method-complementary rather than topic-similar knowledge change their search paths and the research ideas they form? Does this effect depend on researchers' prior knowledge?\n\nResearch positioning\nThis project combines recommendation systems with innovation behavior, studies the scientific questions of each part separately, and examines the connection between the two parts. The knowledge integration is as follows: the recommendation system controls knowledge relations and exposure, and the innovation behavior study measures specific changes in idea occurrence. System performance is verified by whether task materials conform to specified relations; behavioral effects are evaluated through idea content and search records, with click-through rate serving only as a process variable.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, an executable analysis pipeline, and records of failure situations. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relations not yet explained, rather than on adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "研究内容",
+          "text": "Research objectives\nDoes showing researchers method-complementary rather than topic-similar knowledge change their search paths and the research ideas they form? Does this effect depend on researchers' prior knowledge?\n\nResearch tasks and technical route\nRecommendation system research task 1: Encode complementary relations by method inputs, outputs, and applicability conditions, while retaining a topic-similarity channel; construct method-repetition and method-complementary material packages under the same topic.\n\nRecommendation system research task 2: Fix material quantity, length, readability, and ordering position across the two conditions; coders not participating in the main experiment first verify content differences.\n\nRecommendation system research task 3: The recommendation vocabulary covers the topics of this experiment and does not test unseen topics; the research objective is limited to this set of controlled materials.\n\nRecommendation system research task 4: Remove the complementary-relation module on a fixed candidate pool and examine changes in the recommended knowledge structure; behavioral scores are not used to reverse-select the algorithm.\n\nInnovation behavior research task 1: Ideas are judged by blinded raters separately for problem change, method recombination, and argument completeness, and pre- and post-idea versions are retained; coding consistency is reported.\n\nInnovation behavior research task 2: Randomly assign 240 participants to recommendation conditions, pre-register primary idea indicators and exclusion rules, and estimate effects according to initial group assignment.\n\nInnovation behavior research task 3: Record search paths and prior domain knowledge, prespecify heterogeneity comparisons under different knowledge backgrounds, and distinguish process associations from causal mediation conclusions.\n\nInnovation behavior research task 4: Conduct only an immediate idea task and do not track subsequent research; conclusions are limited to idea formation within the experiment.\n\nCross-domain interface\nThe recommendation system controls knowledge relations and exposure, and the innovation behavior study measures specific changes in idea occurrence. System performance is verified by whether task materials conform to specified relations; behavioral effects are evaluated through idea content and search records, with click-through rate serving only as a process variable.\n\nKnowledge content and work configuration\nAlgorithm tasks: 40 units; knowledge relations 15, material generation 15, module verification 10. Behavior tasks: 60 units; measurement 15, recruitment experiment 25, process analysis 20. The work-hour units here are used to illustrate work content and cannot be treated as the magnitude of scientific contribution.\n\nImplementation plan\nMonths 1–6: freeze the data dictionary, research subjects, primary outcomes, and analysis specifications; months 7–18: complete the main methods of the two parts; months 19–28: execute the above verification plan; months 29–36: analyze failure cases, organize shared code and reports. Each conclusion simultaneously reports the materials supporting it, the applicable scope, and the situations not covered.\n\nExpected products\nThe two fields will separately produce research reports, and the intersection part will submit an interface description and joint analysis; data splits, runtime configurations, evaluation scripts, and results will also be preserved. When results do not support expectations, they will be reported truthfully, and the number of publications will not replace evidence that the method is established."
+        },
+        {
+          "heading": "研究基础",
+          "text": "Preliminary work and data conditions\nIn the scenario, there are 1,200 authorized teaching research materials with topic and method annotations, with a two-person recheck agreement rate of 0.86. Forty pilot participants completed interface usability testing, forming 24 pairs of material packages of similar length, but these were not used to test the main effect. The recruitment quota for 240 formal researchers has been confirmed, and the project uses the same interface, recruitment criteria, and compensation throughout.\n\nResearch team and conditions\nThe research team includes two principal investigators responsible respectively for recommendation systems and innovation behavior, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material cues.\n\nWork feasibility\nExisting code covers only the above basic methods; the new knowledge integration and main effects remain to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are governed by the research content section, and unarranged tests are not supplemented by general promises.\n\nRisk handling\nSample attrition, implementation deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions are not used. If changed conditions make the originally planned research impossible to execute, the affected tasks are reported first, and then the scope of conclusions is explicitly narrowed. Tasks not covered by different plans are not automatically treated as already completed at project conclusion.\n\nDuration and budget\nThe project duration is 36 months, with a budget of 30 uniform funding units. Funds are used for research assistants, data processing, experiment organization, and operational resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "语义推荐与研究构想形成的关联",
+      "title_en": "Semantic Recommendations and Research Idea Formation",
+      "domains": [
+        "推荐系统",
+        "创新行为"
+      ],
+      "family_id": "C",
+      "field_ids": [
+        "CS",
+        "MS"
+      ],
+      "field_shares": {
+        "CS": 0.4,
+        "MS": 0.6,
+        "OR": 0,
+        "MED": 0,
+        "STAT": 0
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究C-R1已表明主题推荐可提高点击率，但没有测量构想内容；C-R2将跨领域阅读与新颖构想联系起来，却未随机控制展示材料。现有证据无法区分算法选择、曝光差异和研究者自主选择。\n\n科学问题\n向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？\n\n研究定位\n本项目将推荐系统与创新行为结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：推荐系统控制知识关系与曝光，创新行为研究测量构想发生的具体变化。系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？\n\n研究任务与技术路线\n推荐系统研究任务1：以方法输入、输出和适用条件编码互补关系，另保留主题相似通道；同一主题下构造方法重复与互补材料包。\n\n推荐系统研究任务2：按算法自然返回的结果展示，材料数量相同，但长度、难度和排名位置不配平。\n\n推荐系统研究任务3：在未参与关系词表开发的主题上复核推荐，报告领域外有效率。\n\n推荐系统研究任务4：仅运行完整推荐系统，以行为效果较好的参数作为最终推荐参数。\n\n创新行为研究任务1：构想由盲评者分别判断问题变化、方法重组和论证完整性，并保留构想前后版本；报告编码一致性。\n\n创新行为研究任务2：参与者自行选择推荐模式，回归控制既往论文数和专业背景，报告模式与构想变化的关联。\n\n创新行为研究任务3：记录搜索路径及既往领域知识，预设不同知识背景下的异质性比较，并区分过程关联与因果中介结论。\n\n创新行为研究任务4：只进行即时构想任务，不跟踪后续研究，结论限于实验中的构想形成。\n\n跨领域接口\n推荐系统控制知识关系与曝光，创新行为研究测量构想发生的具体变化。系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。\n\n知识内容和工作配置\n算法任务40单元：知识关系15、材料生成15、模块检验10；行为任务60单元：测量15、招募实验25、过程分析20。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n情境中已有1200篇授权教学研究材料的主题与方法标注，双人复核一致率0.86。40名预试参与者完成了界面可用性测试，形成24对长度相近的材料包，但未用于检验主要效果。正式240名研究者的招募额度已确认，项目均使用同一界面、招募标准和报酬。\n\n研究队伍和条件\n研究队伍包括分别负责推荐系统与创新行为的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0.4,
+          "MS": 0.6,
+          "OR": 0,
+          "MED": 0,
+          "STAT": 0
+        },
+        "content_units_total": 100,
+        "span_D": 0.43868818,
+        "pair_distance": 0.9139337034,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "CS",
+            "quote": "推荐系统控制知识关系与曝光"
+          },
+          {
+            "field_id": "MS",
+            "quote": "创新行为研究测量构想发生的具体变化"
+          }
+        ],
+        "method_tags": [
+          "recommender systems",
+          "randomized controlled exposure",
+          "blind coding",
+          "regression adjustment",
+          "heterogeneity analysis"
+        ],
+        "integration_en": "CS contributes recommender-system design to control knowledge relations and exposure; MS contributes innovation-behavior measurement of how research ideas form and change. The interface tests whether method-complementary recommendations alter search paths and idea generation, conditional on prior knowledge, using click-through only as a process variable."
+      },
+      "sections_en": [
+        {
+          "heading": "立项依据",
+          "text": "This application is a fictional research plan within a controlled study. The following scenario reference records, data permissions, and preliminary preparations are all experimentally given conditions; they are not statements about real institutions or completed research. During review, judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study C-R1 has shown that topic recommendation can increase click-through rate, but it did not measure conception content; C-R2 linked cross-domain reading with novel conceptions, yet did not randomly control the displayed materials. Existing evidence cannot distinguish algorithmic selection, exposure differences, and researchers' autonomous choices.\n\nScientific question\nDoes showing researchers knowledge that is method-complementary rather than topic-similar change their search paths and the research conceptions they form? Does this effect depend on researchers' prior knowledge?\n\nResearch positioning\nThis project combines recommendation systems with innovation behavior, studies the scientific questions of each part separately, and tests the connection between the two parts. The knowledge integration is as follows: the recommendation system controls knowledge relations and exposure, and the innovation behavior research measures specific changes in conception occurrence. System performance is verified by whether task materials conform to the specified relations; behavioral effects are evaluated through conception content and search records, with click-through rate serving only as a process variable.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, executable analysis procedures, and records of failure situations. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relations not yet explained, rather than on adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "研究内容",
+          "text": "Research objectives\nDoes showing researchers knowledge that is method-complementary rather than topic-similar change their search paths and the research conceptions they form? Does this effect depend on researchers' prior knowledge?\n\nResearch tasks and technical route\nRecommendation system research Task 1: encode complementary relations by method input, output, and applicability conditions, while retaining a topic-similarity channel; construct method-repetition and method-complementary material packages under the same topic.\n\nRecommendation system research Task 2: display materials according to the algorithm's naturally returned results, with the same number of materials, but without matching length, difficulty, and ranking position.\n\nRecommendation system research Task 3: re-check recommendations on topics not involved in developing the relation vocabulary, and report out-of-domain effectiveness.\n\nRecommendation system research Task 4: run only the complete recommendation system, and use the parameters with better behavioral effects as the final recommendation parameters.\n\nInnovation behavior research Task 1: conceptions are judged by blinded raters separately for problem change, method recombination, and argument completeness, and pre- and post-conception versions are retained; report coding consistency.\n\nInnovation behavior research Task 2: participants choose the recommendation mode themselves; regression controls for previous paper count and professional background, and reports the association between mode and conception change.\n\nInnovation behavior research Task 3: record search paths and prior domain knowledge, preset heterogeneity comparisons under different knowledge backgrounds, and distinguish process associations from causal mediation conclusions.\n\nInnovation behavior research Task 4: conduct only an immediate conception task, do not follow up subsequent research, and limit conclusions to conception formation within the experiment.\n\nCross-domain interface\nThe recommendation system controls knowledge relations and exposure, and the innovation behavior research measures specific changes in conception occurrence. System performance is verified by whether task materials conform to the specified relations; behavioral effects are evaluated through conception content and search records, with click-through rate serving only as a process variable.\n\nKnowledge content and work configuration\nAlgorithm tasks 40 units: knowledge relations 15, material generation 15, module testing 10; behavior tasks 60 units: measurement 15, recruitment experiment 25, process analysis 20. The work-hour units here are used to illustrate work content and cannot be treated as the size of scientific contribution.\n\nImplementation plan\nMonths 1-6: freeze the data dictionary, research subjects, primary outcomes, and analysis specifications; months 7-18: complete the main methods of the two parts; months 19-28: execute the above verification plan; months 29-36: analyze failure cases, organize shared code, and report. Each conclusion simultaneously reports the materials supporting it, the applicable scope, and the situations not covered.\n\nExpected products\nThe two fields will separately form research reports, and the intersection part will submit an interface description and joint analysis; at the same time, data partitions, runtime configurations, evaluation scripts, and results will be preserved. When results do not support expectations, report truthfully, and do not replace evidence that the method is established with the number of publications."
+        },
+        {
+          "heading": "研究基础",
+          "text": "Preliminary work and data conditions\nIn the scenario, there are already 1,200 authorized teaching research materials with topic and method annotations, and the two-person re-check agreement rate is 0.86. Forty pilot participants completed interface usability testing, forming 24 pairs of material packages with similar length, but these were not used to test the main effects. The recruitment quota for 240 formal researchers has been confirmed, and the project uses the same interface, recruitment criteria, and compensation throughout.\n\nResearch team and conditions\nThe research team includes two principal investigators responsible respectively for recommendation systems and innovation behavior, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Research reputation, institution name, and awards are not used as material cues.\n\nWork feasibility\nExisting code covers only the above basic methods; the new knowledge integration and main effects still await project testing. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unspecified tests are not supplemented by general promises.\n\nRisk handling\nSample loss, execution deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions are not used. If changed conditions make the originally planned research impossible to execute, first report the affected tasks, then clearly narrow the scope of conclusions. Tasks not covered by different plans are not automatically treated as completed at project conclusion.\n\nPeriod and budget\nThe project period is 36 months, with a budget of 30 uniform funding units. Funds are used for research assistants, data processing, experiment organization, and operating resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "固定随访名额下患者风险识别与服务配置",
+      "title_en": "Patient Risk Identification and Follow-up Allocation",
+      "domains": [
+        "临床文本建模",
+        "临床随访与卫生服务"
+      ],
+      "family_id": "D",
+      "field_ids": [
+        "CS",
+        "MED"
+      ],
+      "field_shares": {
+        "CS": 0.45,
+        "MS": 0,
+        "OR": 0,
+        "MED": 0.55,
+        "STAT": 0
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究D-R1用使用频次预测后续咨询，不能区分咨询意愿与临床风险；D-R2基于常规检查分配随访，但忽略文本中早期变化。现有研究缺少在固定随访容量下，文本增量信息与临床后果之间的连接。\n\n科学问题\n患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？\n\n研究定位\n本项目将临床文本建模与临床随访与卫生服务结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：文本模块识别潜在风险，临床模块定义可干预的结局、服务容量及患者安全边界。算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？\n\n研究任务与技术路线\n临床文本建模研究任务1：在同一患者样本比较常规风险评分、结构化变量模型和文本增强模型，固定训练预算及阈值选择流程。\n\n临床文本建模研究任务2：按患者划分，并将第三家门诊及末期患者完全留出；阈值在前两家门诊校准后冻结。\n\n临床文本建模研究任务3：除AUC外报告校准、每100个名额识别的真实高风险人数及年龄分组误差，名额统一由服务能力决定。\n\n临床文本建模研究任务4：模型只在冻结时间窗使用，不实施持续更新；后续漂移列为边界。\n\n临床随访与卫生服务研究任务1：将对象限定为已有诊断且可接受常规随访的人群，排除必须即时就诊者；预先规定干预升级的临床结局。\n\n临床随访与卫生服务研究任务2：训练及检验结局由病历和独立临床复核确定，模型开发者无法修改结局；自报咨询单独分析。\n\n临床随访与卫生服务研究任务3：在不减少标准治疗的条件下，对符合条件者随机安排两种随访优先方案，比较90天内干预升级与漏访。\n\n临床随访与卫生服务研究任务4：设立独立安全监测、预定停止规则与补救随访，按年龄及共病报告服务差异和潜在伤害。\n\n跨领域接口\n文本模块识别潜在风险，临床模块定义可干预的结局、服务容量及患者安全边界。算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。\n\n知识内容和工作配置\n计算任务45单元：文本处理15、模型20、迁移检验10；临床任务55单元：结局核验20、随访试验25、安全监测10。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。文本脱敏流程和风险模型运行环境已通过机构内部测试。正式新入组600人的随访研究尚未开展，计划不涉及改变必要治疗。\n\n研究队伍和条件\n研究队伍包括分别负责临床文本建模与临床随访与卫生服务的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0.45,
+          "MS": 0,
+          "OR": 0,
+          "MED": 0.55,
+          "STAT": 0
+        },
+        "content_units_total": 100,
+        "span_D": 0.36719155,
+        "pair_distance": 0.7418011103,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "CS",
+            "quote": "临床文本建模研究任务1"
+          },
+          {
+            "field_id": "MED",
+            "quote": "临床随访与卫生服务研究任务1"
+          }
+        ],
+        "method_tags": [
+          "text modeling",
+          "risk prediction",
+          "model calibration",
+          "randomized trial",
+          "safety monitoring"
+        ],
+        "integration_en": "CS develops text-enhanced risk models to identify high-risk patients under fixed follow-up capacity. MED defines intervenable outcomes, service capacity, and safety boundaries, then tests whether CS-identified patients benefit in a randomized follow-up trial. Both share unified patient timepoints and outcome definitions."
+      },
+      "sections_en": [
+        {
+          "heading": "A",
+          "text": "This application is a fictional research plan within a controlled study. The following scenario reference records, data permissions, and preliminary preparations are all experimentally given conditions; they are not statements about real institutions or completed research. During review, judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study D-R1 uses usage frequency to predict subsequent consultations and cannot distinguish consultation willingness from clinical risk; D-R2 allocates follow-up based on routine examinations but ignores early changes in text. Existing research lacks a connection between incremental text information and clinical consequences under fixed follow-up capacity.\n\nScientific question\nCan changes in patient consultation text supplement routine risk indicators so that limited follow-up slots cover more people who truly need intervention, and improve clinical service outcomes?\n\nResearch positioning\nThis project combines clinical text modeling with clinical follow-up and health services, studies the respective scientific questions of each part, and tests the connection between the two parts. The knowledge integration is as follows: the text module identifies potential risk, and the clinical module defines intervenable outcomes, service capacity, and patient safety boundaries. Algorithms compare identification under the same number of slots, and the clinical study tests whether identified patients truly benefit; the two are connected through unified patient time points and outcome definitions.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, executable analysis workflows, and records of failure scenarios. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relationships not yet explained, rather than adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "B",
+          "text": "Research objectives\nCan changes in patient consultation text supplement routine risk indicators so that limited follow-up slots cover more people who truly need intervention, and improve clinical service outcomes?\n\nResearch tasks and technical route\nClinical text modeling research task 1: Compare routine risk scores, structured variable models, and text-enhanced models on the same patient sample, with fixed training budget and threshold selection process.\n\nClinical text modeling research task 2: Split by patient, and completely hold out the third clinic and end-stage patients; thresholds are frozen after calibration on the first two clinics.\n\nClinical text modeling research task 3: In addition to AUC, report calibration, the number of true high-risk individuals identified per 100 slots, and errors by age group; slots are uniformly determined by service capacity.\n\nClinical text modeling research task 4: The model is used only in a frozen time window, without continuous updating; subsequent drift is listed as a boundary.\n\nClinical follow-up and health services research task 1: Limit participants to those with existing diagnoses who can receive routine follow-up, excluding those who must seek immediate care; pre-specify the clinical outcome of intervention escalation.\n\nClinical follow-up and health services research task 2: Training and test outcomes are determined by medical records and independent clinical review; model developers cannot modify outcomes; self-reported consultations are analyzed separately.\n\nClinical follow-up and health services research task 3: Without reducing standard treatment, randomly assign eligible patients to two follow-up priority schemes, and compare intervention escalation and missed visits within 90 days.\n\nClinical follow-up and health services research task 4: Establish independent safety monitoring, pre-specified stopping rules, and remedial follow-up; report service differences and potential harm by age and comorbidity.\n\nCross-domain interface\nThe text module identifies potential risk, and the clinical module defines intervenable outcomes, service capacity, and patient safety boundaries. Algorithms compare identification under the same number of slots, and the clinical study tests whether identified patients truly benefit; the two are connected through unified patient time points and outcome definitions.\n\nKnowledge content and work allocation\nComputing tasks 45 units: text processing 15, modeling 20, transfer testing 10; clinical tasks 55 units: outcome verification 20, follow-up trial 25, safety monitoring 10. The work-hour units here are used to illustrate work content and cannot be treated as the size of scientific contribution.\n\nImplementation plan\nMonths 1-6: freeze the data dictionary, research subjects, primary outcomes, and analysis specifications; months 7-18: complete the main methods of the two parts; months 19-28: execute the above validation plan; months 29-36: analyze failure cases, organize shared code and reports. Each conclusion simultaneously reports the materials supporting it, the applicable scope, and the situations not covered.\n\nExpected products\nThe two fields will separately form research reports, and the intersection part will submit interface documentation and joint analysis; at the same time, data splits, runtime configurations, evaluation scripts, and results will be preserved. When results do not support expectations, report truthfully, and do not replace evidence that the method is established with the number of publications."
+        },
+        {
+          "heading": "C",
+          "text": "Preliminary work and data conditions\nThree outpatient clinics have provided de-identified two-year records of 9,000 patients for this experimental scenario; among them, 600 cases were independently reviewed by two clinical personnel for outcomes, with disagreements adjudicated by a third person. The text de-identification process and the risk model runtime environment have passed internal institutional testing. A formal new enrollment follow-up study of 600 people has not yet been conducted, and the plan does not involve changing necessary treatment.\n\nResearch team and conditions\nThe research team includes two leaders respectively responsible for clinical text modeling and clinical follow-up and health services, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code only covers the above basic methods; the new knowledge integration and main effects remain to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unarranged tests are not supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and inability to verify outcomes are recorded separately; data beyond established permissions are not used. If changed conditions make the originally planned research impossible to execute, first report the affected tasks, then clearly narrow the scope of conclusions. Tasks not covered by different schemes are not automatically treated as already completed at project conclusion.\n\nDuration and budget\nThe project duration is 36 months, with a budget of 30 unified funding units. Funds are used for research assistants, data processing, experiment organization, and operating resources; all candidate projects have the same cost. There is no scenario in which another fund repeatedly undertakes the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "患者平台行为预测与随访线索生成",
+      "title_en": "Platform Behavior Prediction for Follow-up Signals",
+      "domains": [
+        "临床文本建模",
+        "临床随访与卫生服务"
+      ],
+      "family_id": "D",
+      "field_ids": [
+        "CS",
+        "MED"
+      ],
+      "field_shares": {
+        "CS": 0.45,
+        "MS": 0,
+        "OR": 0,
+        "MED": 0.55,
+        "STAT": 0
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究D-R1用使用频次预测后续咨询，不能区分咨询意愿与临床风险；D-R2基于常规检查分配随访，但忽略文本中早期变化。现有研究缺少在固定随访容量下，文本增量信息与临床后果之间的连接。\n\n科学问题\n患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？\n\n研究定位\n本项目将临床文本建模与临床随访与卫生服务结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：文本模块识别潜在风险，临床模块定义可干预的结局、服务容量及患者安全边界。算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？\n\n研究任务与技术路线\n临床文本建模研究任务1：在同一患者样本比较常规风险评分、结构化变量模型和文本增强模型，固定训练预算及阈值选择流程。\n\n临床文本建模研究任务2：按咨询记录随机分割，同一患者不同记录可出现在训练与测试；不单独保留门诊。\n\n临床文本建模研究任务3：除AUC外报告校准、每100个名额识别的真实高风险人数及年龄分组误差，名额统一由服务能力决定。\n\n临床文本建模研究任务4：模型只在冻结时间窗使用，不实施持续更新；后续漂移列为边界。\n\n临床随访与卫生服务研究任务1：将对象限定为已有诊断且可接受常规随访的人群，排除必须即时就诊者；预先规定干预升级的临床结局。\n\n临床随访与卫生服务研究任务2：使用下一次咨询中的自报症状作为风险标签，不安排病历复核。\n\n临床随访与卫生服务研究任务3：根据历史日志回溯比较已被随访者与未被随访者，使用可观测特征控制差异；暂不随机安排服务。\n\n临床随访与卫生服务研究任务4：沿用常规投诉处理，不设置针对算法遗漏的主动安全监测或群体差异分析。\n\n跨领域接口\n文本模块识别潜在风险，临床模块定义可干预的结局、服务容量及患者安全边界。算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。\n\n知识内容和工作配置\n计算任务45单元：文本处理15、模型20、迁移检验10；临床任务55单元：结局核验20、随访试验25、安全监测10。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。文本脱敏流程和风险模型运行环境已通过机构内部测试。正式新入组600人的随访研究尚未开展，计划不涉及改变必要治疗。\n\n研究队伍和条件\n研究队伍包括分别负责临床文本建模与临床随访与卫生服务的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0.45,
+          "MS": 0,
+          "OR": 0,
+          "MED": 0.55,
+          "STAT": 0
+        },
+        "content_units_total": 100,
+        "span_D": 0.36719155,
+        "pair_distance": 0.7418011103,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "needs_adjudication",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "CS",
+            "quote": "患者咨询文本中的变化是否能补充常规风险指标"
+          },
+          {
+            "field_id": "MED",
+            "quote": "使有限随访名额覆盖更多真正需要干预的人"
+          },
+          {
+            "field_id": "OR",
+            "quote": "名额统一由服务能力决定"
+          }
+        ],
+        "method_tags": [
+          "text mining",
+          "predictive modeling",
+          "calibration",
+          "AUC",
+          "risk stratification",
+          "observational comparison",
+          "resource allocation",
+          "frozen time window"
+        ],
+        "integration_en": "CS builds text-enhanced risk models from patient messages; MED defines intervenable outcomes, follow-up capacity, and safety boundaries; OR frames allocation of fixed follow-up slots. They connect through shared patient time points and outcome definitions, comparing identification under equal capacity and testing whether identified patients benefit."
+      },
+      "sections_en": [
+        {
+          "heading": "立项依据",
+          "text": "This application is a fictional research plan within a controlled study. The following scenario records, data permissions, and preliminary preparations are given experimental conditions; they are not statements about real institutions or completed research. Reviewers should judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study D-R1 uses usage frequency to predict subsequent consultations and cannot distinguish consultation willingness from clinical risk; D-R2 assigns follow-up based on routine examinations but ignores early changes in text. Existing research lacks a connection between incremental text information and clinical consequences under a fixed follow-up capacity.\n\nScientific question\nCan changes in patient consultation text supplement routine risk indicators so that limited follow-up slots cover more people who truly need intervention, and improve clinical service outcomes?\n\nResearch positioning\nThis project combines clinical text modeling with clinical follow-up and health services, studies their respective scientific questions separately, and tests the connection between the two parts. The knowledge integration is as follows: the text module identifies potential risk, and the clinical module defines intervenable outcomes, service capacity, and patient safety boundaries. Algorithms compare identification under the same number of slots, and clinical research tests whether identified patients truly benefit; the two are connected through unified patient time points and outcome definitions.\n\nExpected contributions\nThe project will submit research conclusions that clearly state applicable conditions, executable analysis workflows, and records of failure scenarios. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relationships not yet explained, rather than on adding technical names or increasing the number of publications."
+        },
+        {
+          "heading": "研究内容",
+          "text": "Research objectives\nCan changes in patient consultation text supplement routine risk indicators so that limited follow-up slots cover more people who truly need intervention, and improve clinical service outcomes?\n\nResearch tasks and technical route\nClinical text modeling research task 1: Compare routine risk scores, structured variable models, and text-enhanced models on the same patient sample, with fixed training budget and threshold selection process.\n\nClinical text modeling research task 2: Split randomly by consultation records; different records of the same patient may appear in training and testing; outpatient clinics are not separately held out.\n\nClinical text modeling research task 3: In addition to AUC, report calibration, the number of true high-risk people identified per 100 slots, and age-group errors; slots are uniformly determined by service capacity.\n\nClinical text modeling research task 4: The model is used only in a frozen time window, and continuous updating is not implemented; subsequent drift is listed as a boundary.\n\nClinical follow-up and health services research task 1: Restrict the population to those with existing diagnoses who can receive routine follow-up, excluding those who must seek immediate care; pre-specify clinical outcomes for intervention escalation.\n\nClinical follow-up and health services research task 2: Use self-reported symptoms from the next consultation as risk labels, and do not arrange medical record review.\n\nClinical follow-up and health services research task 3: Retrospectively compare those who were followed up and those who were not based on historical logs, using observable characteristics to control differences; random service assignment is not arranged for now.\n\nClinical follow-up and health services research task 4: Continue to use routine complaint handling, and do not set up active safety monitoring or group difference analysis for algorithm misses.\n\nCross-domain interface\nThe text module identifies potential risk, and the clinical module defines intervenable outcomes, service capacity, and patient safety boundaries. Algorithms compare identification under the same number of slots, and clinical research tests whether identified patients truly benefit; the two are connected through unified patient time points and outcome definitions.\n\nKnowledge content and work configuration\nComputational tasks 45 units: text processing 15, modeling 20, transfer testing 10; clinical tasks 55 units: outcome verification 20, follow-up trial 25, safety monitoring 10. The work units here are used to illustrate work content and cannot be treated as the size of scientific contribution.\n\nImplementation plan\nMonths 1-6: freeze the data dictionary, research population, primary outcomes, and analysis specifications; months 7-18: complete the main methods for the two parts; months 19-28: execute the above validation plan; months 29-36: analyze failure cases, organize shared code and reports. Each conclusion simultaneously reports the materials supporting it, the applicable scope, and the situations not covered.\n\nExpected outputs\nThe two fields will separately produce research reports, and the intersection part will submit interface descriptions and joint analysis; data splits, runtime configurations, evaluation scripts, and results will also be preserved. When results do not support expectations, report truthfully, and do not use publication counts as a substitute for evidence that the method is valid."
+        },
+        {
+          "heading": "研究基础",
+          "text": "Preliminary work and data conditions\nThree outpatient clinics have provided de-identified two-year records of 9,000 patients for this experimental scenario; among them, 600 cases were independently reviewed for outcomes by two clinical personnel, with disagreements adjudicated by a third person. The text de-identification process and risk model runtime environment have passed internal institutional testing. A formal new enrollment follow-up study of 600 people has not yet begun, and the plan does not involve changing necessary treatment.\n\nResearch team and conditions\nThe research team includes two leaders respectively responsible for clinical text modeling and clinical follow-up and health services, and three research assistants. Personnel qualifications, general equipment, and total available time are consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code only covers the above basic methods; the new knowledge integration and main effects remain to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unspecified tests are not supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and inability to verify outcomes are recorded separately; data beyond established permissions are not used. If changed conditions make the originally planned research impossible to execute, first report the affected tasks, then clearly narrow the scope of conclusions. Tasks not covered by different plans are not automatically treated as completed at project conclusion.\n\nDuration and budget\nThe project duration is 36 months, with a budget of 30 unified funding units. Funds are used for research assistants, data processing, experiment organization, and operating resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "短序列预测不确定性与库存决策",
+      "title_en": "Short-Series Forecast Uncertainty and Inventory Decisions",
+      "domains": [
+        "短序列预测",
+        "库存与资源优化"
+      ],
+      "family_id": "E",
+      "field_ids": [
+        "STAT",
+        "OR"
+      ],
+      "field_shares": {
+        "CS": 0,
+        "MS": 0,
+        "OR": 0.35,
+        "MED": 0,
+        "STAT": 0.65
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究E-R1结合灰色预测和时序模型降低均方误差，但未研究库存损失；E-R2在给定需求分布下优化库存，未检验分布估计误差。更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。\n\n科学问题\n当需求历史较短且供应中断稀少时，预测误差怎样传播到库存成本，什么预测信息能够改善固定预算下的库存决策？\n\n研究定位\n本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。预测与决策共享时间截断和成本口径。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n当需求历史较短且供应中断稀少时，预测误差怎样传播到库存成本，什么预测信息能够改善固定预算下的库存决策？\n\n研究任务与技术路线\n短序列预测研究任务1：在同一滚动窗口比较季节均值、灰色模型和分位数模型，明确样本不足时的退化规则。\n\n短序列预测研究任务2：所有插补、缩放和参数选择只使用预测时点以前的数据，最终12个月滚动封存；训练与测试不共享扩增窗口。\n\n短序列预测研究任务3：报告需求分位数的覆盖率、区间宽度和高需求期误差，分别检查稀少中断月份。\n\n短序列预测研究任务4：预设灰色生成、残差学习和成本重加权三个消融，固定参数搜索预算并在封存月份比较。\n\n库存与资源优化研究任务1：以采购预算、仓储容量及提前期为约束，缺货与持有成本由同一会计口径给定，各方法采用相同成本。\n\n库存与资源优化研究任务2：以预测分位数形成随机库存规划，用需求不确定性决定安全库存；与只用点预测的策略在相同预算比较。\n\n库存与资源优化研究任务3：只在已有80类零部件的时间窗口检验，不设置新供应商留出，结论限于既有供应结构。\n\n库存与资源优化研究任务4：仅报告当前成本比下的损失，不推导政策阈值或外部成本情景。\n\n跨领域接口\n统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。预测与决策共享时间截断和成本口径。\n\n知识内容和工作配置\n统计任务65单元：样本与预测25、尾部校准20、消融20；运筹任务35单元：成本定义10、策略求解15、决策检验10。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n情境数据包含80类零部件连续36个月需求、采购成本和缺货记录。原始缺失月份已标记，未先行插补；价格、提前期和容量约束可核对。团队已有灰色预测、分位数回归和单期库存求解器，初步复算能够重现已记录的库存成本，尚未比较拟议方法。\n\n研究队伍和条件\n研究队伍包括分别负责短序列预测与库存与资源优化的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0,
+          "MS": 0,
+          "OR": 0.35,
+          "MED": 0,
+          "STAT": 0.65
+        },
+        "content_units_total": 100,
+        "span_D": 0.455,
+        "pair_distance": 1.0,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "STAT",
+            "quote": "短序列预测研究任务1"
+          },
+          {
+            "field_id": "OR",
+            "quote": "库存与资源优化研究任务1"
+          }
+        ],
+        "method_tags": [
+          "grey prediction",
+          "quantile regression",
+          "time series forecasting",
+          "stochastic inventory optimization",
+          "safety stock planning",
+          "ablation study"
+        ],
+        "integration_en": "STAT provides conditional demand distributions and forecast uncertainty from short histories; OR converts these distributions into budget-constrained inventory decisions under asymmetric costs. The two fields share time truncation and cost definitions, with forecast error propagation to inventory loss as the connecting evaluation."
+      },
+      "sections_en": [
+        {
+          "heading": "Basis for the Project",
+          "text": "This application is a fictional research plan within a controlled study. The following scenario reference records, data permissions, and preliminary preparations are given experimental conditions; they are not statements about real institutions or completed research. During review, judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study E-R1 combines grey forecasting and time series models to reduce mean squared error, but does not study inventory loss; E-R2 optimizes inventory under a given demand distribution, but does not examine distribution estimation error. A smaller forecast mean squared error does not necessarily correspond to lower stockout loss, because costs respond differently to the direction of error.\n\nScientific question\nWhen demand history is short and supply disruptions are rare, how do forecast errors propagate to inventory costs, and what forecast information can improve inventory decisions under a fixed budget?\n\nResearch positioning\nThis project combines short-sequence forecasting with inventory and resource optimization, studies the respective scientific questions of each part, and examines the connection between the two parts. The knowledge combination is as follows: statistical research provides conditional distributions and uncertainty, operations research converts demand distributions into inventory decisions within budget, and evaluates forecast information with asymmetric costs. Forecasting and decision-making share the same time truncation and cost standard.\n\nExpected contributions\nThe project will submit research conclusions with clearly stated applicable conditions, an executable analysis workflow, and records of failure scenarios. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relationships not yet explained, rather than adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "Research Content",
+          "text": "Research objectives\nWhen demand history is short and supply disruptions are rare, how do forecast errors propagate to inventory costs, and what forecast information can improve inventory decisions under a fixed budget?\n\nResearch tasks and technical route\nShort-sequence forecasting research task 1: Compare seasonal mean, grey model, and quantile model in the same rolling window, and clarify degradation rules when samples are insufficient.\n\nShort-sequence forecasting research task 2: All imputation, scaling, and parameter selection use only data before the prediction time; the final 12 months are sealed for rolling evaluation; training and testing do not share augmented windows.\n\nShort-sequence forecasting research task 3: Report coverage, interval width, and high-demand period errors of demand quantiles, and separately examine months with rare disruptions.\n\nShort-sequence forecasting research task 4: Preset three ablations—grey generation, residual learning, and cost reweighting—fix the parameter search budget, and compare on sealed months.\n\nInventory and resource optimization research task 1: With procurement budget, storage capacity, and lead time as constraints, shortage and holding costs are given by the same accounting standard, and all methods use the same costs.\n\nInventory and resource optimization research task 2: Use forecast quantiles to form stochastic inventory planning, and use demand uncertainty to determine safety stock; compare with strategies using only point forecasts under the same budget.\n\nInventory and resource optimization research task 3: Test only within the time window of the existing 80 categories of components; do not set aside new suppliers; conclusions are limited to the existing supply structure.\n\nInventory and resource optimization research task 4: Report only losses under the current cost ratio; do not derive policy thresholds or external cost scenarios.\n\nCross-domain interface\nStatistical research provides conditional distributions and uncertainty; operations research converts demand distributions into inventory decisions within budget, and evaluates forecast information with asymmetric costs. Forecasting and decision-making share the same time truncation and cost standard.\n\nKnowledge content and work allocation\nStatistical tasks: 65 units—samples and forecasting 25, tail calibration 20, ablation 20; operations research tasks: 35 units—cost definition 10, policy solving 15, decision testing 10. The work-hour units here are used to illustrate work content and cannot be treated as the size of scientific contribution.\n\nImplementation plan\nMonths 1–6: freeze the data dictionary, research objects, primary outcomes, and analysis specifications; months 7–18: complete the main methods of the two parts; months 19–28: execute the above validation plan; months 29–36: analyze failure cases, organize shared code and reports. Each conclusion simultaneously reports the materials supporting it, the applicable scope, and the situations not covered.\n\nExpected outputs\nThe two fields will separately form research reports, and the intersection part will submit an interface description and joint analysis; at the same time, data splits, runtime configurations, evaluation scripts, and results will be preserved. When results do not support expectations, report truthfully, and do not replace evidence that the method is valid with the number of publications."
+        },
+        {
+          "heading": "Research Foundation",
+          "text": "Preliminary work and data conditions\nThe scenario data contain 36 consecutive months of demand, procurement cost, and stockout records for 80 categories of components. Original missing months have been marked and not imputed in advance; prices, lead times, and capacity constraints can be checked. The team already has grey forecasting, quantile regression, and a single-period inventory solver; preliminary recalculation can reproduce the recorded inventory costs, but the proposed methods have not yet been compared.\n\nResearch team and conditions\nThe research team includes two principal investigators respectively responsible for short-sequence forecasting and inventory and resource optimization, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Scientific reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code covers only the above basic methods; the new knowledge combination and main effects still need to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are governed by the research content section, and unarranged tests are not supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions are not used. If changed conditions make the originally planned research impossible to execute, first report the affected tasks, then clearly narrow the scope of conclusions. Tasks not covered by different plans are not automatically treated as completed at project conclusion.\n\nPeriod and budget\nThe project period is 36 months, with a budget of 30 uniform funding units. Funds are used for research assistants, data processing, experiment organization, and operating resources; all candidate projects have the same cost. There is no scenario in which another fund duplicates the tasks of this project."
+        }
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "短序列点预测与库存配置",
+      "title_en": "Point Forecasts and Inventory Allocation",
+      "domains": [
+        "短序列预测",
+        "库存与资源优化"
+      ],
+      "family_id": "E",
+      "field_ids": [
+        "STAT",
+        "OR"
+      ],
+      "field_shares": {
+        "CS": 0,
+        "MS": 0,
+        "OR": 0.35,
+        "MED": 0,
+        "STAT": 0.65
+      },
+      "disciplinary_status": "cross_discipline",
+      "duration_months": 36,
+      "budget_units": 30,
+      "status": "constructed_research_stimulus",
+      "sections": [
+        {
+          "id": "A",
+          "heading": "立项依据",
+          "text": "本申请为受控研究中的虚构科研计划。以下情境参考记录、数据权限及前期准备均为实验给定条件；不是对真实机构或已完成研究的陈述。评审时按给定事实判断研究设计及预期贡献。\n\n研究背景与既有认识\n情境研究E-R1结合灰色预测和时序模型降低均方误差，但未研究库存损失；E-R2在给定需求分布下优化库存，未检验分布估计误差。更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。\n\n科学问题\n当需求历史较短且供应中断稀少时，预测误差怎样传播到库存成本，什么预测信息能够改善固定预算下的库存决策？\n\n研究定位\n本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。知识结合方式如下：统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。预测与决策共享时间截断和成本口径。\n\n预期贡献\n项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。"
+        },
+        {
+          "id": "B",
+          "heading": "研究内容",
+          "text": "研究目标\n当需求历史较短且供应中断稀少时，预测误差怎样传播到库存成本，什么预测信息能够改善固定预算下的库存决策？\n\n研究任务与技术路线\n短序列预测研究任务1：在同一滚动窗口比较季节均值、灰色模型和分位数模型，明确样本不足时的退化规则。\n\n短序列预测研究任务2：先用全部36个月平滑缺失，再随机抽取重叠窗口作训练和测试；评估以该回溯方案为准。\n\n短序列预测研究任务3：报告需求分位数的覆盖率、区间宽度和高需求期误差，分别检查稀少中断月份。\n\n短序列预测研究任务4：把融合比例调整到测试误差最低，仅报告完整融合方案，不实施独立消融。\n\n库存与资源优化研究任务1：以采购预算、仓储容量及提前期为约束，缺货与持有成本由同一会计口径给定，各方法采用相同成本。\n\n库存与资源优化研究任务2：使用点预测均值代入确定性库存计划，安全库存统一设置为均值的10%，不随预测不确定性改变。\n\n库存与资源优化研究任务3：将20类供应商关联零部件留出，冻结全部成本校准与政策参数后比较库存损失。\n\n库存与资源优化研究任务4：仅报告当前成本比下的损失，不推导政策阈值或外部成本情景。\n\n跨领域接口\n统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。预测与决策共享时间截断和成本口径。\n\n知识内容和工作配置\n统计任务65单元：样本与预测25、尾部校准20、消融20；运筹任务35单元：成本定义10、策略求解15、决策检验10。这里的工时单元用于说明工作内容，不能当作科研贡献大小。\n\n实施计划\n第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。每项结论同时报告支持它的材料、适用范围和未覆盖的情况。\n\n预期产物\n两个领域分别形成研究报告，交叉部分提交接口说明与联合分析；同时保存数据划分、运行配置、评价脚本及结果。结果不支持预期时如实报告，不以发表篇数代替方法成立的证据。"
+        },
+        {
+          "id": "C",
+          "heading": "研究基础",
+          "text": "前期工作与数据条件\n情境数据包含80类零部件连续36个月需求、采购成本和缺货记录。原始缺失月份已标记，未先行插补；价格、提前期和容量约束可核对。团队已有灰色预测、分位数回归和单期库存求解器，初步复算能够重现已记录的库存成本，尚未比较拟议方法。\n\n研究队伍和条件\n研究队伍包括分别负责短序列预测与库存与资源优化的两位负责人及三名研究助理。人员资历、通用设备和可支配总时间在同主题两份申请之间保持一致。科研声望、单位名称和奖励不作为材料线索。\n\n工作可行性\n已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。\n\n风险处理\n样本缺失、执行偏差与结局无法核验均单独记录；超出既定权限的数据不使用。若条件变化导致原定研究无法执行，先报告受影响任务，再明确缩小结论范围。不同方案未覆盖的任务不在结题时自动补作已经完成。\n\n周期与预算\n项目期限36个月，预算30个统一经费单位。经费用于研究助理、数据处理、实验组织与运行资源；全部候选项目成本相同。不存在另一个基金重复承担本项目任务的情境。"
+        }
+      ],
+      "material_validation": "design-traceable; independent human audit pending",
+      "source_template": "NSFC 2026 three-part structure; controlled experimental abridgment",
+      "label_source": "Frozen scientific-task specification",
+      "knowledge_design": {
+        "content_shares": {
+          "CS": 0,
+          "MS": 0,
+          "OR": 0.35,
+          "MED": 0,
+          "STAT": 0.65
+        },
+        "content_units_total": 100,
+        "span_D": 0.455,
+        "pair_distance": 1.0,
+        "distance_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      },
+      "label_agreement": "agree",
+      "label_evidence": {
+        "fields": [
+          {
+            "field_id": "STAT",
+            "quote": "短序列预测研究任务1"
+          },
+          {
+            "field_id": "OR",
+            "quote": "库存与资源优化研究任务1"
+          }
+        ],
+        "method_tags": [
+          "grey prediction",
+          "quantile regression",
+          "time series forecasting",
+          "inventory optimization",
+          "rolling window evaluation"
+        ],
+        "integration_en": "Statistics supplies conditional demand distributions and forecast uncertainty from short series; operations research converts these into budget-constrained inventory decisions under asymmetric shortage and holding costs. The two fields share time truncation and cost definitions, enabling evaluation of how forecast error propagates into inventory loss."
+      },
+      "sections_en": [
+        {
+          "heading": "Basis for the Project",
+          "text": "This application is a fictional research plan in a controlled study. The following scenario reference records, data permissions, and preliminary preparations are given experimental conditions; they are not statements about real institutions or completed research. During review, judge the research design and expected contributions according to the given facts.\n\nResearch background and existing understanding\nScenario study E-R1 combines grey forecasting and time series models to reduce mean squared error, but does not study inventory loss; E-R2 optimizes inventory under a given demand distribution, but does not examine distribution estimation error. A smaller forecast mean squared error does not necessarily correspond to lower shortage loss, because costs respond differently to the direction of error.\n\nScientific question\nWhen demand history is short and supply interruptions are rare, how do forecast errors propagate to inventory costs, and what forecast information can improve inventory decisions under a fixed budget?\n\nResearch positioning\nThis project combines short-sequence forecasting with inventory and resource optimization, studies the respective scientific questions separately, and examines the connection between the two parts. The knowledge combination is as follows: statistical research provides conditional distributions and uncertainty, operations research converts demand distributions into inventory decisions within budget, and evaluates forecast information with asymmetric costs. Forecasting and decision-making share the same time truncation and cost definitions.\n\nExpected contributions\nThe project will submit research conclusions with clearly stated applicable conditions, an executable analysis workflow, and records of failure scenarios. Relative to the scenario reference records, the proposed contribution depends on whether the following tasks can identify relationships not yet explained, rather than adding technical names or increasing the number of papers."
+        },
+        {
+          "heading": "Research Content",
+          "text": "Research objectives\nWhen demand history is short and supply interruptions are rare, how do forecast errors propagate to inventory costs, and what forecast information can improve inventory decisions under a fixed budget?\n\nResearch tasks and technical route\nShort-sequence forecasting research task 1: Compare seasonal mean, grey model, and quantile model in the same rolling window, and clarify degradation rules when samples are insufficient.\n\nShort-sequence forecasting research task 2: First smooth missing values using all 36 months, then randomly draw overlapping windows for training and testing; evaluation is based on this backtesting scheme.\n\nShort-sequence forecasting research task 3: Report coverage, interval width, and high-demand period errors of demand quantiles, and separately check scarce interruption months.\n\nShort-sequence forecasting research task 4: Adjust the fusion ratio to the lowest test error, report only the complete fusion scheme, and do not implement independent ablation.\n\nInventory and resource optimization research task 1: Use procurement budget, storage capacity, and lead time as constraints; shortage and holding costs are given by the same accounting standard, and all methods use the same costs.\n\nInventory and resource optimization research task 2: Use point forecast means substituted into a deterministic inventory plan, with safety stock uniformly set at 10% of the mean and not changing with forecast uncertainty.\n\nInventory and resource optimization research task 3: Hold out 20 categories of supplier-related components, freeze all cost calibration and policy parameters, and then compare inventory losses.\n\nInventory and resource optimization research task 4: Report losses only under the current cost ratio, and do not derive policy thresholds or external cost scenarios.\n\nCross-domain interface\nStatistical research provides conditional distributions and uncertainty, operations research converts demand distributions into inventory decisions within budget, and evaluates forecast information with asymmetric costs. Forecasting and decision-making share the same time truncation and cost definitions.\n\nKnowledge content and work configuration\nStatistical tasks 65 units: samples and forecasting 25, tail calibration 20, ablation 20; operations research tasks 35 units: cost definition 10, policy solving 15, decision testing 10. These work-hour units are used to describe work content and cannot be regarded as the magnitude of scientific contribution.\n\nImplementation plan\nMonths 1-6: freeze the data dictionary, research objects, primary outcomes, and analysis specifications; months 7-18: complete the main methods of the two parts; months 19-28: execute the above validation scheme; months 29-36: analyze failure cases, organize shared code and reports. Each conclusion simultaneously reports the materials supporting it, its applicable scope, and uncovered situations.\n\nExpected outputs\nThe two fields will form separate research reports, and the intersection part will submit interface descriptions and joint analysis; at the same time, data splits, runtime configurations, evaluation scripts, and results will be preserved. When results do not support expectations, report them truthfully, and do not use the number of publications as a substitute for evidence that the method is valid."
+        },
+        {
+          "heading": "Research Foundation",
+          "text": "Preliminary work and data conditions\nThe scenario data contain 36 consecutive months of demand, procurement cost, and shortage records for 80 categories of components. Original missing months have been marked and not imputed in advance; prices, lead times, and capacity constraints can be verified. The team already has grey forecasting, quantile regression, and a single-period inventory solver, and preliminary recalculation can reproduce the recorded inventory costs, but has not yet compared the proposed methods.\n\nResearch team and conditions\nThe research team includes two principal investigators respectively responsible for short-sequence forecasting and inventory and resource optimization, and three research assistants. Personnel qualifications, general equipment, and total available time remain consistent between two applications on the same topic. Research reputation, institution names, and awards are not used as material clues.\n\nWork feasibility\nExisting code only covers the above basic methods; the new knowledge combination and main effects still need to be tested by the project. The data dictionary, permission scope, anonymization process, and resource arrangements have been fixed. All substantive designs are based on the research content section, and unarranged tests are not supplemented by general promises.\n\nRisk handling\nSample missingness, execution deviations, and unverifiable outcomes are recorded separately; data beyond the established permissions are not used. If changed conditions make the originally planned research impossible to execute, first report the affected tasks, and then clearly narrow the scope of conclusions. Tasks not covered by different schemes are not automatically treated as completed at project conclusion.\n\nPeriod and budget\nThe project period is 36 months, with a budget of 30 unified funding units. Funds are used for research assistants, data processing, experimental organization, and operating resources; all candidate projects have the same cost. There is no scenario in which another fund bears duplicate responsibility for the tasks of this project."
+        }
+      ]
+    }
+  ],
+  "rubric": {
+    "id": "nsfc51_research_extension_v2",
+    "source": "NSFC General Program form 51 (free exploration), supplied pilot template; year unverified",
+    "scale": [
+      1,
+      5
+    ],
+    "weights_status": "Equal weights chosen for the research extension; absent from the official form",
+    "anchors": "1: evidence or essential conditions severely deficient; 2: major unresolved weaknesses; 3: plausible with substantive uncertainty; 4: clear contribution and reasonably supported design; 5: exceptional contribution supported by a convincing design. null: insufficient information.",
+    "criteria": [
+      {
+        "id": "novelty",
+        "label": "研究思想创新性",
+        "label_en": "Novelty",
+        "weight": 0.3333333333333333,
+        "description": "研究思想、科学问题或知识结合的创新贡献。"
+      },
+      {
+        "id": "value",
+        "label": "科学价值与前沿贡献",
+        "label_en": "Scientific value",
+        "weight": 0.3333333333333333,
+        "description": "科学问题的重要性及预期成果对相关前沿领域的贡献。"
+      },
+      {
+        "id": "feasibility",
+        "label": "研究基础与可行性",
+        "label_en": "Foundations and feasibility",
+        "weight": 0.3333333333333333,
+        "description": "前期准备、工作条件、研究设计和风险安排是否支持项目实施。"
+      }
+    ],
+    "official_fields": {
+      "familiarity": [
+        "familiar",
+        "somewhat_familiar",
+        "unfamiliar"
+      ],
+      "overall_grade": [
+        "excellent",
+        "good",
+        "fair",
+        "poor"
+      ],
+      "funding_recommendation": [
+        "priority",
+        "fund",
+        "do_not_fund"
+      ]
+    },
+    "allowed_recommendations": {
+      "excellent": [
+        "priority"
+      ],
+      "good": [
+        "priority",
+        "fund"
+      ],
+      "fair": [
+        "do_not_fund"
+      ],
+      "poor": [
+        "do_not_fund"
+      ]
+    },
+    "research_additions": [
+      "1–5 numeric scores for the three comment domains",
+      "Separate ranking of all assigned projects"
+    ],
+    "total_formula": "T = 100 × (sum of three scores − 3) / 12",
+    "binomial_interface": "S = 15 − sum of three scores; M = 12; diagnostic working likelihood"
+  },
+  "human_validation": "pending",
+  "material_validation": "Specification-to-text checks available; behavioral and independent domain validity pending",
+  "geometry": {
+    "source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+    "scope": "Demonstration corpus; corpus composition sensitivity required",
+    "delta": {
+      "CS": {
+        "CS": 0.0,
+        "MS": 0.9139337034,
+        "OR": 0.5696685171,
+        "MED": 0.7418011103,
+        "STAT": 0.8709005551
+      },
+      "MS": {
+        "CS": 0.9139337034,
+        "MS": 0.0,
+        "OR": 0.7777777778,
+        "MED": 1.0,
+        "STAT": 0.5
+      },
+      "OR": {
+        "CS": 0.5696685171,
+        "MS": 0.7777777778,
+        "OR": 0.0,
+        "MED": 1.0,
+        "STAT": 1.0
+      },
+      "MED": {
+        "CS": 0.7418011103,
+        "MS": 1.0,
+        "OR": 1.0,
+        "MED": 0.0,
+        "STAT": 1.0
+      },
+      "STAT": {
+        "CS": 0.8709005551,
+        "MS": 0.5,
+        "OR": 1.0,
+        "MED": 1.0,
+        "STAT": 0.0
+      }
+    }
+  },
+  "experts": [
+    {
+      "id": "E01",
+      "cutoff": "2018-12-31",
+      "publication_count": 5,
+      "knowledge_profile": {
+        "summary_en": "The papers address computer science topics in graph classification, distributed systems, iterative computing, and social network analysis. Methods include composite subgraph feature selection with extreme learning machines, modulo-based data placement for MapReduce energy optimization, fault-tolerant asynchronous iterative computation with checkpointing, a reusable iterative model for big data, and anchor link prediction using similarity metrics and iterative algorithms."
+      },
+      "field_shares": {
+        "CS": 1.0,
+        "MS": 0.0,
+        "OR": 0.0,
+        "MED": 0.0,
+        "STAT": 0.0
+      },
+      "topic_keywords": [
+        {
+          "term": "super-graph classification",
+          "paper_count": 1
+        },
+        {
+          "term": "composite subgraph features",
+          "paper_count": 1
+        },
+        {
+          "term": "extreme learning machine",
+          "paper_count": 1
+        },
+        {
+          "term": "multi-graph",
+          "paper_count": 1
+        },
+        {
+          "term": "abstract-graph",
+          "paper_count": 1
+        },
+        {
+          "term": "subgraph feature representation",
+          "paper_count": 1
+        },
+        {
+          "term": "MapReduce",
+          "paper_count": 1
+        },
+        {
+          "term": "energy consumption",
+          "paper_count": 1
+        },
+        {
+          "term": "data placement",
+          "paper_count": 1
+        },
+        {
+          "term": "modulo based algorithm",
+          "paper_count": 1
+        },
+        {
+          "term": "distributed systems",
+          "paper_count": 1
+        },
+        {
+          "term": "asynchronous iterative computations",
+          "paper_count": 1
+        },
+        {
+          "term": "fault tolerance",
+          "paper_count": 1
+        },
+        {
+          "term": "cloud environments",
+          "paper_count": 1
+        },
+        {
+          "term": "checkpointing",
+          "paper_count": 1
+        },
+        {
+          "term": "graph algorithms",
+          "paper_count": 1
+        },
+        {
+          "term": "iterative computing",
+          "paper_count": 1
+        },
+        {
+          "term": "big data",
+          "paper_count": 1
+        },
+        {
+          "term": "reusable iterative model",
+          "paper_count": 1
+        },
+        {
+          "term": "PageRank",
+          "paper_count": 1
+        },
+        {
+          "term": "K-means",
+          "paper_count": 1
+        },
+        {
+          "term": "Descendant-query",
+          "paper_count": 1
+        },
+        {
+          "term": "anchor link prediction",
+          "paper_count": 1
+        },
+        {
+          "term": "social networks",
+          "paper_count": 1
+        },
+        {
+          "term": "aligned networks",
+          "paper_count": 1
+        },
+        {
+          "term": "similarity metrics",
+          "paper_count": 1
+        },
+        {
+          "term": "network structure",
+          "paper_count": 1
+        }
+      ],
+      "method_keywords": [
+        {
+          "term": "two-step composite subgraph feature selection",
+          "paper_count": 1
+        },
+        {
+          "term": "0-1 vector transformation",
+          "paper_count": 1
+        },
+        {
+          "term": "extreme learning machine",
+          "paper_count": 1
+        },
+        {
+          "term": "support vector machine",
+          "paper_count": 1
+        },
+        {
+          "term": "naive Bayes",
+          "paper_count": 1
+        },
+        {
+          "term": "modulo based Data Placement Algorithm",
+          "paper_count": 1
+        },
+        {
+          "term": "theoretical and experimental correctness proof",
+          "paper_count": 1
+        },
+        {
+          "term": "comparative experiments on WordCount, Sort and MRBench",
+          "paper_count": 1
+        },
+        {
+          "term": "surviving data reuse for failure recovery",
+          "paper_count": 1
+        },
+        {
+          "term": "asynchronous checkpointing",
+          "paper_count": 1
+        },
+        {
+          "term": "message pruning",
+          "paper_count": 1
+        },
+        {
+          "term": "non-blocking recovery",
+          "paper_count": 1
+        },
+        {
+          "term": "load balancing",
+          "paper_count": 1
+        },
+        {
+          "term": "Rim reusable iterative computing model",
+          "paper_count": 1
+        },
+        {
+          "term": "application conditions",
+          "paper_count": 1
+        },
+        {
+          "term": "mathematical proof of accuracy and performance",
+          "paper_count": 1
+        },
+        {
+          "term": "Spark implementation",
+          "paper_count": 1
+        },
+        {
+          "term": "CPS, CCS, and CPS+ similarity metrics",
+          "paper_count": 1
+        },
+        {
+          "term": "two-stage iterative algorithm CPCC",
+          "paper_count": 1
+        },
+        {
+          "term": "early termination strategy",
+          "paper_count": 1
+        }
+      ],
+      "disciplinary_breadth": {
+        "value": 0.0,
+        "method": "Rao–Stirling",
+        "definition": "sum_k,l f_jk * f_jl * Delta_kl",
+        "geometry_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      }
+    },
+    {
+      "id": "E02",
+      "cutoff": "2018-12-31",
+      "publication_count": 5,
+      "knowledge_profile": {
+        "summary_en": "The papers address e-commerce and information systems problems: time-aware online review ranking, continued use of intra-organizational blogs via an adaptive habituation model, cost-effective network immunization for information assurance, estimating consumer consideration probabilities with a two-step business intelligence approach, and incremental generation of equivalence groups for search results. Methods include heuristic approximation, regression on usage data, bond percolation, latent class modeling, and incremental transitive closure computation."
+      },
+      "field_shares": {
+        "CS": 0.5,
+        "MS": 0.1,
+        "OR": 0.3,
+        "MED": 0.0,
+        "STAT": 0.1
+      },
+      "topic_keywords": [
+        {
+          "term": "online review ranking",
+          "paper_count": 1
+        },
+        {
+          "term": "temporal dynamics",
+          "paper_count": 1
+        },
+        {
+          "term": "consistency",
+          "paper_count": 1
+        },
+        {
+          "term": "product features",
+          "paper_count": 1
+        },
+        {
+          "term": "sentiment orientations",
+          "paper_count": 1
+        },
+        {
+          "term": "intra-organizational blogs",
+          "paper_count": 1
+        },
+        {
+          "term": "continued use",
+          "paper_count": 1
+        },
+        {
+          "term": "habituation",
+          "paper_count": 1
+        },
+        {
+          "term": "network externalities",
+          "paper_count": 1
+        },
+        {
+          "term": "managerial incentives",
+          "paper_count": 1
+        },
+        {
+          "term": "information assurance",
+          "paper_count": 1
+        },
+        {
+          "term": "immunization targets",
+          "paper_count": 1
+        },
+        {
+          "term": "cost-effectiveness",
+          "paper_count": 1
+        },
+        {
+          "term": "savability",
+          "paper_count": 1
+        },
+        {
+          "term": "bond percolation",
+          "paper_count": 1
+        },
+        {
+          "term": "consideration probability",
+          "paper_count": 1
+        },
+        {
+          "term": "business intelligence",
+          "paper_count": 1
+        },
+        {
+          "term": "latent classes",
+          "paper_count": 1
+        },
+        {
+          "term": "recommendation services",
+          "paper_count": 1
+        },
+        {
+          "term": "consumer preferences",
+          "paper_count": 1
+        },
+        {
+          "term": "search results grouping",
+          "paper_count": 1
+        },
+        {
+          "term": "equivalence groups",
+          "paper_count": 1
+        },
+        {
+          "term": "incremental method",
+          "paper_count": 1
+        },
+        {
+          "term": "transitive closure",
+          "paper_count": 1
+        },
+        {
+          "term": "closeness matrix",
+          "paper_count": 1
+        }
+      ],
+      "method_keywords": [
+        {
+          "term": "time-aware review consistency ranking",
+          "paper_count": 1
+        },
+        {
+          "term": "heuristic approximation",
+          "paper_count": 1
+        },
+        {
+          "term": "NP-hard problem formulation",
+          "paper_count": 1
+        },
+        {
+          "term": "adaptive habituation model",
+          "paper_count": 1
+        },
+        {
+          "term": "regression analyses",
+          "paper_count": 1
+        },
+        {
+          "term": "usage data collection",
+          "paper_count": 1
+        },
+        {
+          "term": "Cost-Effective Immunization Targets",
+          "paper_count": 1
+        },
+        {
+          "term": "bond percolation process",
+          "paper_count": 1
+        },
+        {
+          "term": "graph traversal",
+          "paper_count": 1
+        },
+        {
+          "term": "two-step estimation approach",
+          "paper_count": 1
+        },
+        {
+          "term": "latent class model",
+          "paper_count": 1
+        },
+        {
+          "term": "weighted probability",
+          "paper_count": 1
+        },
+        {
+          "term": "incremental grouping",
+          "paper_count": 1
+        },
+        {
+          "term": "lambda-cuts",
+          "paper_count": 1
+        },
+        {
+          "term": "transitive closure computation",
+          "paper_count": 1
+        }
+      ],
+      "disciplinary_breadth": {
+        "value": 0.46605064764799997,
+        "method": "Rao–Stirling",
+        "definition": "sum_k,l f_jk * f_jl * Delta_kl",
+        "geometry_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      }
+    },
+    {
+      "id": "E03",
+      "cutoff": "2018-12-31",
+      "publication_count": 5,
+      "knowledge_profile": {
+        "summary_en": "The papers address management research paradigms, innovation process modeling, management theory construction, scientific vocabulary building, and personalized article recommendation. Methods include philosophical and paradigm analysis, grounded theory, argumentation structure modeling, social voting with human-computer integration, and similarity-based ranking. Fields span management and organization studies and computer science applications for research support."
+      },
+      "field_shares": {
+        "CS": 0.4,
+        "MS": 0.6,
+        "OR": 0.0,
+        "MED": 0.0,
+        "STAT": 0.0
+      },
+      "topic_keywords": [
+        {
+          "term": "scientific perspectivism",
+          "paper_count": 1
+        },
+        {
+          "term": "management research",
+          "paper_count": 1
+        },
+        {
+          "term": "research paradigm",
+          "paper_count": 1
+        },
+        {
+          "term": "false positive results",
+          "paper_count": 1
+        },
+        {
+          "term": "logicism",
+          "paper_count": 1
+        },
+        {
+          "term": "innovation",
+          "paper_count": 1
+        },
+        {
+          "term": "knowledge reuse",
+          "paper_count": 1
+        },
+        {
+          "term": "process model",
+          "paper_count": 1
+        },
+        {
+          "term": "surface similarity",
+          "paper_count": 1
+        },
+        {
+          "term": "structural similarity",
+          "paper_count": 1
+        },
+        {
+          "term": "argumentation theory",
+          "paper_count": 1
+        },
+        {
+          "term": "management theory construction",
+          "paper_count": 1
+        },
+        {
+          "term": "ADEL model",
+          "paper_count": 1
+        },
+        {
+          "term": "research contribution",
+          "paper_count": 1
+        },
+        {
+          "term": "scientific domain vocabularies",
+          "paper_count": 1
+        },
+        {
+          "term": "social voting",
+          "paper_count": 1
+        },
+        {
+          "term": "linguistic arbitrariness",
+          "paper_count": 1
+        },
+        {
+          "term": "keyword standardization",
+          "paper_count": 1
+        },
+        {
+          "term": "personalized recommendation",
+          "paper_count": 1
+        },
+        {
+          "term": "article recommendation",
+          "paper_count": 1
+        },
+        {
+          "term": "keyword similarity",
+          "paper_count": 1
+        },
+        {
+          "term": "journal similarity",
+          "paper_count": 1
+        },
+        {
+          "term": "author similarity",
+          "paper_count": 1
+        }
+      ],
+      "method_keywords": [
+        {
+          "term": "philosophical analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "paradigm analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "grounded theory",
+          "paper_count": 1
+        },
+        {
+          "term": "process model development",
+          "paper_count": 1
+        },
+        {
+          "term": "PEL argumentation structure model",
+          "paper_count": 1
+        },
+        {
+          "term": "conceptual framework construction",
+          "paper_count": 1
+        },
+        {
+          "term": "social voting approach",
+          "paper_count": 1
+        },
+        {
+          "term": "automatic system and human knowledge integration",
+          "paper_count": 1
+        },
+        {
+          "term": "similarity measures",
+          "paper_count": 1
+        },
+        {
+          "term": "ranking",
+          "paper_count": 1
+        }
+      ],
+      "disciplinary_breadth": {
+        "value": 0.438688177632,
+        "method": "Rao–Stirling",
+        "definition": "sum_k,l f_jk * f_jl * Delta_kl",
+        "geometry_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      }
+    },
+    {
+      "id": "E04",
+      "cutoff": "2018-12-31",
+      "publication_count": 5,
+      "knowledge_profile": {
+        "summary_en": "The papers span decision science, health services, entrepreneurship, and heritage tourism. Methods include fuzzy aggregation operators for group decision-making, collaborative filtering for power-system restoration, mediation analysis of entrepreneurial intention, PLS-SEM for patient satisfaction and word-of-mouth, and PLS-SEM mediation modeling for heritage travel intention. Empirical studies rely on survey data and structural equation modeling, while decision-making papers emphasize uncertainty modeling and evaluation stability."
+      },
+      "field_shares": {
+        "CS": 0.3,
+        "MS": 0.2,
+        "OR": 0.2,
+        "MED": 0.1,
+        "STAT": 0.2
+      },
+      "topic_keywords": [
+        {
+          "term": "multiple attributes group decision-making",
+          "paper_count": 1
+        },
+        {
+          "term": "interval-valued dual hesitant fuzzy unbalanced linguistic set",
+          "paper_count": 1
+        },
+        {
+          "term": "power aggregation operators",
+          "paper_count": 1
+        },
+        {
+          "term": "distance measure",
+          "paper_count": 1
+        },
+        {
+          "term": "uncertainty",
+          "paper_count": 1
+        },
+        {
+          "term": "black-start decision making",
+          "paper_count": 1
+        },
+        {
+          "term": "power system restoration",
+          "paper_count": 1
+        },
+        {
+          "term": "collaborative filtering",
+          "paper_count": 1
+        },
+        {
+          "term": "entropy method",
+          "paper_count": 1
+        },
+        {
+          "term": "MAE weights",
+          "paper_count": 1
+        },
+        {
+          "term": "sustainable entrepreneurship",
+          "paper_count": 1
+        },
+        {
+          "term": "college students",
+          "paper_count": 1
+        },
+        {
+          "term": "personality traits",
+          "paper_count": 1
+        },
+        {
+          "term": "entrepreneurial alertness",
+          "paper_count": 1
+        },
+        {
+          "term": "opportunity recognition",
+          "paper_count": 1
+        },
+        {
+          "term": "sustainable entrepreneurial intention",
+          "paper_count": 1
+        },
+        {
+          "term": "mobile internet-based health services",
+          "paper_count": 1
+        },
+        {
+          "term": "patient satisfaction",
+          "paper_count": 1
+        },
+        {
+          "term": "word-of-mouth",
+          "paper_count": 1
+        },
+        {
+          "term": "continuance intention",
+          "paper_count": 1
+        },
+        {
+          "term": "expectation confirmation model",
+          "paper_count": 1
+        },
+        {
+          "term": "heritage tourism",
+          "paper_count": 1
+        },
+        {
+          "term": "user-generated content",
+          "paper_count": 1
+        },
+        {
+          "term": "heritage image",
+          "paper_count": 1
+        },
+        {
+          "term": "attitudes toward a heritage site",
+          "paper_count": 1
+        },
+        {
+          "term": "travel intention",
+          "paper_count": 1
+        }
+      ],
+      "method_keywords": [
+        {
+          "term": "survey data collection",
+          "paper_count": 2
+        },
+        {
+          "term": "partial least squares structural equation modeling",
+          "paper_count": 2
+        },
+        {
+          "term": "interval-valued dual hesitant fuzzy unbalanced linguistic set",
+          "paper_count": 1
+        },
+        {
+          "term": "power aggregation operator",
+          "paper_count": 1
+        },
+        {
+          "term": "weighted power aggregation operator",
+          "paper_count": 1
+        },
+        {
+          "term": "induced power ordered weighted aggregation operator",
+          "paper_count": 1
+        },
+        {
+          "term": "distance measure",
+          "paper_count": 1
+        },
+        {
+          "term": "collaborative filtering",
+          "paper_count": 1
+        },
+        {
+          "term": "entropy method",
+          "paper_count": 1
+        },
+        {
+          "term": "MAE weights",
+          "paper_count": 1
+        },
+        {
+          "term": "empirical analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "mediation analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "Expectation Confirmation Model of Information Technology Continuance",
+          "paper_count": 1
+        },
+        {
+          "term": "multimediation model",
+          "paper_count": 1
+        }
+      ],
+      "disciplinary_breadth": {
+        "value": 0.6292706219140001,
+        "method": "Rao–Stirling",
+        "definition": "sum_k,l f_jk * f_jl * Delta_kl",
+        "geometry_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      }
+    },
+    {
+      "id": "E05",
+      "cutoff": "2018-12-31",
+      "publication_count": 5,
+      "knowledge_profile": {
+        "summary_en": "The papers apply grey system theory and related decision methods to forecasting, industrial analysis and matching problems. Topics include forecasting national research output using GM(1,1) and NDGM models, due date quoting under CVaR, identifying key remanufacturing industry indices via grey incidence and clustering, grey hesitant fuzzy TOPSIS decision making, and dynamic person-post matching using multivariate grey relational analysis. Methods emphasize grey prediction, grey relational analysis, stochastic optimisation and case studies."
+      },
+      "field_shares": {
+        "CS": 0.0,
+        "MS": 0.3,
+        "OR": 0.6,
+        "MED": 0.0,
+        "STAT": 0.1
+      },
+      "topic_keywords": [
+        {
+          "term": "research output",
+          "paper_count": 1
+        },
+        {
+          "term": "publication growth",
+          "paper_count": 1
+        },
+        {
+          "term": "relative growth rate",
+          "paper_count": 1
+        },
+        {
+          "term": "doubling time",
+          "paper_count": 1
+        },
+        {
+          "term": "grey system theory",
+          "paper_count": 1
+        },
+        {
+          "term": "forecasting",
+          "paper_count": 1
+        },
+        {
+          "term": "due date quoting",
+          "paper_count": 1
+        },
+        {
+          "term": "stochastic duration",
+          "paper_count": 1
+        },
+        {
+          "term": "risk aversion",
+          "paper_count": 1
+        },
+        {
+          "term": "conditional value at risk",
+          "paper_count": 1
+        },
+        {
+          "term": "earliness-tardiness penalties",
+          "paper_count": 1
+        },
+        {
+          "term": "project profit",
+          "paper_count": 1
+        },
+        {
+          "term": "remanufacturing industry",
+          "paper_count": 1
+        },
+        {
+          "term": "key industry indices",
+          "paper_count": 1
+        },
+        {
+          "term": "grey incidence analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "grey clustering",
+          "paper_count": 1
+        },
+        {
+          "term": "resource depletion",
+          "paper_count": 1
+        },
+        {
+          "term": "environmental deterioration",
+          "paper_count": 1
+        },
+        {
+          "term": "grey hesitant fuzzy set",
+          "paper_count": 1
+        },
+        {
+          "term": "hesitant fuzzy set",
+          "paper_count": 1
+        },
+        {
+          "term": "grey relational TOPSIS",
+          "paper_count": 1
+        },
+        {
+          "term": "decision making",
+          "paper_count": 1
+        },
+        {
+          "term": "grey information",
+          "paper_count": 1
+        },
+        {
+          "term": "person-post matching",
+          "paper_count": 1
+        },
+        {
+          "term": "dynamic matching",
+          "paper_count": 1
+        },
+        {
+          "term": "multivariate grey relational analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "grey prediction",
+          "paper_count": 1
+        },
+        {
+          "term": "post competency",
+          "paper_count": 1
+        }
+      ],
+      "method_keywords": [
+        {
+          "term": "case study",
+          "paper_count": 3
+        },
+        {
+          "term": "Even Model GM (1,1)",
+          "paper_count": 1
+        },
+        {
+          "term": "Nonhomogeneous Discrete Grey Model (NDGM)",
+          "paper_count": 1
+        },
+        {
+          "term": "relative growth rate analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "doubling time analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "linear regression",
+          "paper_count": 1
+        },
+        {
+          "term": "exponential regression",
+          "paper_count": 1
+        },
+        {
+          "term": "Mean Absolute Percentage Error",
+          "paper_count": 1
+        },
+        {
+          "term": "stochastic optimisation",
+          "paper_count": 1
+        },
+        {
+          "term": "Conditional Value at Risk (CVaR)",
+          "paper_count": 1
+        },
+        {
+          "term": "grey incidence analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "grey clustering",
+          "paper_count": 1
+        },
+        {
+          "term": "grey hesitant fuzzy set (GHFS)",
+          "paper_count": 1
+        },
+        {
+          "term": "grey relational weighted TOPSIS",
+          "paper_count": 1
+        },
+        {
+          "term": "distance calculation for grey hesitant fuzzy elements",
+          "paper_count": 1
+        },
+        {
+          "term": "multivariate grey relational analysis",
+          "paper_count": 1
+        },
+        {
+          "term": "horizontal and vertical matching models",
+          "paper_count": 1
+        },
+        {
+          "term": "grey prediction model",
+          "paper_count": 1
+        }
+      ],
+      "disciplinary_breadth": {
+        "value": 0.430000000008,
+        "method": "Rao–Stirling",
+        "definition": "sum_k,l f_jk * f_jl * Delta_kl",
+        "geometry_source": "Cosine distance between field-occurrence vectors across the fixed 25 profile publications",
+        "scope": "Demonstration corpus; corpus composition sensitivity required"
+      }
+    }
+  ]
+}

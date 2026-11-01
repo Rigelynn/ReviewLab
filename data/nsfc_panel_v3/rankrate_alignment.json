@@ -1,0 +1,4787 @@
+{
+  "analysis": "GenAI evaluations refitted with rankrate 1.2.1",
+  "new_ai_calls": 0,
+  "M": 12,
+  "N": 10,
+  "J": 5,
+  "fitting_signature": "ee9d081914a8854349421fc0696ee29678b79fccbcd712c746a9a79e0b141032",
+  "tie_policy": "Maximum observed log likelihood; ties within 1e-8 use frozen value-blind order",
+  "tie_order": [
+    "P01",
+    "P06",
+    "P10",
+    "P03",
+    "P04",
+    "P02",
+    "P09",
+    "P05",
+    "P07",
+    "P08"
+  ],
+  "fits": {
+    "direct": {
+      "FV": {
+        "status": "completed",
+        "method": "FV",
+        "version": "1.2.1",
+        "scenario": "direct",
+        "order": [
+          "P07",
+          "P01",
+          "P03",
+          "P05",
+          "P09",
+          "P04",
+          "P02",
+          "P08",
+          "P06",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P07",
+              "P01",
+              "P03",
+              "P05",
+              "P09",
+              "P04",
+              "P02",
+              "P08",
+              "P06",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.333333329201642,
+              "P02": 0.524999998113498,
+              "P03": 0.416666669195733,
+              "P04": 0.525000001886502,
+              "P05": 0.4166666641376,
+              "P06": 0.558333331426648,
+              "P07": 0.333333337465024,
+              "P08": 0.558333335240019,
+              "P09": 0.45,
+              "P10": 0.65
+            },
+            "theta": 1.27906376008818,
+            "log_likelihood": -113.877379556064
+          }
+        ],
+        "elapsed_seconds": 0.021,
+        "nodes": 3
+      },
+      "Greedy": {
+        "status": "completed",
+        "method": "Greedy",
+        "version": "1.2.1",
+        "scenario": "direct",
+        "order": [
+          "P01",
+          "P07",
+          "P03",
+          "P05",
+          "P09",
+          "P04",
+          "P02",
+          "P08",
+          "P06",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P01",
+              "P07",
+              "P03",
+              "P05",
+              "P09",
+              "P04",
+              "P02",
+              "P08",
+              "P06",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.25,
+              "P02": 0.524999996502657,
+              "P03": 0.416666670716056,
+              "P04": 0.525000003497344,
+              "P05": 0.416666660861471,
+              "P06": 0.558333329816612,
+              "P07": 0.416666668422473,
+              "P08": 0.558333336850054,
+              "P09": 0.449999999999999,
+              "P10": 0.65
+            },
+            "theta": 1.23176549368871,
+            "log_likelihood": -113.242497107012
+          }
+        ],
+        "elapsed_seconds": 0.14,
+        "nodes": 55
+      },
+      "GreedyLocal": {
+        "status": "completed",
+        "method": "GreedyLocal",
+        "version": "1.2.1",
+        "scenario": "direct",
+        "order": [
+          "P01",
+          "P07",
+          "P03",
+          "P05",
+          "P09",
+          "P04",
+          "P02",
+          "P08",
+          "P06",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P01",
+              "P07",
+              "P03",
+              "P05",
+              "P09",
+              "P04",
+              "P02",
+              "P08",
+              "P06",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.25,
+              "P02": 0.524999996502657,
+              "P03": 0.416666670716056,
+              "P04": 0.525000003497344,
+              "P05": 0.416666660861471,
+              "P06": 0.558333329816612,
+              "P07": 0.416666668422473,
+              "P08": 0.558333336850054,
+              "P09": 0.449999999999999,
+              "P10": 0.65
+            },
+            "theta": 1.23176549368871,
+            "log_likelihood": -113.242497107012
+          }
+        ],
+        "elapsed_seconds": 0.163,
+        "nodes": 65
+      },
+      "ASTAR": {
+        "status": "completed",
+        "method": "ASTAR",
+        "version": "1.2.1",
+        "scenario": "direct",
+        "order": [
+          "P01",
+          "P07",
+          "P03",
+          "P05",
+          "P09",
+          "P04",
+          "P02",
+          "P08",
+          "P06",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P01",
+              "P07",
+              "P03",
+              "P05",
+              "P09",
+              "P04",
+              "P02",
+              "P08",
+              "P06",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.25,
+              "P02": 0.524999996502657,
+              "P03": 0.416666670716056,
+              "P04": 0.525000003497344,
+              "P05": 0.416666660861471,
+              "P06": 0.558333329816612,
+              "P07": 0.416666668422473,
+              "P08": 0.558333336850054,
+              "P09": 0.449999999999999,
+              "P10": 0.65
+            },
+            "theta": 1.23176549368871,
+            "log_likelihood": -113.242497107012
+          }
+        ],
+        "elapsed_seconds": 0.136,
+        "nodes": 54
+      }
+    },
+    "score_derived": {
+      "FV": {
+        "status": "completed",
+        "method": "FV",
+        "version": "1.2.1",
+        "scenario": "score_derived",
+        "order": [
+          "P01",
+          "P05",
+          "P03",
+          "P07",
+          "P09",
+          "P06",
+          "P02",
+          "P04",
+          "P08",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P01",
+              "P05",
+              "P03",
+              "P07",
+              "P09",
+              "P06",
+              "P02",
+              "P04",
+              "P08",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.25,
+              "P02": 0.516666662830665,
+              "P03": 0.433333337119369,
+              "P04": 0.55,
+              "P05": 0.383333333333333,
+              "P06": 0.516666670502668,
+              "P07": 0.433333329547298,
+              "P08": 0.583333333333333,
+              "P09": 0.45,
+              "P10": 0.65
+            },
+            "theta": 0.717391448760335,
+            "log_likelihood": -129.653144214634
+          }
+        ],
+        "elapsed_seconds": 0.02,
+        "nodes": 3
+      },
+      "Greedy": {
+        "status": "completed",
+        "method": "Greedy",
+        "version": "1.2.1",
+        "scenario": "score_derived",
+        "order": [
+          "P01",
+          "P05",
+          "P03",
+          "P07",
+          "P09",
+          "P06",
+          "P04",
+          "P02",
+          "P08",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P01",
+              "P05",
+              "P03",
+              "P07",
+              "P09",
+              "P06",
+              "P04",
+              "P02",
+              "P08",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.25,
+              "P02": 0.527777772352552,
+              "P03": 0.433333337610904,
+              "P04": 0.527777781776721,
+              "P05": 0.383333333333333,
+              "P06": 0.52777777920406,
+              "P07": 0.433333329055763,
+              "P08": 0.583333333333333,
+              "P09": 0.45,
+              "P10": 0.65
+            },
+            "theta": 0.736273282854689,
+            "log_likelihood": -129.01563068622
+          }
+        ],
+        "elapsed_seconds": 0.152,
+        "nodes": 55
+      },
+      "GreedyLocal": {
+        "status": "completed",
+        "method": "GreedyLocal",
+        "version": "1.2.1",
+        "scenario": "score_derived",
+        "order": [
+          "P01",
+          "P05",
+          "P03",
+          "P07",
+          "P09",
+          "P06",
+          "P04",
+          "P02",
+          "P08",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P01",
+              "P05",
+              "P03",
+              "P07",
+              "P09",
+              "P06",
+              "P04",
+              "P02",
+              "P08",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.25,
+              "P02": 0.527777772352552,
+              "P03": 0.433333337610904,
+              "P04": 0.527777781776721,
+              "P05": 0.383333333333333,
+              "P06": 0.52777777920406,
+              "P07": 0.433333329055763,
+              "P08": 0.583333333333333,
+              "P09": 0.45,
+              "P10": 0.65
+            },
+            "theta": 0.736273282854689,
+            "log_likelihood": -129.01563068622
+          }
+        ],
+        "elapsed_seconds": 0.165,
+        "nodes": 65
+      },
+      "ASTAR": {
+        "status": "completed",
+        "method": "ASTAR",
+        "version": "1.2.1",
+        "scenario": "score_derived",
+        "order": [
+          "P01",
+          "P05",
+          "P03",
+          "P07",
+          "P09",
+          "P06",
+          "P04",
+          "P02",
+          "P08",
+          "P10"
+        ],
+        "selected_solution": 1,
+        "solutions": [
+          {
+            "solution": 1,
+            "order": [
+              "P01",
+              "P05",
+              "P03",
+              "P07",
+              "P09",
+              "P06",
+              "P04",
+              "P02",
+              "P08",
+              "P10"
+            ],
+            "p": {
+              "P01": 0.25,
+              "P02": 0.527777772352552,
+              "P03": 0.433333337610904,
+              "P04": 0.527777781776721,
+              "P05": 0.383333333333333,
+              "P06": 0.52777777920406,
+              "P07": 0.433333329055763,
+              "P08": 0.583333333333333,
+              "P09": 0.45,
+              "P10": 0.65
+            },
+            "theta": 0.736273282854689,
+            "log_likelihood": -129.01563068622
+          }
+        ],
+        "elapsed_seconds": 0.184,
+        "nodes": 75
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "budget": 1,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07"
+      ],
+      "value": 0.875,
+      "loss": 0.025,
+      "loss_per_project": 0.025000000000000022,
+      "hit_rate": 0.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07"
+      ],
+      "value": 0.875,
+      "loss": 0.025,
+      "loss_per_project": 0.025000000000000022,
+      "hit_rate": 0.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 1,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01"
+      ],
+      "value": 0.9,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 0.9
+    },
+    {
+      "budget": 2,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01"
+      ],
+      "value": 1.775,
+      "loss": 0.0125,
+      "loss_per_project": 0.006250000000000089,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03"
+      ],
+      "value": 1.7875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09"
+      ],
+      "value": 1.675,
+      "loss": 0.1125,
+      "loss_per_project": 0.05625000000000002,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09"
+      ],
+      "value": 1.675,
+      "loss": 0.1125,
+      "loss_per_project": 0.05625000000000002,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01"
+      ],
+      "value": 1.775,
+      "loss": 0.0125,
+      "loss_per_project": 0.006250000000000089,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07"
+      ],
+      "value": 1.775,
+      "loss": 0.0125,
+      "loss_per_project": 0.006250000000000089,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07"
+      ],
+      "value": 1.775,
+      "loss": 0.0125,
+      "loss_per_project": 0.006250000000000089,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07"
+      ],
+      "value": 1.775,
+      "loss": 0.0125,
+      "loss_per_project": 0.006250000000000089,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 2,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05"
+      ],
+      "value": 1.65,
+      "loss": 0.1375,
+      "loss_per_project": 0.06875000000000009,
+      "hit_rate": 0.5,
+      "oracle_value": 1.7875
+    },
+    {
+      "budget": 3,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07"
+      ],
+      "value": 2.525,
+      "loss": 0.1375,
+      "loss_per_project": 0.04583333333333339,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07"
+      ],
+      "value": 2.525,
+      "loss": 0.1375,
+      "loss_per_project": 0.04583333333333339,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "value": 2.5375,
+      "loss": 0.125,
+      "loss_per_project": 0.041666666666666664,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03"
+      ],
+      "value": 2.6625,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03",
+        "P05"
+      ],
+      "value": 2.5375,
+      "loss": 0.125,
+      "loss_per_project": 0.041666666666666664,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05"
+      ],
+      "value": 2.425,
+      "loss": 0.2375,
+      "loss_per_project": 0.07916666666666676,
+      "hit_rate": 0.3333333333333333,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05"
+      ],
+      "value": 2.425,
+      "loss": 0.2375,
+      "loss_per_project": 0.07916666666666676,
+      "hit_rate": 0.3333333333333333,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07"
+      ],
+      "value": 2.525,
+      "loss": 0.1375,
+      "loss_per_project": 0.04583333333333339,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P06"
+      ],
+      "value": 2.15,
+      "loss": 0.5125,
+      "loss_per_project": 0.1708333333333334,
+      "hit_rate": 0.3333333333333333,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03"
+      ],
+      "value": 2.6625,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03"
+      ],
+      "value": 2.6625,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03"
+      ],
+      "value": 2.6625,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03"
+      ],
+      "value": 2.6625,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "value": 2.5375,
+      "loss": 0.125,
+      "loss_per_project": 0.041666666666666664,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "value": 2.5375,
+      "loss": 0.125,
+      "loss_per_project": 0.041666666666666664,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "value": 2.5375,
+      "loss": 0.125,
+      "loss_per_project": 0.041666666666666664,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 3,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03"
+      ],
+      "value": 2.5375,
+      "loss": 0.125,
+      "loss_per_project": 0.041666666666666664,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 2.6625
+    },
+    {
+      "budget": 4,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03",
+        "P05",
+        "P07"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P06"
+      ],
+      "value": 2.925,
+      "loss": 0.5125,
+      "loss_per_project": 0.12812500000000004,
+      "hit_rate": 0.5,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P07"
+      ],
+      "value": 3.3,
+      "loss": 0.1375,
+      "loss_per_project": 0.034375000000000044,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P06",
+        "P10"
+      ],
+      "value": 2.65,
+      "loss": 0.7875,
+      "loss_per_project": 0.19687500000000002,
+      "hit_rate": 0.25,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 4,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07"
+      ],
+      "value": 3.4125,
+      "loss": 0.025,
+      "loss_per_project": 0.006249999999999978,
+      "hit_rate": 0.75,
+      "oracle_value": 3.4375
+    },
+    {
+      "budget": 5,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06"
+      ],
+      "value": 3.9125,
+      "loss": 0.275,
+      "loss_per_project": 0.05499999999999998,
+      "hit_rate": 0.8,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03"
+      ],
+      "value": 3.8125,
+      "loss": 0.375,
+      "loss_per_project": 0.075,
+      "hit_rate": 0.8,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03"
+      ],
+      "value": 3.5375,
+      "loss": 0.65,
+      "loss_per_project": 0.12999999999999998,
+      "hit_rate": 0.6,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 5,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09"
+      ],
+      "value": 4.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.1875
+    },
+    {
+      "budget": 6,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02"
+      ],
+      "value": 4.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.016666666666666607,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04"
+      ],
+      "value": 4.4125,
+      "loss": 0.275,
+      "loss_per_project": 0.04583333333333339,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02"
+      ],
+      "value": 4.2125,
+      "loss": 0.475,
+      "loss_per_project": 0.07916666666666661,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02"
+      ],
+      "value": 4.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.016666666666666607,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04"
+      ],
+      "value": 4.0375,
+      "loss": 0.65,
+      "loss_per_project": 0.10833333333333339,
+      "hit_rate": 0.6666666666666666,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8333333333333334,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 6,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06"
+      ],
+      "value": 4.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 4.6875
+    },
+    {
+      "budget": 7,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06"
+      ],
+      "value": 5.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02"
+      ],
+      "value": 4.8125,
+      "loss": 0.375,
+      "loss_per_project": 0.05357142857142857,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08"
+      ],
+      "value": 4.9625,
+      "loss": 0.225,
+      "loss_per_project": 0.03214285714285709,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04"
+      ],
+      "value": 5.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02"
+      ],
+      "value": 4.4375,
+      "loss": 0.75,
+      "loss_per_project": 0.10714285714285714,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.7142857142857143,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02"
+      ],
+      "value": 5.0875,
+      "loss": 0.1,
+      "loss_per_project": 0.014285714285714235,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04"
+      ],
+      "value": 5.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04"
+      ],
+      "value": 5.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 7,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04"
+      ],
+      "value": 5.1875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 0.8571428571428571,
+      "oracle_value": 5.1875
+    },
+    {
+      "budget": 8,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10"
+      ],
+      "value": 5.6875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.4625,
+      "loss": 0.225,
+      "loss_per_project": 0.028124999999999956,
+      "hit_rate": 0.75,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08"
+      ],
+      "value": 5.4625,
+      "loss": 0.225,
+      "loss_per_project": 0.028124999999999956,
+      "hit_rate": 0.75,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06"
+      ],
+      "value": 5.4625,
+      "loss": 0.225,
+      "loss_per_project": 0.028124999999999956,
+      "hit_rate": 0.75,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09"
+      ],
+      "value": 5.2125,
+      "loss": 0.475,
+      "loss_per_project": 0.059374999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.4625,
+      "loss": 0.225,
+      "loss_per_project": 0.028124999999999956,
+      "hit_rate": 0.75,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.4625,
+      "loss": 0.225,
+      "loss_per_project": 0.028124999999999956,
+      "hit_rate": 0.75,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.4625,
+      "loss": 0.225,
+      "loss_per_project": 0.028124999999999956,
+      "hit_rate": 0.75,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.4625,
+      "loss": 0.225,
+      "loss_per_project": 0.028124999999999956,
+      "hit_rate": 0.75,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 8,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02"
+      ],
+      "value": 5.5875,
+      "loss": 0.1,
+      "loss_per_project": 0.012499999999999956,
+      "hit_rate": 0.875,
+      "oracle_value": 5.6875
+    },
+    {
+      "budget": 9,
+      "rule": "Mean score",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P02",
+        "P06",
+        "P04",
+        "P08"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Voting (midpoint threshold)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P04",
+        "P06",
+        "P10",
+        "P02"
+      ],
+      "value": 6.0875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Ranking (from scores)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Borda ranking",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Expertise-based delegation",
+      "order": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P03",
+        "P05",
+        "P07",
+        "P06",
+        "P04",
+        "P02",
+        "P09",
+        "P08"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Individual (E02)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P06",
+        "P03",
+        "P02",
+        "P07",
+        "P08",
+        "P10"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Single reviewer E01 (supplementary)",
+      "order": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10",
+        "P04"
+      ],
+      "selected": [
+        "P01",
+        "P09",
+        "P05",
+        "P07",
+        "P03",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Categorical vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P07",
+        "P03",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P10"
+      ],
+      "value": 6.0875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Score-threshold vote (supplementary)",
+      "order": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07",
+        "P08"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P06",
+        "P10",
+        "P03",
+        "P04",
+        "P02",
+        "P09",
+        "P07"
+      ],
+      "value": 6.0875,
+      "loss": 0.0,
+      "loss_per_project": 0.0,
+      "hit_rate": 1.0,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · FV",
+      "order": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P07",
+        "P01",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · Greedy",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · GreedyLocal",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · ASTAR",
+      "order": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P07",
+        "P03",
+        "P05",
+        "P09",
+        "P04",
+        "P02",
+        "P08",
+        "P06"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · FV (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P02",
+        "P04",
+        "P08"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · Greedy (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · GreedyLocal (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    },
+    {
+      "budget": 9,
+      "rule": "Joint MB · ASTAR (score-derived ranking)",
+      "order": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08",
+        "P10"
+      ],
+      "selected": [
+        "P01",
+        "P05",
+        "P03",
+        "P07",
+        "P09",
+        "P06",
+        "P04",
+        "P02",
+        "P08"
+      ],
+      "value": 5.9625,
+      "loss": 0.125,
+      "loss_per_project": 0.013888888888888888,
+      "hit_rate": 0.8888888888888888,
+      "oracle_value": 6.0875
+    }
+  ],
+  "files_sha256": {
+    "analyze_results.py": "2ce1abc157391140924606700c05a8d97412bf55939c2407c5abc60382bca83d",
+    "fit_rankrate.R": "d96837e8489c7d27a38914ab818fda97a8c185478bcb36c5fd09ed960c6b6c4b",
+    "inputs/manifest.json": "eb1fa2c58bf9be0e609894bacb240566cc6722c604604c9066f0cb4dad6fe71c",
+    "inputs/matching_and_recommendations.json": "adf628a7489b69100606a1d13c37467e34e043c6bea23d72a8b7e288d12fb44f",
+    "inputs/rankings_direct.csv": "c9fadab7a9c4b838966285a31f5a27858bfb326bbc949ae16d6e3beec33e1af0",
+    "inputs/rankings_score_derived.csv": "0e911fc1effba9102bef0ad62c74ebbbdf3fba33aed4e1239a1111dc9584b675",
+    "inputs/scores_reverse.csv": "1bfe4cef439264754a1c70859a1122b54f3a12c829bc6fa48693065bca103906",
+    "outputs/direct/ASTAR/fit.rds": "18e54bd2fb9f2cab93d5ae92afcaae491891b8f1678a8bd2b13247d9458cd491",
+    "outputs/direct/ASTAR/orders.csv": "5e97725d8fdd9cdec8d3ca147b3a01b72e64f2a7e99f932a52b6771e058d8b7d",
+    "outputs/direct/ASTAR/parameters.csv": "b59cbae733c922d69240f212a50cbf8ad34e90081370ce6d5d714540b559be8c",
+    "outputs/direct/ASTAR/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/direct/ASTAR/status.csv": "844ae7671bc4c9e2dbcce6dacb69ba6cf140332a85a18883d306ac2879f552af",
+    "outputs/direct/ASTAR/summary.csv": "702b5285a4e84b306677eec6367815741f6fd9463a11490cb16ecff744061e2c",
+    "outputs/direct/FV/fit.rds": "22f80203272c96d616c0aa0563e249743924c93f737a0ef4c884dd3f6db57c3b",
+    "outputs/direct/FV/orders.csv": "bf2daab937ab86258011372635cc15aecbcc44a7af1cb45e80099731fc989732",
+    "outputs/direct/FV/parameters.csv": "4b74904e981cd1c97146f6d0fb542cb46736a680c4a9c4c777e67ebdc4af6e0e",
+    "outputs/direct/FV/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/direct/FV/status.csv": "990228fb261a2ead41b6c2c8fdedb6dc27d32319beadb2ecd5715325ff109247",
+    "outputs/direct/FV/summary.csv": "60514ee184c0a63cc0856582e05015c11f72638eed47fdfba5f0094e0ad2a859",
+    "outputs/direct/Greedy/fit.rds": "a3c61b230b349438bc9b7feefe2bbd3b0caccc30dc0f752d90d11ecfbc2254ff",
+    "outputs/direct/Greedy/orders.csv": "5e97725d8fdd9cdec8d3ca147b3a01b72e64f2a7e99f932a52b6771e058d8b7d",
+    "outputs/direct/Greedy/parameters.csv": "b59cbae733c922d69240f212a50cbf8ad34e90081370ce6d5d714540b559be8c",
+    "outputs/direct/Greedy/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/direct/Greedy/status.csv": "be706fafb84d08f711d10d2c084aecb6e8b60aaea2a5b4ca65d4c380271ac24a",
+    "outputs/direct/Greedy/summary.csv": "c210d231cf73badc5461a3a404c6e3811fbf4a89e9c30a4f7032b8d7a604f70c",
+    "outputs/direct/GreedyLocal/fit.rds": "0c1b2d52a8b3dc32d056c4e9483d6de5f76e202a67648b42b0b1453b548da148",
+    "outputs/direct/GreedyLocal/orders.csv": "5e97725d8fdd9cdec8d3ca147b3a01b72e64f2a7e99f932a52b6771e058d8b7d",
+    "outputs/direct/GreedyLocal/parameters.csv": "b59cbae733c922d69240f212a50cbf8ad34e90081370ce6d5d714540b559be8c",
+    "outputs/direct/GreedyLocal/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/direct/GreedyLocal/status.csv": "9994e25c44e762a1c562a3077335cc51e9ee5300c8335bc8e28bc0a91a277612",
+    "outputs/direct/GreedyLocal/summary.csv": "3932fe2495bf50975b3441e4cd706c7380550fccc2e3d9d854c673865896d4b7",
+    "outputs/score_derived/ASTAR/fit.rds": "b6244877161c7c80c2cb8d3b6cbd357f0a3185bbc57319f9a665a53e7d84d1a1",
+    "outputs/score_derived/ASTAR/orders.csv": "ad698d55ca3166744f5fe655e655b115b9f43a8908bdd4d06c8cd3d6730fc32a",
+    "outputs/score_derived/ASTAR/parameters.csv": "27992e854b00915f4e9a8d43b7b045d2379ea983b267a94dd5db73c487106b9f",
+    "outputs/score_derived/ASTAR/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/score_derived/ASTAR/status.csv": "73324151eb9d761ab3b1b866dd54bcb9d6d0c5270d0d85a59f8de9a7d6dae93a",
+    "outputs/score_derived/ASTAR/summary.csv": "e8aa81b47fa1aa6491acdb63e784a9a41d28a5fbd8b421c349ffa89bd8ad28ff",
+    "outputs/score_derived/FV/fit.rds": "bd84751a29fcea6caba40b7154d6128b19b69dbed429a9b2ccc03f158df62ca7",
+    "outputs/score_derived/FV/orders.csv": "9ff0f286515c31b8f95123db133b81fe10775b6b45e0f9e6ee5d097ffb36024c",
+    "outputs/score_derived/FV/parameters.csv": "61ed13806ae08fd88a0ee2728b49f7999547989ad06e27bf74951710d5038537",
+    "outputs/score_derived/FV/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/score_derived/FV/status.csv": "e36ae95eb0695a154c5e01e9cbae5ff05bef7c20c3fcee5892e4fea5f53be8f0",
+    "outputs/score_derived/FV/summary.csv": "83fea0acf68a6b87491d3e0603bcbc6fc88f5192ad4413d25c3f930d525c5187",
+    "outputs/score_derived/Greedy/fit.rds": "8d881def46adc69bb55ba6dd924bb6a376b03b5ce5ef558033226058300de554",
+    "outputs/score_derived/Greedy/orders.csv": "ad698d55ca3166744f5fe655e655b115b9f43a8908bdd4d06c8cd3d6730fc32a",
+    "outputs/score_derived/Greedy/parameters.csv": "27992e854b00915f4e9a8d43b7b045d2379ea983b267a94dd5db73c487106b9f",
+    "outputs/score_derived/Greedy/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/score_derived/Greedy/status.csv": "442ff7677ead4968776cf37abba4dc35fec557944bcd888d045d689181509864",
+    "outputs/score_derived/Greedy/summary.csv": "1f498769a2c4456af15dacae3afd191b47c45a5ce11c537208cd7fad2468d173",
+    "outputs/score_derived/GreedyLocal/fit.rds": "d616924d785faf1cfb6d42e45b23d7ea40dcb37b9eb26a1061bddb9996b9f68f",
+    "outputs/score_derived/GreedyLocal/orders.csv": "ad698d55ca3166744f5fe655e655b115b9f43a8908bdd4d06c8cd3d6730fc32a",
+    "outputs/score_derived/GreedyLocal/parameters.csv": "27992e854b00915f4e9a8d43b7b045d2379ea983b267a94dd5db73c487106b9f",
+    "outputs/score_derived/GreedyLocal/sessionInfo.txt": "f2114d295696d4714f12b5d862256c0ec195ffd5671c1e4b5e80d4114b1d103d",
+    "outputs/score_derived/GreedyLocal/status.csv": "30ca9aa44d02908da448ecf55b0ad94bd62d3c65b4efb24f43f0788ee27b7dc5",
+    "outputs/score_derived/GreedyLocal/summary.csv": "56216c4a132ee097e10d82578273353898b7e4f1f0475821ba7071915a12b503",
+    "reference_values.json": "a778f8cd73424fb9a837472f3126118a2fd8856928cf6fa736b6b77676d44221"
+  }
+}

@@ -1,0 +1,1989 @@
+{
+  "source": "actual_genai",
+  "version": "nsfc_profile_review_v3",
+  "human_validation": "pending",
+  "material_validation": "pending",
+  "job": {},
+  "records": [
+    {
+      "id": "E01_P03_rubric_4da4a8dfdc22",
+      "expert_id": "E01",
+      "project_id": "P03",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal does not demonstrate that the proposed knowledge combination is distinguishable from existing distributionally robust optimization work. The statistical guarantees under heavy tails and small samples are uncertain, and the stated contribution depends on unverified relationships rather than clearly established novelty.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of robust optimization with statistical inference for post-selection risk calibration is a meaningful knowledge combination, but the supplied prior work does not establish how far this differs from existing distributionally robust optimization literature.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question is clearly stated and practically relevant. However, the expected contribution depends on identifying relationships not yet explained, and the proposal does not demonstrate that the planned analyses will yield results beyond incremental extensions.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器。",
+            "reason": "Preliminary data, code, and team structure are concrete. Yet the proposal acknowledges that the core knowledge combination and main effects remain untested, and the small sample with heavy tails raises substantive uncertainty about the statistical guarantees.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "4da4a8dfdc22833c962cd74b02492c367c9e7621340608ab8c8ff0a26da15857",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:17:56.981835+00:00"
+    },
+    {
+      "id": "E01_P04_rubric_49e606a98b94",
+      "expert_id": "E01",
+      "project_id": "P04",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal identifies a meaningful gap but excludes the core post-selection dependence problem from the planned analysis. Several tasks are under-specified or circular (e.g., choosing the radius by final outcome). The claimed contribution depends on unspecified future findings rather than a concrete, testable design.",
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "现有方法把参数估计与决策分开处理，缺少选择后仍成立的风险校准。",
+            "reason": "The stated knowledge combination of robust optimization and statistical inference is generic; the application explicitly defers key novelty to 'identifying unexplained relations' without specifying them, and several tasks merely restate standard procedures.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "统计推断研究任务4：直接沿用单项目区间作为组合风险依据，不额外处理优化选择导致的依赖。",
+            "reason": "The central scientific question—post-selection risk calibration—is acknowledged but explicitly excluded from analysis in Task 4, undermining the claimed contribution to decision-dependent inference reliability.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。",
+            "reason": "The data, code base, and fixed workflow support execution, but the design contains unresolved tensions: small samples for distribution estimation, no covariance modeling, and deferred handling of selection effects create substantive uncertainty.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "49e606a98b944af1e84a12c033645fc339a3aa70bc2902ba55880765ae554163",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:17:58.335165+00:00"
+    },
+    {
+      "id": "E01_P02_rubric_2cb0ab8f5453",
+      "expert_id": "E01",
+      "project_id": "P02",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The application defers key controls (degree-preserving permutation, activity stratification), omits mechanism predictions for institutional boundary effects, restricts conclusions to six existing institutions, and uses overall accuracy without robustness checks. These gaps leave the central claim about complementarity and collaboration formation insufficiently supported.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The question of distinguishing method redundancy from complementarity in collaboration formation is a meaningful extension beyond topic-similarity recommendation. However, the application explicitly limits novelty by deferring key controls and mechanism tests, leaving the claimed contribution uncertain.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。",
+            "reason": "The integration of graph representation learning with organizational behavior could inform research-partner recommendation and collaboration studies. Yet the design restricts generalizability to existing institutions, omits mechanism predictions for boundary effects, and leaves high-activity author influence unexamined, weakening the expected contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。",
+            "reason": "The stated data, permissions, and preliminary resources are plausible and the timeline is detailed. However, several planned analyses are explicitly deferred or under-specified, including permutation controls, activity stratification, and boundary mechanism predictions, so the design only partially supports the proposed conclusions.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "2cb0ab8f5453972fd689b4f252967efe9263b864dea6af34048f276e543dc4c7",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:17:58.921355+00:00"
+    },
+    {
+      "id": "E01_P01_rubric_d60ffbeab1e6",
+      "expert_id": "E01",
+      "project_id": "P01",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 4,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The application poses a genuinely novel question: distinguishing method redundancy from complementarity and linking it to organizational conditions for collaboration. Prior work only addressed topic similarity or anchor links, not this combined mechanism.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 4,
+            "evidence": "图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。",
+            "reason": "The integration of graph representation learning with organizational behavior research addresses an important gap. The design explicitly avoids conflating algorithmic ranking with mechanism evidence, strengthening the scientific contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。方法术语表有240个概念；独立的80组研究者访谈可用于建立合作事件定义。",
+            "reason": "The stated data infrastructure, validation accuracy, and pre-registered analysis plan support execution. Risks are explicitly addressed with fallback recording and scope limitation, though the single-region sample limits generalizability.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "priority",
+        "limitations": "The study is confined to six institutions in one region, limiting external validity. The 160-pair randomized experiment is modest in scale. The two-channel graph representation approach assumes method complementarity can be reliably inferred from task input-output relations, which remains to be validated."
+      },
+      "input_sha256": "d60ffbeab1e6c370c7ee3d4d551004421b3624e1909b90a0609dfc14fc8ffd53",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:17:57.541923+00:00"
+    },
+    {
+      "id": "E01_P05_rubric_d18745162c2e",
+      "expert_id": "E01",
+      "project_id": "P05",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The main scientific claim depends on a contrast not established as novel in the supplied prior-work record. The study is limited to immediate idea formation, one interface, and controlled materials; generalizability to real recommendation settings and longer-term research behavior remains uncertain.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The question of method-complementary versus topic-similar recommendations for idea formation is a plausible extension, but the supplied prior-work record does not establish that this specific contrast is unexplored or that the proposed knowledge combination is new.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。",
+            "reason": "The project addresses a meaningful interface between recommendation systems and innovation behavior, with explicit outcome measures. However, the expected contribution is stated conditionally and the application does not demonstrate a clear advance over existing evidence.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The design includes pre-registration, randomized assignment, material validation, coding reliability checks, and explicit scope limits. Stated resources and preliminary materials appear adequate for the planned tasks.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "d18745162c2ed4101f010e011bc363df25d851367ba43c34f3e41b9a763ec714",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:21.093192+00:00"
+    },
+    {
+      "id": "E01_P07_rubric_ac2feac409bd",
+      "expert_id": "E01",
+      "project_id": "P07",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The prior-work record does not establish a relevant clinical text or follow-up allocation baseline, so novelty is asserted rather than evidenced. The contribution is conditional on discovering unexplained relationships. No pilot results for the proposed text-enhanced model are supplied, and the fixed-capacity clinical trial design is only outlined.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？",
+            "reason": "The question of combining clinical text signals with fixed-capacity follow-up allocation is a plausible but incremental knowledge combination. The supplied prior-work record concerns graph classification, MapReduce, iterative computing, and social network analysis, none of which directly addresses clinical text modeling or follow-up service allocation, so novelty is asserted rather than demonstrated against a relevant baseline.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The proposed interface between text-based risk identification and clinical service outcomes addresses a meaningful practical problem. However, the expected contribution is conditional and the application explicitly frames results as contingent on whether the tasks identify unexplained relationships, leaving the scientific value uncertain.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "The application provides concrete data access, a defined sample, independent outcome verification, frozen data dictionaries, pre-specified analysis plans, and explicit risk-handling procedures. The staged timeline and separation of modeling and clinical validation tasks are reasonably designed, though the novelty of the underlying methods remains unproven.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "ac2feac409bd9532f6cb3220d4fc4b01ac60e550fe1ffc220f7925ab614d1410",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:23.275068+00:00"
+    },
+    {
+      "id": "E01_P06_rubric_39913d045516",
+      "expert_id": "E01",
+      "project_id": "P06",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The application does not clearly articulate a novel theoretical contribution. Several design decisions, including unbalanced materials and participant-selected modes, undermine causal inference. The expected outputs are modest and explicitly limited to immediate idea formation, with no follow-up or validation of practical relevance.",
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "本项目将推荐系统与创新行为结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The proposed integration of recommender systems and innovation behavior is only loosely specified. The application does not identify a novel mechanism or theoretical advance beyond combining existing fields, and the prior-work record does not establish that this combination is new.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。",
+            "reason": "The scientific question is potentially interesting, but the expected contribution is vague. The application explicitly limits conclusions to immediate idea formation and does not show how results would advance either recommender systems or innovation research.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The plan includes staged milestones, pre-registration-like freezing, and explicit risk reporting. However, several design choices, such as unbalanced materials and self-selected recommendation modes, weaken causal claims and leave feasibility only moderately supported.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "39913d04551641451744e4f2efeda34c74b107e6f62333c8b285de3bc263bb65",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:20.995520+00:00"
+    },
+    {
+      "id": "E01_P08_rubric_0d28a0cef509",
+      "expert_id": "E01",
+      "project_id": "P08",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design relies on retrospective comparison and self-reported outcomes without randomization or prospective validation. No active safety monitoring for algorithm misses is planned. The proposed text-clinical connection is asserted but not supported by a new mechanism or rigorous causal design.",
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "现有研究缺少在固定随访容量下，文本增量信息与临床后果之间的连接。",
+            "reason": "The stated gap is plausible, but the proposed design largely combines existing text modeling and observational follow-up methods without a new conceptual mechanism or methodological advance. Novelty rests on an asserted connection rather than a demonstrated new idea.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The question is practically important for resource-constrained follow-up. However, the observational design and self-reported outcome limit the strength of the expected contribution, leaving substantive uncertainty about whether the claimed service improvement can be established.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "Data access and preliminary infrastructure are stated. Yet the design contains weaknesses: no randomization, self-reported labels, no safety monitoring for algorithm misses, and no prospective validation, which undermine the ability to support the central claims.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "0d28a0cef50958140b8667b351190f5a35a4c3883b1c9c644c1e395f25d0ff23",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:22.122106+00:00"
+    },
+    {
+      "id": "E01_P09_rubric_08374ee58bb1",
+      "expert_id": "E01",
+      "project_id": "P09",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of short-sequence prediction with inventory optimization is a plausible but incremental combination. The supplied prior work already covers prediction and inventory separately, so the novelty rests on the untested interface, which remains uncertain.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The asymmetric cost question is scientifically meaningful and practically relevant. However, the application restricts conclusions to existing supply structures and current cost ratios, limiting the breadth of expected contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "数据字典、权限范围、匿名流程及资源安排已经固定。各项实质设计以研究内容部分为准，不以笼统承诺补足未安排的检验。",
+            "reason": "The design includes frozen data dictionaries, rolling validation, ablation prespecification, and explicit failure-case reporting. The team has relevant solvers and preliminary replication, supporting execution within the stated constraints.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The proposed contribution depends on identifying relationships not covered by the supplied prior records, but the application does not specify how the interface findings will be validated beyond descriptive comparison. The restricted scope of cost ratios and supply structures may limit generalizability."
+      },
+      "input_sha256": "08374ee58bb1869aa06eb31ea56b8f005b9112cdd1d87016ec75948ac06ab836",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:44.080225+00:00"
+    },
+    {
+      "id": "E02_P01_rubric_61ee96d102db",
+      "expert_id": "E02",
+      "project_id": "P01",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 4,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The proposal distinguishes method complementarity from topical similarity and separates knowledge relations from organizational mechanisms, a clear conceptual advance over prior work that used co-authorship or topic similarity alone.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 4,
+            "evidence": "图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。",
+            "reason": "The two-part design connects computational identification of complementarity with organizational-behavior testing of cooperation formation, addressing a gap in both literatures with clear boundary conditions and falsifiable predictions.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。方法术语表有240个概念；独立的80组研究者访谈可用于建立合作事件定义，正式结局尚未收集。",
+            "reason": "The stated data, disambiguation accuracy, terminology resources, and pre-registered validation plans support execution. Risks are explicitly handled, and the design includes held-out institution and temporal checks.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "priority",
+        "limitations": "The proposal depends on the fictional premise of six institutions and 80 interviews; generalizability beyond this setting is explicitly limited. The two research strands are connected mainly through shared outputs and timestamps, so the integrative mechanism remains partly inferential."
+      },
+      "input_sha256": "61ee96d102db9a1bef7fc0218f4319e5a333aff4e1d835009be23ef8ae66fd25",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:46.817776+00:00"
+    },
+    {
+      "id": "E02_P02_rubric_81fc734780f8",
+      "expert_id": "E02",
+      "project_id": "P02",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design leaves key validity checks unplanned: no degree-preserving permutation or activity stratification, no second-region replication, and no explicit prediction for how institutional boundaries moderate complementarity. The contribution therefore remains conditional on unresolved identification and limited generalizability.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The question distinguishes method redundancy from complementarity and links graph-based relation evidence to organizational mechanisms, which goes beyond the supplied prior work. However, the application itself notes that the contribution depends on unresolved identification, leaving substantive uncertainty.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。",
+            "reason": "The proposed interface between computational relation identification and organizational explanation addresses a real gap in the supplied records. But the value is conditional on successfully separating method complementarity from topic similarity and on limited generalizability to six institutions.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。",
+            "reason": "The data and prior preparation are plausible, and the plan includes freezing definitions and reporting failures. However, several design choices are explicitly deferred or restricted, such as no degree-preserving permutation, no second-region replication, and no mechanism prediction for boundary effects.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "81fc734780f8a751c84dfa991ddc970a8873501636792568476c49bf306da2bb",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:47.431470+00:00"
+    },
+    {
+      "id": "E01_P10_rubric_f50f2b0fadc5",
+      "expert_id": "E01",
+      "project_id": "P10",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal identifies a meaningful problem but does not provide a convincing mechanism or design to test the prediction-inventory link. Fixed safety stock, single cost ratio, and absence of independent ablation weaken evidential support. The claimed contribution over prior work is not clearly established.",
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The proposed integration of short-series prediction with inventory optimization is stated, but the application explicitly avoids deriving policy thresholds or external cost scenarios, and the prior-work record already covers prediction and inventory separately. The claimed novelty is not substantiated by a new mechanism or testable hypothesis.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The scientific question is relevant, but the design weakens its contribution: safety stock is fixed at 10% of mean regardless of uncertainty, and only one cost ratio is reported. This limits the ability to demonstrate how prediction information improves budgeted inventory decisions.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The plan has a clear timeline, fixed data dictionary, and risk handling. However, several design choices, such as no independent ablation and fixed safety stock, reduce the strength of validation, leaving substantive uncertainty about whether the stated goals can be achieved.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "f50f2b0fadc5d7b6bccd81e207f543cf2e8766c8163ac7b7cdf52f6bcec29fea",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:18:45.295514+00:00"
+    },
+    {
+      "id": "E02_P03_rubric_66d263f8675b",
+      "expert_id": "E02",
+      "project_id": "P03",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The combination of robust optimization and statistical inference is a plausible but incremental extension. The application frames the integration abstractly, without identifying a specific new mechanism beyond coupling existing modules, so novelty remains uncertain.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question is relevant and the emphasis on testable risk guarantees is valuable. However, the expected contribution depends on unresolved tasks and the application does not yet demonstrate a clear advance over the supplied prior-work record.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。",
+            "reason": "Preliminary data and existing implementations support the plan, but the proposed validation relies on methods not yet developed. The design is plausible yet carries substantive uncertainty about whether the statistical and optimization modules will integrate as claimed.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal describes a reasonable framework but does not specify a concrete novel mechanism for integrating robust optimization and statistical inference. The claimed risk guarantees are not yet demonstrated, and the validation plan depends on methods still to be developed. The contribution relative to prior work remains unclear."
+      },
+      "input_sha256": "66d263f8675b07dda6efd13c221b5fe141bf245e94ce04017d015c206c8dce61",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:06.582525+00:00"
+    },
+    {
+      "id": "E02_P04_rubric_cc16c20ed1a9",
+      "expert_id": "E02",
+      "project_id": "P04",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The claimed integration of robust optimization and statistical inference is stated as a goal, but the tasks largely separate the two, and the interface lacks a novel mechanism beyond feedback of selected portfolios. No prior-work gap is convincingly identified.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "统计模块给出不确定集合及其覆盖条件，优化模块据此配置预算；再将入选组合反馈给统计评估，检查选择是否破坏风险保证。",
+            "reason": "The scientific question is relevant, but expected contributions are conditional and hedged. Several tasks explicitly exclude key issues such as covariance, common shocks, and selection-induced dependence, weakening the promised risk-calibration contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。",
+            "reason": "Data, code, and personnel are specified, and the work plan is concrete. However, the design contains internal tensions, such as selecting the best radius on all instances and then reporting coverage, which undermines the claimed validation.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal separates optimization and statistics without a convincing joint mechanism. Key risks, including selection-induced dependence, common shocks, and covariance, are explicitly deferred. Validation choices, such as selecting the best radius before reporting coverage, weaken the claimed risk guarantees."
+      },
+      "input_sha256": "cc16c20ed1a9058a18cf71e28e631ba0e33fba6f75487631f1066955ada29acd",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:08.600087+00:00"
+    },
+    {
+      "id": "E02_P06_rubric_c08e39755c02",
+      "expert_id": "E02",
+      "project_id": "P06",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The knowledge combination of recommendation systems and innovation behavior is plausible, but the supplied prior-work record does not establish that this specific question is unaddressed; novelty is asserted rather than demonstrated against the references.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。",
+            "reason": "The question is scientifically meaningful and the proposed separation of system performance from behavioral outcomes is sensible, but the expected contribution remains uncertain because key validation tasks and effect conditions are not yet established.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。",
+            "reason": "The application provides fixed data dictionaries, recruitment quotas, and a staged plan, but the main methods and effects are untested; several design choices, such as unbalanced materials and self-selected modes, introduce substantive uncertainty.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal relies on untested knowledge-relation coding and material generation. Several tasks deliberately avoid balancing materials or randomizing exposure, which weakens causal claims. The prior-work record does not clearly establish the novelty of the proposed knowledge combination, and the expected contribution depends on validation tasks that have not yet been performed."
+      },
+      "input_sha256": "c08e39755c02d3f642ae1f50602a1fb63019e4d28539650531508dcf4e6569db",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:12.082267+00:00"
+    },
+    {
+      "id": "E02_P05_rubric_d10e8b72d11b",
+      "expert_id": "E02",
+      "project_id": "P05",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The main effect is untested and the contribution is incremental relative to prior work. Conclusions are restricted to immediate ideation in a controlled setting, with no follow-up research behavior. Cross-domain integration depends on material validation and may not generalize beyond the fixed candidate pool.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The question shifts from topic similarity to method complementarity and adds knowledge-background moderation, but the supplied prior work already covers recommendation, search behavior, and knowledge combination; the incremental novelty is plausible but not strongly established.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。",
+            "reason": "The design promises interpretable conclusions about recommendation-knowledge interaction and explicit failure reporting, but the value depends on unverified effects and is limited to immediate ideation tasks without follow-up.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The application specifies pre-registration, fixed materials, randomized assignment, coding reliability, and staged verification. Existing annotations, pilot materials, and confirmed recruitment support execution, though the main effect remains untested.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "d10e8b72d11b6e28eb17ccac9ab1b979d630f7d4bf40c0b1929c61e221b45323",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:10.838546+00:00"
+    },
+    {
+      "id": "E02_P07_rubric_c6d7f1073c82",
+      "expert_id": "E02",
+      "project_id": "P07",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？",
+            "reason": "The question of combining textual change signals with routine risk indicators under fixed follow-up capacity is a plausible extension of prior work, but the application does not clearly establish what specific new knowledge combination is proposed beyond the stated reference records.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The proposed link between text-based identification and clinical benefit under constrained service capacity addresses a meaningful operational problem, but the expected contribution remains conditional on unverified effects and lacks demonstration of clear frontier impact.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "The stated data access, independent outcome verification, and pre-specified validation plan provide a reasonable foundation, but the design relies on a not-yet-conducted follow-up study and leaves several execution risks only recorded rather than resolved.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal does not clearly articulate the specific novel knowledge combination relative to the supplied prior-work record. The clinical follow-up study is not yet conducted, and several risks are only documented rather than mitigated. Expected contributions remain conditional on unverified effects."
+      },
+      "input_sha256": "c6d7f1073c82f43bdd678eee248f4ef240b71c9f8872e7897566c66b719564df",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:28.647674+00:00"
+    },
+    {
+      "id": "E02_P08_rubric_c52946ad2ce3",
+      "expert_id": "E02",
+      "project_id": "P08",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？",
+            "reason": "The question of linking text-derived risk signals to constrained follow-up capacity is a plausible extension beyond the supplied prior work, but the application does not articulate a distinct methodological or conceptual advance; it mainly combines existing components.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The stated goal addresses a practical service-allocation problem, but the design relies on self-reported symptoms and retrospective comparisons, leaving the clinical benefit claim uncertain and the expected contribution modest.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "The supplied data and preliminary verification support initial modeling, but several design choices, such as no active safety monitoring and retrospective follow-up comparison, weaken the ability to test the central clinical benefit claim.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The central claim that text signals improve clinical outcomes is not directly tested: the design uses self-reported symptoms and retrospective comparisons, omits active safety monitoring, and does not validate whether identified patients truly benefit from follow-up."
+      },
+      "input_sha256": "c52946ad2ce375977ece55cc600702ff92e9b218bae62a651f2138634f5b706c",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:33.829282+00:00"
+    },
+    {
+      "id": "E02_P09_rubric_aba10c89741a",
+      "expert_id": "E02",
+      "project_id": "P09",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The proposal does not clearly specify how prediction errors propagate to inventory costs beyond stating the question. The novelty relative to prior work is modest, and the expected contribution is conditional. The interface between statistical and operational models lacks a concrete formal mechanism.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of short-series prediction with inventory optimization under asymmetric costs is a plausible but incremental knowledge combination. The supplied prior work already addresses prediction and inventory separately; the proposed linkage is not strongly differentiated.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The scientific question is practically relevant, but the expected contribution is framed cautiously and depends on identifying unexplained relationships. The application does not establish that the proposed interface will yield generalizable or frontier-advancing results.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。数据字典、权限范围、匿名流程及资源安排已经固定。",
+            "reason": "The design includes explicit data conditions, rolling validation, ablation plans, and risk handling. The team has relevant preliminary tools and reproducible baseline results, supporting implementation, though the core knowledge integration remains untested.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "aba10c89741a742d148548970d74e3b5e55f0231eb8b5e85d73fe9dd1eb4bdb8",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:33.716698+00:00"
+    },
+    {
+      "id": "E02_P10_rubric_1c4ce0f84645",
+      "expert_id": "E02",
+      "project_id": "P10",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of short-series forecasting with inventory optimization is stated, but the application explicitly avoids ablation, policy thresholds, or external cost scenarios, leaving the claimed knowledge combination largely untested and weakly novel relative to the supplied prior work.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The scientific question is relevant, but the design restricts evaluation to one cost ratio, fixed safety stock, and no policy derivation, so the expected contribution to understanding error propagation into asymmetric inventory costs is substantially limited.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "数据字典、权限范围、匿名流程及资源安排已经固定。",
+            "reason": "The stated data, code, and fixed protocols support execution of the described tasks, but several design choices, such as no independent ablation and fixed safety stock, weaken the ability to answer the central research question.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design avoids independent ablation, policy thresholds, and external cost scenarios, so the central claim about prediction information improving inventory decisions is not adequately tested. Fixed safety stock and single cost ratio further restrict generalizability and scientific contribution."
+      },
+      "input_sha256": "1c4ce0f84645a171db94ac1310cfeed4157040a7cf58610c82eb2021ea6533ff",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:19:35.986370+00:00"
+    },
+    {
+      "id": "E03_P03_rubric_e6882473d3af",
+      "expert_id": "E03",
+      "project_id": "P03",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The proposal does not clearly identify a new theoretical mechanism beyond combining existing robust optimization and statistical calibration. The contribution is framed conditionally, and the absence of covariance modeling may limit practical applicability. Evidence for the central knowledge integration remains prospective rather than demonstrated.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "现有方法把参数估计与决策分开处理，缺少选择后仍成立的风险校准。",
+            "reason": "The integration of robust optimization with post-selection statistical calibration is a meaningful knowledge combination, but the application frames it cautiously and does not demonstrate a clearly new conceptual mechanism beyond joining existing modules.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question is practically important and the emphasis on testable risk guarantees is valuable. However, the expected contribution is conditional and the application does not establish that the proposed tasks will resolve previously unexplained relationships.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器。",
+            "reason": "The design includes concrete data, staged validation, frozen splits, and explicit failure reporting. The main uncertainty is whether the statistical and optimization modules can be integrated as claimed, but the operational plan is reasonably supported.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "e6882473d3af362055badeb23679d5754657826a162b6fbd913f11c125333878",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:20:47.838519+00:00"
+    },
+    {
+      "id": "E03_P01_rubric_11550848c839",
+      "expert_id": "E03",
+      "project_id": "P01",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The organizational experiment is limited to six institutions and one region, so external validity is constrained. The proposal relies on self-reported cooperation measures supplemented by logs, which may still miss informal collaboration. The interface between graph outputs and organizational mechanisms remains partly dependent on successful identification of complementarity.",
+        "scores": [
+          {
+            "score": 4,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The application frames a clear knowledge-combination gap: distinguishing method complementarity from topical similarity and linking it to organizational boundary conditions. This goes beyond prior similarity-based recommendation and co-authorship proxies.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 4,
+            "evidence": "项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。",
+            "reason": "The proposed integration of graph representation learning with organizational research addresses a practically and theoretically important question about when knowledge relations become collaboration. Explicit reporting of conditions and failure cases strengthens scientific value.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。",
+            "reason": "The supplied data infrastructure, prior disambiguation checks, fixed data dictionary, and staged validation plan provide a credible basis. Risks are acknowledged and scoped, though the organizational experiment depends on cooperation from six institutions.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "11550848c839342068a96c44febcfe833fb7f17a8668406368417bfc7b2f5f95",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:20:48.362844+00:00"
+    },
+    {
+      "id": "E03_P02_rubric_7f7663080d2e",
+      "expert_id": "E03",
+      "project_id": "P02",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design defers important validity checks (permutation tests, activity stratification), restricts conclusions to six institutions without replication, and lacks mechanism predictions for institutional boundary effects. The novelty claim is modest relative to prior similarity-based work, and the integration between computational and organizational tasks remains underdeveloped.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The question of distinguishing method redundancy from complementarity and linking it to collaboration formation is a meaningful extension beyond similarity-based recommendation. However, the application explicitly limits novelty by deferring key issues and restricting scope, leaving substantive uncertainty about the claimed contribution.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "本项目将图表示学习与科研合作与组织行为结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of graph representation learning with organizational behavior could advance understanding of research collaboration mechanisms. Yet the design narrows conclusions to existing institutions, defers high-activity author effects, and does not propose mechanism predictions for institutional boundaries, weakening the expected frontier contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。",
+            "reason": "The data infrastructure and preliminary work are reasonably prepared. However, several design choices—no permutation tests, no activity stratification, no second-region replication, and no mechanism predictions for boundary effects—leave important validity threats unaddressed, making the design only plausibly feasible.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "7f7663080d2ef30cbf94b0f346b5f784e46a2730412fd9bfc2b5d038f3c89c6c",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:20:49.637513+00:00"
+    },
+    {
+      "id": "E03_P07_rubric_5cf9080520b6",
+      "expert_id": "E03",
+      "project_id": "P07",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The main uncertainty is whether text-derived signals will show incremental value over structured risk indicators under fixed capacity. The proposal does not demonstrate prior evidence for this effect, and the clinical trial component depends on assumptions about outcome verifiability and service conditions that may shift.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "现有研究缺少在固定随访容量下，文本增量信息与临床后果之间的连接。",
+            "reason": "The combination of clinical text modeling with service-capacity-constrained follow-up is a plausible extension, but the prior-work record does not establish that this specific linkage is clearly novel or non-obvious.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 4,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The question addresses a practical resource-allocation problem with explicit clinical outcomes and safety boundaries, offering potentially useful evidence for follow-up service design.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "The stated data, pre-verified outcomes, frozen design, and explicit risk handling support implementation, though the planned randomized follow-up study remains untested.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "5cf9080520b6dbad2af2c977b877f9ca476e826aa5310f5feed29998bbae97fa",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:20:59.329001+00:00"
+    },
+    {
+      "id": "E03_P05_rubric_d09fccb59947",
+      "expert_id": "E03",
+      "project_id": "P05",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The contribution is incremental relative to prior cross-domain ideation work. Conclusions are restricted to immediate ideation in a controlled task, with no follow-up on later research behavior. The interface between the two research areas is described conceptually but not tested as a joint model.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The question shifts from topic similarity to method complementarity and adds researcher knowledge as a moderator, but the application itself notes prior work already links cross-domain reading to novel ideation. The increment is plausible but modest.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。",
+            "reason": "The design separates recommendation-system validation from behavioral outcomes and limits conclusions to immediate ideation. This is a careful but narrow contribution; the stated value depends on identifying previously unexplained relations.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The plan includes pre-registration, randomization, blinded coding, material controls, and explicit failure reporting. Existing annotated materials and confirmed recruitment support execution, though the 240-participant experiment remains a single-site controlled task.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "d09fccb59947eb9637baa4d48ffac027ba13977686ae92508d0f6df284ae1a59",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:20:59.463937+00:00"
+    },
+    {
+      "id": "E03_P06_rubric_43335be51c33",
+      "expert_id": "E03",
+      "project_id": "P06",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The question shifts from topic similarity to method complementarity and links recommendation exposure to idea formation, a plausible extension. However, the supplied prior work already covers recommendation, similarity, and innovation process modeling, so the advance is incremental rather than sharply novel.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。",
+            "reason": "The proposed contribution is conditional and honestly framed: it may clarify whether controlled exposure to complementary methods changes search paths and research ideas. But the application itself notes that existing evidence cannot yet support strong claims, leaving substantive uncertainty about the eventual scientific gain.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The plan specifies staged tasks, pre-registration-like freezing, and failure reporting. However, several design choices weaken causal inference: participants self-select recommendation modes, materials are not matched on length or difficulty, and only immediate idea tasks are used.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The design mixes controlled and self-selected exposure, does not match materials on length, difficulty, or rank, and measures only immediate idea formation. Causal claims about recommendation effects are therefore limited. The novelty is incremental relative to prior work on similarity-based recommendation and innovation process modeling."
+      },
+      "input_sha256": "43335be51c3396ec602f13f712fd28abc655b9e8324f176d48f3ce05a8b7348c",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:20:59.992346+00:00"
+    },
+    {
+      "id": "E03_P04_rubric_4e8d1aa43901",
+      "expert_id": "E03",
+      "project_id": "P04",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The design leaves several central risks unaddressed: cross-project covariance and common shocks are excluded, selection-induced dependence is not modeled, and the fixed-radius choice is not linked to risk calibration. Four-period records may be too thin for reliable uncertainty sets. The claimed integration remains partly programmatic.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of robust optimization with statistical inference for post-selection risk calibration is a plausible knowledge combination, but the application explicitly defers key issues (covariance, common shocks, selection dependence) and does not clearly identify a novel mechanism beyond the stated prior work.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question is relevant and the emphasis on testable risk guarantees is valuable. However, several tasks explicitly narrow scope (fixed radius, independence assumption, no selection dependence), leaving the central claim of combined decision-inference reliability only partially supported.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器。",
+            "reason": "The stated data, existing implementations, staged plan, and explicit recording of failure cases provide a reasonably strong foundation. The main feasibility concern is whether the proposed interface between statistical coverage and optimization can be validated with only four periods per project.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "4e8d1aa439014ddb9e3fd6e2bbe88a72328a3233d4dfcedd2fea2c97af3ea5da",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:01.386316+00:00"
+    },
+    {
+      "id": "E03_P10_rubric_79f7f41c75ac",
+      "expert_id": "E03",
+      "project_id": "P10",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The integration of short-sequence forecasting with asymmetric inventory cost propagation is a plausible knowledge combination, but the application does not clearly identify an unresolved relationship beyond the stated premise. Novelty is moderate.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。",
+            "reason": "The scientific question is relevant to practical inventory decisions under limited data, but the expected contribution is framed cautiously and lacks a clear demonstration of broader frontier impact.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 2,
+            "evidence": "仅报告完整融合方案，不实施独立消融。",
+            "reason": "Several design choices weaken feasibility: no ablation, fixed safety stock independent of uncertainty, and no policy threshold analysis. These limit the ability to test the core claims and identify failure modes.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design omits independent ablation, fixes safety stock without uncertainty adjustment, and restricts cost analysis to a single ratio. These choices reduce internal validity and limit the ability to establish the claimed link between forecast information and inventory cost improvement."
+      },
+      "input_sha256": "79f7f41c75ac3f97105d1b306682d71a155e9a9ea09bdb07aaabc963b5c95b11",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:09.649710+00:00"
+    },
+    {
+      "id": "E03_P09_rubric_b2a42dd562d2",
+      "expert_id": "E03",
+      "project_id": "P09",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The 36-month series is very short for reliable tail and rare-disruption calibration. The proposal deliberately avoids policy thresholds and external cost scenarios, limiting practical transfer. Novelty is framed cautiously, so the expected contribution may remain incremental.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The proposed coupling of short-series prediction uncertainty with asymmetric inventory cost is a meaningful knowledge combination, but the application frames it cautiously and does not establish a clearly new mechanism beyond the stated prior-work gap.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。",
+            "reason": "The scientific question is practically relevant and the interface between prediction and inventory decisions is well specified. However, the expected contribution is conditional and modest, with limited evidence that it will advance the broader field.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "情境数据包含80类零部件连续36个月需求、采购成本和缺货记录。原始缺失月份已标记，未先行插补；价格、提前期和容量约束可核对。",
+            "reason": "The design includes clear data conditions, time-split rules, ablation plans, and risk reporting. The stated preliminary tools and data access support execution, though the short 36-month series remains a substantive constraint.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "b2a42dd562d217df549f035c156489c37174983eef2e18b0e1ae96f73cf4103a",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:10.512855+00:00"
+    },
+    {
+      "id": "E03_P08_rubric_131a725f11d9",
+      "expert_id": "E03",
+      "project_id": "P08",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design lacks randomization and active safety monitoring. Risk labels come from self-reported symptoms without chart review. The text model uses random record splitting, allowing same-patient leakage. These choices weaken causal and safety claims, leaving the proposed contribution uncertain.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？",
+            "reason": "The question of whether text-change signals add incremental value over routine risk scores under fixed follow-up capacity is a plausible but modest extension. The supplied prior-work record does not establish this specific connection, yet the application frames it cautiously rather than as a clearly novel knowledge combination.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The proposed link between text modeling and service outcomes addresses a meaningful operational problem. However, the design relies on self-reported symptoms and retrospective comparison, limiting the strength of the claimed clinical contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "The stated data access and preliminary outcome verification are adequate premises. But several design choices—no randomization, no active safety monitoring, no separate outpatient holdout—leave substantive uncertainty about whether the planned validation can support the conclusions.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "131a725f11d942fef253580ff66d6d4f268b1eb518df5f9dda42e69fc364ed13",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:10.519389+00:00"
+    },
+    {
+      "id": "E04_P01_rubric_9f6ca719930d",
+      "expert_id": "E04",
+      "project_id": "P01",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The proposal relies on a single regional setting and six institutions, limiting generalizability. The formal cooperation outcome has not yet been collected, and the interface between graph outputs and organizational mechanisms depends on successful execution of both tracks.",
+        "scores": [
+          {
+            "score": 4,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The proposal distinguishes thematic similarity from methodological complementarity and links graph representation outputs to organizational mechanisms, a combination not present in the supplied prior-work record.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 4,
+            "evidence": "图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。",
+            "reason": "The scientific question addresses a real gap between recommendation-based and organizational explanations of collaboration, with potential contributions to both decision-support and organizational research.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The application provides explicit data conditions, staged validation, ablation tests, and risk handling. Some uncertainty remains about outcome measurement and cross-institution generalization, but the design is reasonably supported.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "9f6ca719930de9637973cf18d152cf7111f69d0dfb3b95537bcb338a7a921453",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:12.433022+00:00"
+    },
+    {
+      "id": "E04_P02_rubric_b31e60a507a7",
+      "expert_id": "E04",
+      "project_id": "P02",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The question distinguishes thematic overlap from methodological complementarity and links graph representation to organizational mechanisms. However, the supplied prior work already covers fuzzy decision-making, collaborative filtering, and mediation of collaboration-related constructs, so the incremental novelty is moderate rather than exceptional.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "项目将提交清楚说明适用条件的研究结论、可执行分析流程及失败情境记录。",
+            "reason": "The proposed outputs could inform research collaboration recommendation and organizational boundary analysis. Yet the application explicitly limits scope to existing institutions and link completion, and several tasks defer key validity checks, leaving the frontier contribution uncertain.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。",
+            "reason": "Data infrastructure and personnel are plausible, and the timeline is detailed. However, several design choices weaken feasibility: no degree-preserving permutation or activity stratification, no second-region replication, and no mechanism prediction for how institutional boundaries alter complementarity conversion.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design defers or omits key validity checks: no degree-preserving permutation or activity stratification, no mechanism prediction for institutional boundary effects, and no second-region replication. The claimed contribution depends on identifying previously unexplained relationships, but the proposed tasks do not yet establish that these relationships are identifiable or generalizable."
+      },
+      "input_sha256": "b31e60a507a70b421df717dd7078a32d12a3dd63c307e8364b10ecc68047ee92",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:21.030848+00:00"
+    },
+    {
+      "id": "E04_P03_rubric_73856a024cf8",
+      "expert_id": "E04",
+      "project_id": "P03",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of robust optimization with statistical inference for post-selection risk calibration is a plausible but incremental combination. Prior work already treats interval estimation and robust optimization separately; the novelty lies mainly in the feedback loop, which is not yet demonstrated.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question is relevant to decision-making under uncertainty, but the application does not establish why the proposed risk guarantees would advance the field beyond existing robust optimization or selective inference methods.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器。",
+            "reason": "The stated data, preliminary implementations, and staged validation plan are concrete and support execution. Risks are acknowledged and handled with explicit reporting protocols, though the small sample size may limit statistical power.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The proposal relies on only four periods of return data per project, which may be insufficient for reliable distribution estimation. The independence assumption excludes common shocks, and the post-selection calibration framework is not yet validated. Contributions depend on identifying relationships not covered by prior records."
+      },
+      "input_sha256": "73856a024cf8a64370c317a7366852d9c168bb25b2b875139e4a6194d86e03ca",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:21.719514+00:00"
+    },
+    {
+      "id": "E04_P04_rubric_12712dab07ee",
+      "expert_id": "E04",
+      "project_id": "P04",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal explicitly excludes covariance and common shocks, uses only four observations per project, and selects the best-performing radius across all instances, risking overfitting. The interface between statistical coverage and post-selection risk calibration is asserted rather than designed, leaving the central scientific claim insufficiently supported.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of robust optimization with statistical inference for budget allocation under estimated return intervals is a plausible knowledge combination, but the application explicitly defers key novel aspects (covariance, selection-induced dependence) to future work, limiting demonstrated novelty.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question addresses a relevant gap between estimation and decision-making, but the stated scope excludes important risk factors such as common shocks and selection-induced dependence, weakening the claimed contribution to risk calibration.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器。",
+            "reason": "Preliminary data and code provide a reasonable foundation, but the design contains unresolved weaknesses: only four periods per project, no covariance estimation, and selection of results based on highest final return, which risks overfitting and undermines the stated risk guarantees.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "12712dab07eec45d906322e39ec9e6dc307a36ae0149e433c45312aec913010a",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:22.462111+00:00"
+    },
+    {
+      "id": "E04_P05_rubric_965eed68b855",
+      "expert_id": "E04",
+      "project_id": "P05",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The question shifts from topical similarity to method complementarity, but the supplied prior work already covers recommendation, knowledge combination, and innovation measurement. The incremental framing is plausible yet not clearly distinct from existing decision and innovation studies.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "本项目将推荐系统与创新行为结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The interface between recommendation control and innovation measurement is meaningful, but the application limits conclusions to immediate ideation tasks and a fixed material set, reducing general scientific contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The design includes pre-registration, randomization, blinded coding, fixed materials, and explicit failure reporting. Stated preliminary resources and staffing appear adequate, though the 240-participant recruitment depends on the fictional premise.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The study is confined to a fixed material set and immediate ideation outcomes, so findings may not generalize to real recommendation environments or longer-term research behavior. The novelty claim depends on distinguishing method complementarity from existing knowledge-combination work, which is not fully established."
+      },
+      "input_sha256": "965eed68b855ab305fd6e4221f2dd1569248c4f0dfc083c91ee0f216a2f56aab",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:24.389904+00:00"
+    },
+    {
+      "id": "E04_P06_rubric_87cec7d452b5",
+      "expert_id": "E04",
+      "project_id": "P06",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The question of method-complementary versus topic-similar recommendations is a meaningful extension beyond the supplied prior work, which measured clicks or cross-domain reading without controlled exposure. However, the novelty is moderate because the application frames it as combining existing recommendation and innovation-behavior approaches rather than introducing a new construct or method.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "现有证据无法区分算法选择、曝光差异和研究者自主选择。",
+            "reason": "The proposed work addresses a genuine gap: prior records cannot separate algorithm choice, exposure, and self-selection. Expected outputs include applicability conditions, analysis pipelines, and failure records. Value is tempered by the narrow scope of immediate conception tasks and the absence of follow-up tracking.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "情境中已有1200篇授权教学研究材料的主题与方法标注，双人复核一致率0.86。40名预试参与者完成了界面可用性测试，形成24对长度相近的材料包，但未用于检验主要效果。",
+            "reason": "The stated data, annotation reliability, pilot testing, and confirmed recruitment provide a plausible foundation. However, several design choices weaken feasibility: materials are not balanced on length, difficulty, or rank; participants self-select recommendation modes; and the main effect remains untested in pilot work.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "Self-selected recommendation modes and unbalanced material features threaten causal attribution. Immediate conception tasks without follow-up limit claims about research outcomes. Pilot materials were not tested for the main effect, and the interface between recommendation and behavior relies on planned rather than demonstrated integration."
+      },
+      "input_sha256": "87cec7d452b5ec74358dcadf27e86d59ff238ba6c272fbc6c6160d81de047c79",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:34.093418+00:00"
+    },
+    {
+      "id": "E04_P08_rubric_497b2c4182c6",
+      "expert_id": "E04",
+      "project_id": "P08",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposed integration of text modeling and clinical follow-up lacks a clearly specified novel mechanism. Labeling by self-report without chart verification, retrospective non-randomized comparison, same-patient data leakage, and absent safety monitoring weaken internal validity and clinical interpretability. Feasibility is plausible but the scientific contribution remains uncertain.",
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "相对于情境参考记录，拟议贡献取决于下述任务能否识别尚未解释的关系，而非增加技术名称或增加论文数量。",
+            "reason": "The application frames novelty conditionally and provides no concrete mechanism linking text changes to clinical outcomes beyond combining existing methods. The prior-work record already covers text modeling, risk scoring, and service evaluation; the proposed integration is asserted but not specified with sufficient originality.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？",
+            "reason": "The question is practically relevant, but the design weakens scientific value: self-reported symptoms as labels without chart review, no randomization, no active safety monitoring, and exclusion of drift analysis limit the credibility and generalizability of any claimed service improvement.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "Data access, preliminary annotation, and a fixed implementation plan are stated. However, several design choices—random split allowing same-patient leakage, retrospective comparison without randomization, and no safety monitoring—introduce unresolved methodological weaknesses that may undermine the planned conclusions.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "497b2c4182c674d73cfc6afd0189c5a05af38053dffa26451f2bce38f59cad32",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:34.410911+00:00"
+    },
+    {
+      "id": "E04_P09_rubric_2a4c488ba633",
+      "expert_id": "E04",
+      "project_id": "P09",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The proposed integration of short-series prediction uncertainty with asymmetric inventory cost is a plausible knowledge combination, but the application does not clearly establish novelty beyond the supplied prior-work record.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。",
+            "reason": "The scientific question is relevant, but expected contributions are stated conditionally and depend on identifying unexplained relationships, leaving substantive uncertainty about the actual value.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。",
+            "reason": "Data access, personnel, and preliminary tools are specified, but the core methodological integration is untested and the design relies on fixed budgets and narrow conditions that may limit execution.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal describes a plausible but unproven integration of prediction and inventory optimization. Novelty relative to prior work is not sharply demonstrated, and the main contribution is conditional on results not yet obtained. Feasibility is constrained by narrow data conditions and untested methodological coupling."
+      },
+      "input_sha256": "2a4c488ba633efe8197a65becbc8e79823e944ce788a995bc1171c7747cd4f29",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:34.813050+00:00"
+    },
+    {
+      "id": "E04_P07_rubric_d43fd7b1b148",
+      "expert_id": "E04",
+      "project_id": "P07",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The application is cautious and well-structured, but the central scientific claim remains conditional. The text-modeling contribution is not yet specified at a level that shows clear advantage over structured variables, and the clinical benefit depends on outcomes not yet tested. Novelty relative to the supplied prior-work record is modest.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？",
+            "reason": "The question of combining clinical text change signals with fixed-capacity follow-up allocation is a plausible extension beyond the supplied prior work, which focuses on fuzzy decision-making, collaborative filtering, and survey-based mediation models. However, the application frames novelty conditionally on whether the proposed tasks identify unexplained relationships, and the specific modeling contribution remains underspecified.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The proposed integration of text-based risk identification with a clinical follow-up trial addresses a practically important service-allocation problem. But the application does not establish that the text signal will yield measurable clinical benefit, and the expected contribution is stated as conditional rather than demonstrated.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "The stated data access, outcome verification process, frozen design windows, independent safety monitoring, and explicit failure-case reporting provide a reasonably supported execution plan. Remaining uncertainty concerns whether the text-enhanced models can be adequately validated under the fixed-capacity and frozen-threshold constraints.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "d43fd7b1b1489d628785300a773bc6bc6e4aa5ed1c8d66d4ba2c2045b66301a9",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:34.974422+00:00"
+    },
+    {
+      "id": "E04_P10_rubric_aba158b8b0bb",
+      "expert_id": "E04",
+      "project_id": "P10",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "预测与决策共享时间截断和成本口径。",
+            "reason": "The proposed integration of short-sequence forecasting and inventory optimization is framed as novel, but the application provides no comparison against the supplied prior-work record showing what specific knowledge gap is newly addressed. The stated combination remains generic.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The scientific question is practically relevant, but expected contributions are vague and conditional. The application explicitly declines to derive policy thresholds or external cost scenarios, limiting demonstrable value for the stated inventory decision problem.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案。",
+            "reason": "The plan includes staged execution, fixed data dictionaries, and risk recording. However, several design choices, such as fixed 10% safety stock and no ablation, weaken the ability to test the central claims.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal lacks a clear demonstration of novelty relative to the supplied prior-work record. Several design restrictions, including fixed safety stock, no ablation, and no policy thresholds, limit the evidential strength of the proposed integration. Expected contributions are stated conditionally rather than as testable claims."
+      },
+      "input_sha256": "aba158b8b0bb06138be388a7971f289cabaa5d447e28a81140940b288acd14c3",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:44.072140+00:00"
+    },
+    {
+      "id": "E05_P03_rubric_9981fe47db91",
+      "expert_id": "E05",
+      "project_id": "P03",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The proposal does not clearly articulate what specific new theoretical or empirical relationship will be established beyond combining existing robust optimization and statistical inference tools. The contribution is framed conditionally, and the absence of covariance modeling may limit practical applicability.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of robust optimization with statistical inference for post-selection risk calibration is a meaningful knowledge combination, but the application does not clearly identify a novel relationship beyond the stated prior-work gap.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question is practically relevant for budget allocation under limited data, but the expected contribution is framed conditionally and lacks a clearly specified advance over existing robust optimization or inference methods.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器。",
+            "reason": "The application provides concrete data, implemented baseline methods, a staged plan, and explicit risk handling, which support execution of the proposed tasks within the stated resources.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "9981fe47db911a2389dd46da073a1a78a90b8bef49610c25281dbb3889c1a802",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:44.596508+00:00"
+    },
+    {
+      "id": "E05_P01_rubric_c601aaf92ec1",
+      "expert_id": "E05",
+      "project_id": "P01",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The design relies on six institutions in one region, so organizational mechanisms may not generalize. The 160-pair experiment is modest for testing interaction effects. Method complementarity is inferred from task input-output relations, which may miss tacit or unreported methodological overlap.",
+        "scores": [
+          {
+            "score": 4,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The application reframes partner recommendation from topic similarity to method complementarity and links it to organizational boundary mechanisms. This knowledge combination is not present in the supplied prior-work records.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 4,
+            "evidence": "图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。",
+            "reason": "The question addresses a real gap between recommendation systems and collaboration research. The design commits to reporting applicability conditions, failure cases, and non-confirmatory results, strengthening the expected contribution.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。方法术语表有240个概念；独立的80组研究者访谈可用于建立合作事件定义。",
+            "reason": "The stated data, disambiguation quality, method lexicon, and interview resources support the tasks. The plan includes held-out institution tests, permutation checks, and explicit risk handling, though the single-region scope limits generalizability.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "c601aaf92ec1015a437d12fd7847d7751989c1f2e6cd2403de5acad6f0a31e73",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:46.140549+00:00"
+    },
+    {
+      "id": "E05_P02_rubric_21f73ecf6759",
+      "expert_id": "E05",
+      "project_id": "P02",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The ablation and baseline comparisons omit degree-preserving controls and activity stratification, so high-activity authors may drive apparent gains. Organizational analysis lacks a mechanism prediction for how boundaries moderate complementarity. Single-region, six-institution sample limits generalizability; self-selected recommendation clicks introduce selection bias.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "主题相近但方法重复、主题不同但方法互补的研究者，为什么会表现出不同的合作形成概率？能否识别这些关系并解释其组织机制？",
+            "reason": "The question of distinguishing method redundancy from complementarity and linking it to organizational boundary conditions is a meaningful extension beyond similarity-based recommendation. However, the design largely combines existing graph representation and organizational behavior approaches without a clearly novel methodological or conceptual synthesis.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "图表示任务输出主题接近度和方法关系证据，组织研究任务用合作事件及机构边界检验这些关系的解释。二者通过研究者对和时间戳连接；算法排名本身不作为组织机制成立的证据。",
+            "reason": "The interface between relational evidence and organizational mechanisms addresses a real gap in collaboration research. Yet the stated contributions remain conditional on identifying unexplained relationships, and the application does not specify what new scientific insight would follow beyond incremental explanatory gains.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "情境中已完成六家研究机构2014—2023年共12万篇论文的去标识关联，作者消歧经600条人工抽检，准确率为97%。方法术语表有240个概念；独立的80组研究者访谈可用于建立合作事件定义，正式结局尚未收集。",
+            "reason": "The data infrastructure and prior preparation are substantial. However, several design choices weaken feasibility: no degree-preserving permutation or activity stratification, no second-region replication, and reliance on self-selected recommendation clicks. These leave key validity threats unaddressed.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "21f73ecf67590a2f4ade753bb058e111c17de4d50b698242fafa884902bfa625",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:47.837313+00:00"
+    },
+    {
+      "id": "E05_P05_rubric_4f62cad02ae2",
+      "expert_id": "E05",
+      "project_id": "P05",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "Effect sizes and statistical power are not specified. The single immediate idea-generation task limits generalizability to later research behavior. Cross-domain integration depends on successful material validation, and the proposal does not fully specify how complementary versus similar method relations will be operationalized.",
+        "scores": [
+          {
+            "score": 4,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The proposal shifts from topic similarity to method complementarity and links recommendation design with innovation behavior, a combination not present in the supplied prior-work record.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 4,
+            "evidence": "系统表现以任务材料是否符合指定关系验证；行为效果通过构想内容与搜索记录评价，点击率仅为过程变量。",
+            "reason": "The design addresses a gap between exposure metrics and actual idea formation, with clear applicability conditions and planned reporting of negative results.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "第1—6个月冻结数据字典、研究对象、主要结局与分析规范；第7—18个月完成两部分主要方法；第19—28个月执行上述验证方案；第29—36个月分析失败案例、整理共享代码和报告。",
+            "reason": "The application provides explicit task decomposition, pre-registration, material validation, and risk handling, supported by stated access to annotated materials and confirmed recruitment.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "4f62cad02ae2df61107c2b6aa864d2d7b3cefc471b671abdb5710203f127f923",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:54.682215+00:00"
+    },
+    {
+      "id": "E05_P04_rubric_b5824694c24a",
+      "expert_id": "E05",
+      "project_id": "P04",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design separates estimation and optimization without resolving post-selection dependence; fixed-radius and independence assumptions limit risk guarantees. The main result selects the radius by final return, undermining calibration. The contribution over prior work is not clearly specified.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将稳健优化与统计推断结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of robust optimization with statistical inference for post-selection risk calibration is a plausible knowledge combination, but the application does not clearly identify a previously unexplained relationship beyond stating the interface.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "项目收益分布只能由少量历史观测估计时，怎样把统计估计的不确定性转化为具有可检验风险保证的预算配置？",
+            "reason": "The scientific question is relevant to decision-making under uncertainty, but the expected contribution is described generically; the application does not specify what substantive advance would follow from the proposed interface.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已取得400个去标识资源配置实例及每个项目的四期收益记录，样本含零收益和长尾收益。研究团队已实现确定性整数规划和单项目自助法区间，20个小规模实例可枚举验证求解器；现有实现不含选择后的风险校准。",
+            "reason": "The stated data, code, and team support basic execution, but several design choices (fixed radius, independence assumption, selection on final return) weaken the risk-calibration claims and leave key validity questions unresolved.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "b5824694c24a4a12d96d7088318ad82e148d0bc50e322716664965bc60912800",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:55.062474+00:00"
+    },
+    {
+      "id": "E05_P06_rubric_f71ffbf0313e",
+      "expert_id": "E05",
+      "project_id": "P06",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design has notable confounds: materials are not matched on length, difficulty, or ranking position; participants self-select recommendation modes; and no follow-up tracks whether ideation leads to actual research. The application acknowledges these limits but does not resolve them.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将推荐系统与创新行为结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The proposed integration of recommendation systems and innovation behavior is a plausible knowledge combination, but the application does not clearly articulate how it advances beyond the supplied prior-work record, which already covers grey relational decision methods and matching models.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "向研究者展示方法互补而非主题相近的知识，是否改变其搜索路径及形成的研究构想？这种作用是否取决于研究者原有知识？",
+            "reason": "The scientific question is relevant to understanding how knowledge exposure shapes research ideation, but the expected contribution is framed cautiously and the application explicitly limits conclusions to immediate ideation tasks, reducing broader impact.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "已有代码只覆盖上述基础方法；新的知识结合和主要效果尚待项目检验。",
+            "reason": "The application provides concrete preliminary resources and a structured plan, but several design choices (e.g., not matching material length and difficulty, self-selected recommendation modes) introduce confounds that weaken causal claims.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "f71ffbf0313e6d9d8bf72a04f2fb97c5083ef77064afab53881546befe3efebc",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:56.384053+00:00"
+    },
+    {
+      "id": "E05_P07_rubric_6ac051c9021b",
+      "expert_id": "E05",
+      "project_id": "P07",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "good",
+        "funding_recommendation": "fund",
+        "limitations": "The proposal is cautious about novelty and contribution, with conditional claims rather than a clearly demonstrated advance. The cross-domain interface is described conceptually but lacks a worked specification of how text-module outputs and clinical endpoints will be jointly validated beyond general statements.",
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "患者咨询文本中的变化是否能补充常规风险指标，使有限随访名额覆盖更多真正需要干预的人，并改善临床服务结果？",
+            "reason": "The question of whether text-based signals add predictive value beyond routine risk indicators under fixed follow-up capacity is a meaningful integration, but the application frames it cautiously and does not clearly establish a novel methodological or conceptual advance over the supplied prior work.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "算法在同等名额下比较识别，临床研究检验被识别者是否真正受益，二者以统一患者时点与结局定义衔接。",
+            "reason": "The proposed link between identification and clinical benefit addresses an important service-allocation problem. However, the expected contribution is stated conditionally and the application does not demonstrate that the findings would substantially advance the relevant clinical or modelling frontiers.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 4,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "The application provides concrete data access, pre-specified validation and safety procedures, frozen evaluation windows, and explicit risk handling. These elements support a reasonably well-designed and executable study within the stated premises.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "6ac051c9021b7675825a27c7c37f32d53ae2c714dd1e6bb3de9ac6909ba35501",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:21:59.101318+00:00"
+    },
+    {
+      "id": "E05_P08_rubric_4b99d5f4b806",
+      "expert_id": "E05",
+      "project_id": "P08",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "Outcome labels rely on self-reported symptoms without chart review; no randomized allocation or prospective validation; no active safety monitoring for missed cases; random split without clinic holdout risks overfitting. These weaken causal and service-level claims despite adequate data and infrastructure.",
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "现有研究缺少在固定随访容量下，文本增量信息与临床后果之间的连接。",
+            "reason": "The stated gap is plausible but the proposed methods (text-enhanced risk models, retrospective comparison) are standard combinations of existing techniques. No novel modeling, inference, or knowledge-integration mechanism is specified beyond juxtaposing text features with clinical outcomes.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "临床随访与卫生服务研究任务2：使用下一次咨询中的自报症状作为风险标签，不安排病历复核。",
+            "reason": "The scientific question is important, but the design weakens the claimed contribution: self-reported symptoms as the outcome label, no randomization, and no active safety monitoring limit the ability to establish that identified patients truly benefit.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "三家门诊已为该实验情境提供去标识的9000名患者两年记录；其中600例由两名临床人员独立核对结局，分歧由第三人裁定。",
+            "reason": "Data access, preliminary infrastructure, and a staged plan are described. However, several design choices (random split without clinic holdout, no prospective validation, no safety monitoring) reduce confidence that the stated clinical-service conclusions can be supported.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "4b99d5f4b80666fcc31b99bcfb596fc17d38def693e0b9fd9c76b588070a8b35",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:05.338275+00:00"
+    },
+    {
+      "id": "E05_P09_rubric_1a511cfe2ef1",
+      "expert_id": "E05",
+      "project_id": "P09",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "scores": [
+          {
+            "score": 3,
+            "evidence": "本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The integration of short-sequence forecasting with inventory optimization under asymmetric costs is a plausible but incremental extension. Prior records separately address grey forecasting and inventory optimization; the proposed link is not strongly novel beyond combining existing methods.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 3,
+            "evidence": "统计研究提供条件分布及不确定性，运筹研究把需求分布转化为预算内的库存决策，并用非对称成本评价预测信息。",
+            "reason": "The scientific question about error propagation to inventory costs is practically relevant, but the application restricts conclusions to existing supply structures and current cost ratios, limiting broader contribution to the field.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "情境数据包含80类零部件连续36个月需求、采购成本和缺货记录。原始缺失月份已标记，未先行插补；价格、提前期和容量约束可核对。",
+            "reason": "Data access and preliminary tools are stated, but 36 months with 80 components is a small sample for short-sequence forecasting and rare supply disruptions. The design includes sensible safeguards but leaves substantive uncertainty about whether effects can be detected.",
+            "criterion_id": "feasibility"
+          }
+        ],
+        "familiarity": "somewhat_familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The proposal relies on a small dataset (80 components, 36 months) with rare disruptions, making robust validation difficult. The claimed integration is plausible but not convincingly novel relative to prior records. Conclusions are explicitly restricted to existing supply structures and current cost ratios, limiting generalizability."
+      },
+      "input_sha256": "1a511cfe2ef180d3c90e48b474ccee424aa75134f96200f67239560e12f75568",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:05.883314+00:00"
+    },
+    {
+      "id": "E05_P10_rubric_f0e9edbf69fc",
+      "expert_id": "E05",
+      "project_id": "P10",
+      "task": "rubric",
+      "status": "actual",
+      "parsed": {
+        "familiarity": "familiar",
+        "overall_grade": "fair",
+        "funding_recommendation": "do_not_fund",
+        "limitations": "The design restricts analysis to a single cost ratio, omits ablation and policy thresholds, and fixes safety stock at 10% regardless of uncertainty. The claimed cross-domain contribution is asserted rather than demonstrated, and the application explicitly defers key validation to the project period.",
+        "scores": [
+          {
+            "score": 2,
+            "evidence": "本项目将短序列预测与库存与资源优化结合，分别研究各自的科学问题，并检验两部分之间的联系。",
+            "reason": "The proposed integration of short-series forecasting with inventory optimization is a plausible extension, but the application explicitly avoids novel methodological development, restricts to fixed rules (10% safety stock), and omits ablation or threshold analysis, weakening the claimed knowledge contribution.",
+            "criterion_id": "novelty"
+          },
+          {
+            "score": 2,
+            "evidence": "更小的预测均方误差未必对应更低缺货损失，因为成本对误差方向的反应不同。",
+            "reason": "The scientific question is relevant, but the design limits generalizability: only one cost ratio is reported, no policy thresholds or external cost scenarios are derived, and the 20 supplier-linked parts are held out without comparative analysis.",
+            "criterion_id": "value"
+          },
+          {
+            "score": 3,
+            "evidence": "团队已有灰色预测、分位数回归和单期库存求解器，初步复算能够重现已记录的库存成本，尚未比较拟议方法。",
+            "reason": "The team possesses relevant tools and data, and the timeline is structured. However, several tasks are under-specified (e.g., no independent ablation, fixed safety stock), and the application acknowledges that the main effects remain untested.",
+            "criterion_id": "feasibility"
+          }
+        ]
+      },
+      "input_sha256": "f0e9edbf69fc90c653237a0c017b3045811e1647c50700696906e9aa2c1811e9",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:08.541834+00:00"
+    },
+    {
+      "id": "E01_all_ranking_2d908d540e77",
+      "expert_id": "E01",
+      "project_id": null,
+      "task": "ranking",
+      "status": "actual",
+      "parsed": {
+        "order": [
+          "P07",
+          "P03",
+          "P01",
+          "P05",
+          "P09",
+          "P04",
+          "P08",
+          "P02",
+          "P06",
+          "P10"
+        ],
+        "rationale": "P07 ranks first for its rigorous design: patient-level split with a fully held-out clinic, frozen thresholds, independent clinical outcome verification, randomized follow-up allocation, and pre-specified safety monitoring. These features directly test whether text signals improve service outcomes under fixed capacity, with strong internal validity and clear clinical value. P03 ranks second for integrating distributionally robust optimization with statistical calibration: it uses training/calibration/test splits, derives radius-to-risk bounds, reports coverage separately for selected and unselected projects, and constructs independent post-selection intervals under heavy-tailed mechanisms. This addresses selection-induced risk distortion convincingly. P01 ranks third for separating topic and method channels, using held-out institutions and time-based validation, permutation tests preserving degree distributions, and measuring actual collaborative activity rather than co-authorship alone. Its two-part design connects algorithmic identification to organizational mechanisms with explicit scope limits."
+      },
+      "input_sha256": "2d908d540e77ab12b36eb19c8f870629b2ea15f62777356f27f6711936f1e878",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:08.707017+00:00"
+    },
+    {
+      "id": "E02_all_ranking_0850c60aebd6",
+      "expert_id": "E02",
+      "project_id": null,
+      "task": "ranking",
+      "status": "actual",
+      "parsed": {
+        "order": [
+          "P01",
+          "P07",
+          "P03",
+          "P05",
+          "P09",
+          "P04",
+          "P02",
+          "P08",
+          "P06",
+          "P10"
+        ],
+        "rationale": "P01 ranks first because it combines rigorous graph representation learning with a randomized organizational experiment, including leave-one-institution-out validation, permutation tests, and pre-specified interaction analyses—directly testing the proposed knowledge-complementarity mechanism. P07 ranks second for its patient-level split, frozen thresholds, independent outcome adjudication, randomized follow-up allocation, and explicit safety monitoring, which together support credible causal inference on clinical benefit. P03 ranks third because its three-way train/calibration/test split, frozen radius selection, and independent coverage evaluation address selection-induced risk calibration, a core unresolved issue in robust optimization. These three applications stand out for designs that can actually identify the claimed cross-domain relationships rather than merely describing them."
+      },
+      "input_sha256": "0850c60aebd63a08f36d9367eb2e232be781189501e7c3586d1c138dac3ae7cd",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:13.426867+00:00"
+    },
+    {
+      "id": "E03_all_ranking_30f8be851a5f",
+      "expert_id": "E03",
+      "project_id": null,
+      "task": "ranking",
+      "status": "actual",
+      "parsed": {
+        "order": [
+          "P01",
+          "P07",
+          "P03",
+          "P05",
+          "P09",
+          "P02",
+          "P04",
+          "P06",
+          "P08",
+          "P10"
+        ],
+        "rationale": "P01 ranks first because it combines rigorous graph representation learning with a randomized organizational experiment, including leave-one-institution-out validation, permutation tests, and pre-specified mechanism analysis—directly addressing whether knowledge complementarity becomes collaboration under institutional boundaries. P07 ranks second for its clinically grounded design: patient-level splitting, frozen thresholds, independent outcome verification, randomized follow-up allocation, and explicit safety monitoring, which together support causal claims about text-enhanced risk identification improving service outcomes. P03 ranks third for integrating robust optimization with statistical inference through train-calibration-test splits, independent coverage evaluation, and selection-aware risk calibration, addressing a well-defined gap between estimation uncertainty and budget allocation. These three applications stand out by pairing methodological rigor with falsifiable cross-domain interfaces, whereas lower-ranked proposals either weaken validation (P06, P08, P10) or narrow generalizability without compensating safeguards (P02, P04)."
+      },
+      "input_sha256": "30f8be851a5fef5e8c118c4748933016b1e45931734622202d8c4293a3770e0c",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:15.875420+00:00"
+    },
+    {
+      "id": "E04_all_ranking_e03102f467fe",
+      "expert_id": "E04",
+      "project_id": null,
+      "task": "ranking",
+      "status": "actual",
+      "parsed": {
+        "order": [
+          "P07",
+          "P03",
+          "P01",
+          "P09",
+          "P05",
+          "P04",
+          "P08",
+          "P10",
+          "P02",
+          "P06"
+        ],
+        "rationale": "P07 ranks first because it combines text modeling with a randomized follow-up trial, independent outcome verification, patient-level holdout, and explicit safety monitoring—addressing both algorithmic validity and clinical benefit under fixed capacity. P03 ranks second for its rigorous three-way data split, frozen calibration, independent evaluation of selected combinations, and explicit coverage checks under heavy-tailed and heteroscedastic settings, directly testing whether optimization preserves statistical guarantees. P01 ranks third for its dual-channel graph representation design, institution-level holdout, permutation tests preserving degree margins, and randomized recommendation experiment with independently verified cooperation outcomes. These three applications share a common strength: each cross-domain interface is tested with pre-registered validation, held-out or randomized evidence, and explicit reporting of failure conditions rather than relying on algorithmic ranking alone."
+      },
+      "input_sha256": "e03102f467fe33cb2eb7bda29dd72913673d2402159ba6c4b877c66772d66639",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:16.885961+00:00"
+    },
+    {
+      "id": "E05_all_ranking_17b9f6bedb54",
+      "expert_id": "E05",
+      "project_id": null,
+      "task": "ranking",
+      "status": "actual",
+      "parsed": {
+        "order": [
+          "P07",
+          "P01",
+          "P05",
+          "P03",
+          "P09",
+          "P02",
+          "P06",
+          "P04",
+          "P10",
+          "P08"
+        ],
+        "rationale": "P07 ranks first because it combines rigorous model validation (patient-level split, external clinic holdout, frozen thresholds, calibration and subgroup error reporting) with a randomized follow-up trial, independent outcome adjudication, and explicit safety monitoring—the strongest causal design for clinical benefit. P01 ranks second for its dual-channel graph representation with held-out institution and temporal validation, permutation testing by degree, and randomized recommendation experiment with pre-specified interaction tests between knowledge relation and institutional boundary. P05 ranks third for its controlled recommendation experiment with balanced materials, pre-registered outcomes, and ablation testing of the complementarity module, though it lacks long-term follow-up. P07, P01, and P05 all combine methodological rigor with genuine cross-domain integration, but P07's randomized clinical design and safety provisions give it the strongest evidence for real-world impact."
+      },
+      "input_sha256": "17b9f6bedb546093bd5b3e6dac86858a8459f41a5bf7f45777ee850d79403844",
+      "model_requested": "deepseek-v4-pro-0813",
+      "response_model": "deepseek-v4-pro-0813",
+      "timestamp": "2026-10-29T02:22:17.799547+00:00"
+    }
+  ]
+}

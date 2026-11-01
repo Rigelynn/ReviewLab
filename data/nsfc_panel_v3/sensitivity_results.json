@@ -1,0 +1,346 @@
+{
+  "scenarios": [
+    {
+      "scenario": "base",
+      "values": {
+        "P01": 0.9,
+        "P02": 0.4,
+        "P03": 0.8875000000000001,
+        "P04": 0.5,
+        "P05": 0.75,
+        "P06": 0.5,
+        "P07": 0.875,
+        "P08": 0.375,
+        "P09": 0.775,
+        "P10": 0.5
+      },
+      "rules": [
+        {
+          "rule": "Mean score",
+          "value": 2.525,
+          "loss": 0.13750000000000018
+        },
+        {
+          "rule": "Funding recommendation vote",
+          "value": 2.525,
+          "loss": 0.13750000000000018
+        },
+        {
+          "rule": "Borda ranking",
+          "value": 2.6625,
+          "loss": 0.0
+        },
+        {
+          "rule": "Expertise-based delegation",
+          "value": 2.5375,
+          "loss": 0.125
+        },
+        {
+          "rule": "Single reviewer E01",
+          "value": 2.425,
+          "loss": 0.23750000000000027
+        },
+        {
+          "rule": "Score-threshold vote (sensitivity)",
+          "value": 2.15,
+          "loss": 0.5125000000000002
+        },
+        {
+          "rule": "Rank-only consensus (approximate)",
+          "value": 2.6625,
+          "loss": 0.0
+        },
+        {
+          "rule": "Joint MB (diagnostic)",
+          "value": 2.6625,
+          "loss": 0.0
+        }
+      ]
+    },
+    {
+      "scenario": "equal_value_weights",
+      "values": {
+        "P01": 0.875,
+        "P02": 0.375,
+        "P03": 0.875,
+        "P04": 0.5,
+        "P05": 0.75,
+        "P06": 0.5,
+        "P07": 0.875,
+        "P08": 0.375,
+        "P09": 0.75,
+        "P10": 0.5
+      },
+      "rules": [
+        {
+          "rule": "Mean score",
+          "value": 2.5,
+          "loss": 0.125
+        },
+        {
+          "rule": "Funding recommendation vote",
+          "value": 2.5,
+          "loss": 0.125
+        },
+        {
+          "rule": "Borda ranking",
+          "value": 2.625,
+          "loss": 0.0
+        },
+        {
+          "rule": "Expertise-based delegation",
+          "value": 2.5,
+          "loss": 0.125
+        },
+        {
+          "rule": "Single reviewer E01",
+          "value": 2.375,
+          "loss": 0.25
+        },
+        {
+          "rule": "Score-threshold vote (sensitivity)",
+          "value": 2.125,
+          "loss": 0.5
+        },
+        {
+          "rule": "Rank-only consensus (approximate)",
+          "value": 2.625,
+          "loss": 0.0
+        },
+        {
+          "rule": "Joint MB (diagnostic)",
+          "value": 2.625,
+          "loss": 0.0
+        }
+      ]
+    },
+    {
+      "scenario": "drop_target_1",
+      "values": {
+        "P01": 0.8666666666666667,
+        "P02": 0.19999999999999998,
+        "P03": 0.8500000000000001,
+        "P04": 0.33333333333333337,
+        "P05": 0.6666666666666666,
+        "P06": 0.3333333333333333,
+        "P07": 0.8333333333333333,
+        "P08": 0.16666666666666666,
+        "P09": 0.7000000000000001,
+        "P10": 0.33333333333333337
+      },
+      "rules": [
+        {
+          "rule": "Mean score",
+          "value": 2.3666666666666667,
+          "loss": 0.18333333333333313
+        },
+        {
+          "rule": "Funding recommendation vote",
+          "value": 2.3666666666666667,
+          "loss": 0.18333333333333313
+        },
+        {
+          "rule": "Borda ranking",
+          "value": 2.55,
+          "loss": 0.0
+        },
+        {
+          "rule": "Expertise-based delegation",
+          "value": 2.3833333333333333,
+          "loss": 0.16666666666666652
+        },
+        {
+          "rule": "Single reviewer E01",
+          "value": 2.2333333333333334,
+          "loss": 0.31666666666666643
+        },
+        {
+          "rule": "Score-threshold vote (sensitivity)",
+          "value": 1.8666666666666667,
+          "loss": 0.6833333333333331
+        },
+        {
+          "rule": "Rank-only consensus (approximate)",
+          "value": 2.55,
+          "loss": 0.0
+        },
+        {
+          "rule": "Joint MB (diagnostic)",
+          "value": 2.55,
+          "loss": 0.0
+        }
+      ]
+    },
+    {
+      "scenario": "drop_target_2",
+      "values": {
+        "P01": 0.8666666666666667,
+        "P02": 0.5333333333333333,
+        "P03": 0.8500000000000001,
+        "P04": 0.5166666666666667,
+        "P05": 0.6666666666666666,
+        "P06": 0.6666666666666666,
+        "P07": 0.8333333333333333,
+        "P08": 0.5,
+        "P09": 0.7000000000000001,
+        "P10": 0.6666666666666667
+      },
+      "rules": [
+        {
+          "rule": "Mean score",
+          "value": 2.3666666666666667,
+          "loss": 0.18333333333333313
+        },
+        {
+          "rule": "Funding recommendation vote",
+          "value": 2.3666666666666667,
+          "loss": 0.18333333333333313
+        },
+        {
+          "rule": "Borda ranking",
+          "value": 2.55,
+          "loss": 0.0
+        },
+        {
+          "rule": "Expertise-based delegation",
+          "value": 2.3833333333333333,
+          "loss": 0.16666666666666652
+        },
+        {
+          "rule": "Single reviewer E01",
+          "value": 2.2333333333333334,
+          "loss": 0.31666666666666643
+        },
+        {
+          "rule": "Score-threshold vote (sensitivity)",
+          "value": 2.2,
+          "loss": 0.34999999999999964
+        },
+        {
+          "rule": "Rank-only consensus (approximate)",
+          "value": 2.55,
+          "loss": 0.0
+        },
+        {
+          "rule": "Joint MB (diagnostic)",
+          "value": 2.55,
+          "loss": 0.0
+        }
+      ]
+    },
+    {
+      "scenario": "drop_target_3",
+      "values": {
+        "P01": 0.8666666666666667,
+        "P02": 0.3333333333333333,
+        "P03": 0.8500000000000001,
+        "P04": 0.48333333333333334,
+        "P05": 0.8,
+        "P06": 0.3333333333333333,
+        "P07": 0.8333333333333333,
+        "P08": 0.3333333333333333,
+        "P09": 0.8500000000000001,
+        "P10": 0.33333333333333337
+      },
+      "rules": [
+        {
+          "rule": "Mean score",
+          "value": 2.5,
+          "loss": 0.06666666666666687
+        },
+        {
+          "rule": "Funding recommendation vote",
+          "value": 2.5,
+          "loss": 0.06666666666666687
+        },
+        {
+          "rule": "Borda ranking",
+          "value": 2.55,
+          "loss": 0.01666666666666705
+        },
+        {
+          "rule": "Expertise-based delegation",
+          "value": 2.5166666666666666,
+          "loss": 0.050000000000000266
+        },
+        {
+          "rule": "Single reviewer E01",
+          "value": 2.5166666666666666,
+          "loss": 0.050000000000000266
+        },
+        {
+          "rule": "Score-threshold vote (sensitivity)",
+          "value": 2.0,
+          "loss": 0.5666666666666669
+        },
+        {
+          "rule": "Rank-only consensus (approximate)",
+          "value": 2.55,
+          "loss": 0.01666666666666705
+        },
+        {
+          "rule": "Joint MB (diagnostic)",
+          "value": 2.55,
+          "loss": 0.01666666666666705
+        }
+      ]
+    },
+    {
+      "scenario": "drop_target_4",
+      "values": {
+        "P01": 1.0,
+        "P02": 0.5333333333333333,
+        "P03": 1.0,
+        "P04": 0.6666666666666667,
+        "P05": 0.8666666666666667,
+        "P06": 0.6666666666666666,
+        "P07": 1.0,
+        "P08": 0.5,
+        "P09": 0.8500000000000001,
+        "P10": 0.6666666666666667
+      },
+      "rules": [
+        {
+          "rule": "Mean score",
+          "value": 2.8666666666666667,
+          "loss": 0.1333333333333333
+        },
+        {
+          "rule": "Funding recommendation vote",
+          "value": 2.8666666666666667,
+          "loss": 0.1333333333333333
+        },
+        {
+          "rule": "Borda ranking",
+          "value": 3.0,
+          "loss": 0.0
+        },
+        {
+          "rule": "Expertise-based delegation",
+          "value": 2.8666666666666667,
+          "loss": 0.1333333333333333
+        },
+        {
+          "rule": "Single reviewer E01",
+          "value": 2.716666666666667,
+          "loss": 0.2833333333333332
+        },
+        {
+          "rule": "Score-threshold vote (sensitivity)",
+          "value": 2.533333333333333,
+          "loss": 0.4666666666666668
+        },
+        {
+          "rule": "Rank-only consensus (approximate)",
+          "value": 3.0,
+          "loss": 0.0
+        },
+        {
+          "rule": "Joint MB (diagnostic)",
+          "value": 3.0,
+          "loss": 0.0
+        }
+      ]
+    }
+  ]
+}
