@@ -29,7 +29,7 @@ jobs:
               if len(archives) != 1:
                   raise SystemExit('Expected one research archive')
               archive = archives[0]
-              expected = '62fede92c17b0ca3b1b3ce445d8094da4cdd576d1ce60860c4a5b53a2a99c142'
+              expected = 'bc4559bda69b97da4dc2e86dbb34cac82732672803085589a452164a7bc751db'
               if hashlib.sha256(archive.read_bytes()).hexdigest() != expected:
                   raise SystemExit('Archive checksum mismatch')
               with ZipFile(archive) as bundle:
