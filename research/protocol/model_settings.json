@@ -1,0 +1,17 @@
+{
+  "protocol": "nsfc_profile_review_v3",
+  "model": "deepseek-v4-pro-0813",
+  "temperature": 0.3,
+  "max_tokens": 2300,
+  "stream": false,
+  "enable_thinking": false,
+  "response_format": {
+    "type": "json_object"
+  },
+  "reviewers": 5,
+  "applications": 10,
+  "review_tasks": 50,
+  "ranking_tasks": 5,
+  "ranking_order_seed": "1028 + numeric reviewer identifier",
+  "execution": "Offline public request generation only. No network requests or credentials are included."
+}

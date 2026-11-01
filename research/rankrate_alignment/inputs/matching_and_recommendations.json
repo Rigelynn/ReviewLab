@@ -1,0 +1,173 @@
+{
+  "reviewer_fields": {
+    "E01": {
+      "CS": 1.0,
+      "MS": 0.0,
+      "OR": 0.0,
+      "MED": 0.0,
+      "STAT": 0.0
+    },
+    "E02": {
+      "CS": 0.5,
+      "MS": 0.1,
+      "OR": 0.3,
+      "MED": 0.0,
+      "STAT": 0.1
+    },
+    "E03": {
+      "CS": 0.4,
+      "MS": 0.6,
+      "OR": 0.0,
+      "MED": 0.0,
+      "STAT": 0.0
+    },
+    "E04": {
+      "CS": 0.3,
+      "MS": 0.2,
+      "OR": 0.2,
+      "MED": 0.1,
+      "STAT": 0.2
+    },
+    "E05": {
+      "CS": 0.0,
+      "MS": 0.3,
+      "OR": 0.6,
+      "MED": 0.0,
+      "STAT": 0.1
+    }
+  },
+  "project_fields": {
+    "P01": {
+      "CS": 0.6,
+      "MS": 0.4,
+      "OR": 0,
+      "MED": 0,
+      "STAT": 0
+    },
+    "P02": {
+      "CS": 0.6,
+      "MS": 0.4,
+      "OR": 0,
+      "MED": 0,
+      "STAT": 0
+    },
+    "P03": {
+      "CS": 0,
+      "MS": 0,
+      "OR": 0.55,
+      "MED": 0,
+      "STAT": 0.45
+    },
+    "P04": {
+      "CS": 0,
+      "MS": 0,
+      "OR": 0.55,
+      "MED": 0,
+      "STAT": 0.45
+    },
+    "P05": {
+      "CS": 0.4,
+      "MS": 0.6,
+      "OR": 0,
+      "MED": 0,
+      "STAT": 0
+    },
+    "P06": {
+      "CS": 0.4,
+      "MS": 0.6,
+      "OR": 0,
+      "MED": 0,
+      "STAT": 0
+    },
+    "P07": {
+      "CS": 0.45,
+      "MS": 0,
+      "OR": 0,
+      "MED": 0.55,
+      "STAT": 0
+    },
+    "P08": {
+      "CS": 0.45,
+      "MS": 0,
+      "OR": 0,
+      "MED": 0.55,
+      "STAT": 0
+    },
+    "P09": {
+      "CS": 0,
+      "MS": 0,
+      "OR": 0.35,
+      "MED": 0,
+      "STAT": 0.65
+    },
+    "P10": {
+      "CS": 0,
+      "MS": 0,
+      "OR": 0.35,
+      "MED": 0,
+      "STAT": 0.65
+    }
+  },
+  "recommendations": {
+    "E01": {
+      "P03": "do_not_fund",
+      "P04": "do_not_fund",
+      "P02": "do_not_fund",
+      "P01": "priority",
+      "P05": "fund",
+      "P07": "fund",
+      "P06": "do_not_fund",
+      "P08": "do_not_fund",
+      "P09": "fund",
+      "P10": "do_not_fund"
+    },
+    "E02": {
+      "P01": "priority",
+      "P02": "do_not_fund",
+      "P03": "do_not_fund",
+      "P04": "do_not_fund",
+      "P06": "do_not_fund",
+      "P05": "fund",
+      "P07": "do_not_fund",
+      "P08": "do_not_fund",
+      "P09": "fund",
+      "P10": "do_not_fund"
+    },
+    "E03": {
+      "P03": "fund",
+      "P01": "fund",
+      "P02": "do_not_fund",
+      "P07": "fund",
+      "P05": "fund",
+      "P06": "fund",
+      "P04": "fund",
+      "P10": "do_not_fund",
+      "P09": "fund",
+      "P08": "do_not_fund"
+    },
+    "E04": {
+      "P01": "fund",
+      "P02": "do_not_fund",
+      "P03": "fund",
+      "P04": "do_not_fund",
+      "P05": "fund",
+      "P06": "fund",
+      "P08": "do_not_fund",
+      "P09": "do_not_fund",
+      "P07": "fund",
+      "P10": "do_not_fund"
+    },
+    "E05": {
+      "P03": "fund",
+      "P01": "fund",
+      "P02": "fund",
+      "P05": "fund",
+      "P04": "do_not_fund",
+      "P06": "do_not_fund",
+      "P07": "fund",
+      "P08": "do_not_fund",
+      "P09": "do_not_fund",
+      "P10": "do_not_fund"
+    }
+  }
+}

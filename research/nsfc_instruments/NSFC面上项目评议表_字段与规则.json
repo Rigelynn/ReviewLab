@@ -1,0 +1,64 @@
+{
+  "id": "nsfc_general_program_source_v1",
+  "source_archive": "nsfc-申请各类评议表模板.rar",
+  "source_provenance": "用户本地提供的NSFC模板包；正文标注试点；未核定具体适用年度。",
+  "forms": [
+    {
+      "file": "面上项目51.pdf",
+      "research_attribute": "自由探索类基础研究",
+      "topics": [
+        "研究思想的创新性",
+        "科学问题的价值及对相关前沿领域的贡献",
+        "研究基础与可行性；创新点特别突出时可弱化研究基础",
+        "其他建议"
+      ]
+    },
+    {
+      "file": "面上项目53.pdf",
+      "research_attribute": "目标导向类基础研究",
+      "topics": [
+        "是否面向经济社会发展需要或国家需求背后的基础科学问题",
+        "科学问题创新性与预期成果的科学价值",
+        "研究基础与可行性",
+        "其他建议"
+      ]
+    }
+  ],
+  "fields": {
+    "familiarity": [
+      "熟悉",
+      "较熟悉",
+      "不熟悉"
+    ],
+    "overall_grade": [
+      "优",
+      "良",
+      "中",
+      "差"
+    ],
+    "funding_recommendation": [
+      "优先资助",
+      "可资助",
+      "不予资助"
+    ]
+  },
+  "allowed_recommendations_by_grade": {
+    "优": [
+      "优先资助"
+    ],
+    "良": [
+      "优先资助",
+      "可资助"
+    ],
+    "中": [
+      "不予资助"
+    ],
+    "差": [
+      "不予资助"
+    ]
+  },
+  "numerical_weights_in_original": null,
+  "direct_pool_ranking_in_original": false,
+  "execution_status": "source verified; new experiment not run",
+  "previous_run": "provincial rubric legacy run; 50 scores and 5 rankings cannot be relabeled as NSFC evaluations"
+}

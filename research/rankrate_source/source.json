@@ -1,0 +1,6 @@
+{
+  "url": "https://cran.r-project.org/src/contrib/rankrate_1.2.1.tar.gz",
+  "sha256": "162c8bea8b4159484d064bfa8b732759d1b8aab4ca73339755e941383e6ef315",
+  "version": "1.2.1",
+  "purpose": "Author implementation used by the coauthor numerical benchmark"
+}

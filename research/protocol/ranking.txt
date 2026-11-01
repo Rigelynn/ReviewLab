@@ -1,0 +1,1 @@
+Rank all ten applications by funding priority under the same review standard. Earlier scores and other reviewers are unavailable. Return {"order":["P01",...],"rationale":"English comparison of the top three using application evidence, max 180 words"}. Each ID exactly once, most deserving first. Ranking is a research task additional to the NSFC source form.

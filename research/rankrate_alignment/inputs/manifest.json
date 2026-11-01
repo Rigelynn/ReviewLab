@@ -1,0 +1,65 @@
+{
+  "reviewers": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05"
+  ],
+  "projects": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10"
+  ],
+  "M": 12,
+  "score_formula": "15-sum(three 1-5 criterion scores)",
+  "ranking_format": "Each row lists project column indices from most to least preferred",
+  "tie_seed": 1028,
+  "tie_order": [
+    "P01",
+    "P06",
+    "P10",
+    "P03",
+    "P04",
+    "P02",
+    "P09",
+    "P05",
+    "P07",
+    "P08"
+  ],
+  "fitting_inputs_exclude_reference_values": true,
+  "new_ai_calls": 0,
+  "source_data": {
+    "materials.json": "c07f06a5cecdeb6bdeed8ba48a421248d26e0659860e9dfc53e48f7fcc2ba8f1",
+    "results.json": "987266b805f9a611cccf9579eb92dd326aab2f7260a43bbfc83e049a1607bced",
+    "researcher_values.json": "a778f8cd73424fb9a837472f3126118a2fd8856928cf6fa736b6b77676d44221"
+  },
+  "scenarios": [
+    "direct",
+    "score_derived"
+  ],
+  "methods": [
+    "FV",
+    "Greedy",
+    "GreedyLocal",
+    "ASTAR"
+  ],
+  "funding_capacities": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}
