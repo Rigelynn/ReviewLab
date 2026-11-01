@@ -1,0 +1,19 @@
+name: Verify research artifact
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - name: Verify released file checksums
+        run: python3 -B verify_artifact.py
+      - name: Reproduce saved portfolio checks
+        run: python3 -B -m unittest discover -s tests -v
+      - name: Check anonymous AI request construction
+        run: python3 -B research/protocol/build_requests.py
