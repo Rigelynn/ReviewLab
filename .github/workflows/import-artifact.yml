@@ -1,0 +1,55 @@
+name: Verify and import research artifact
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '**/release-package.zip'
+      - '.github/workflows/import-artifact.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  verify-and-import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Unpack the verified submission archive
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib
+          archives = list(Path('.').glob('**/release-package.zip'))
+          if archives:
+              if len(archives) != 1:
+                  raise SystemExit('Expected one research archive')
+              archive = archives[0]
+              expected = '62fede92c17b0ca3b1b3ce445d8094da4cdd576d1ce60860c4a5b53a2a99c142'
+              if hashlib.sha256(archive.read_bytes()).hexdigest() != expected:
+                  raise SystemExit('Archive checksum mismatch')
+              with ZipFile(archive) as bundle:
+                  for name in bundle.namelist():
+                      if Path(name).is_absolute() or '..' in Path(name).parts or name.startswith('.git/'):
+                          raise SystemExit('Unexpected archive path')
+                  bundle.extractall('.')
+              archive.unlink()
+          PY
+      - name: Verify released files and reproduce the saved analysis
+        run: |
+          python3 -B verify_artifact.py
+          python3 -B -m unittest discover -s tests -v
+          python3 -B research/protocol/build_requests.py
+      - name: Publish verified research files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish verified ReviewLab research artifact'
+            git push origin HEAD:main
+          fi
